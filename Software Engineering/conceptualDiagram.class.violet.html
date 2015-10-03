@@ -1,0 +1,244 @@
+<HTML>
+<HEAD>
+<META name="description"
+	content="Violet UML Editor cross format document" />
+<META name="keywords" content="Violet, UML" />
+<META charset="UTF-8" />
+<SCRIPT type="text/javascript">
+	function switchVisibility() {
+		var obj = document.getElementById("content");
+		obj.style.display = (obj.style.display == "block") ? "none" : "block";
+	}
+</SCRIPT>
+</HEAD>
+<BODY>
+	This file was generated with Violet UML Editor 2.1.0.
+	&nbsp;&nbsp;(&nbsp;<A href=# onclick="switchVisibility()">View Source</A>&nbsp;/&nbsp;<A href="http://sourceforge.net/projects/violet/files/violetumleditor/" target="_blank">Download Violet</A>&nbsp;)
+	<BR />
+	<BR />
+	<SCRIPT id="content" type="text/xml"><![CDATA[<ClassDiagramGraph id="1">
+  <nodes id="2">
+    <ClassNode id="3">
+      <children id="4"/>
+      <location class="Point2D.Double" id="5" x="240.0" y="340.0"/>
+      <id id="6" value="19f23a26-65a3-4a9a-8118-3242feb7ce34"/>
+      <revision>1</revision>
+      <backgroundColor id="7">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </backgroundColor>
+      <borderColor id="8">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <textColor reference="8"/>
+      <name id="9" justification="1" size="3" underlined="false">
+        <text>Workout</text>
+      </name>
+      <attributes id="10" justification="0" size="4" underlined="false">
+        <text></text>
+      </attributes>
+      <methods id="11" justification="0" size="4" underlined="false">
+        <text></text>
+      </methods>
+    </ClassNode>
+    <ClassNode id="12">
+      <children id="13"/>
+      <location class="Point2D.Double" id="14" x="240.0" y="220.0"/>
+      <id id="15" value="d8ce05e4-8b48-4e90-b635-d7b229b079e2"/>
+      <revision>1</revision>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="8"/>
+      <name id="16" justification="1" size="3" underlined="false">
+        <text>Routine</text>
+      </name>
+      <attributes id="17" justification="0" size="4" underlined="false">
+        <text></text>
+      </attributes>
+      <methods id="18" justification="0" size="4" underlined="false">
+        <text></text>
+      </methods>
+    </ClassNode>
+    <ClassNode id="19">
+      <children id="20"/>
+      <location class="Point2D.Double" id="21" x="430.0" y="340.0"/>
+      <id id="22" value="685b85f5-da7a-40d7-9169-ddc4f190abf8"/>
+      <revision>1</revision>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="8"/>
+      <name id="23" justification="1" size="3" underlined="false">
+        <text>Exercise</text>
+      </name>
+      <attributes id="24" justification="0" size="4" underlined="false">
+        <text></text>
+      </attributes>
+      <methods id="25" justification="0" size="4" underlined="false">
+        <text></text>
+      </methods>
+    </ClassNode>
+    <ClassNode id="26">
+      <children id="27"/>
+      <location class="Point2D.Double" id="28" x="430.0" y="480.0"/>
+      <id id="29" value="dba00a16-e411-499e-a0a8-191a8c360ecb"/>
+      <revision>1</revision>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="8"/>
+      <name id="30" justification="1" size="3" underlined="false">
+        <text>Set</text>
+      </name>
+      <attributes id="31" justification="0" size="4" underlined="false">
+        <text></text>
+      </attributes>
+      <methods id="32" justification="0" size="4" underlined="false">
+        <text></text>
+      </methods>
+    </ClassNode>
+    <ClassNode id="33">
+      <children id="34"/>
+      <location class="Point2D.Double" id="35" x="430.0" y="220.0"/>
+      <id id="36" value="98ca044a-a461-47cd-8337-7029309aa8ad"/>
+      <revision>1</revision>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="8"/>
+      <name id="37" justification="1" size="3" underlined="false">
+        <text>User</text>
+      </name>
+      <attributes id="38" justification="0" size="4" underlined="false">
+        <text></text>
+      </attributes>
+      <methods id="39" justification="0" size="4" underlined="false">
+        <text></text>
+      </methods>
+    </ClassNode>
+  </nodes>
+  <edges id="40">
+    <AggregationEdge id="41">
+      <start class="ClassNode" reference="19"/>
+      <end class="ClassNode" reference="3"/>
+      <startLocation class="Point2D.Double" id="42" x="50.0" y="40.0"/>
+      <endLocation class="Point2D.Double" id="43" x="50.0" y="30.0"/>
+      <transitionPoints id="44"/>
+      <id id="45" value="5f9b0a4c-91d2-4ae4-8763-a9ebdb61db5b"/>
+      <revision>1</revision>
+      <bentStyle name="AUTO"/>
+      <startLabel>1...*</startLabel>
+      <middleLabel></middleLabel>
+      <endLabel>0...*</endLabel>
+    </AggregationEdge>
+    <AggregationEdge id="46">
+      <start class="ClassNode" reference="3"/>
+      <end class="ClassNode" reference="12"/>
+      <startLocation class="Point2D.Double" id="47" x="70.0" y="30.0"/>
+      <endLocation class="Point2D.Double" id="48" x="70.0" y="50.0"/>
+      <transitionPoints id="49"/>
+      <id id="50" value="3685bcbd-d86c-4a5e-aec4-a00a4de7661f"/>
+      <revision>1</revision>
+      <bentStyle name="AUTO"/>
+      <startLabel>0...*</startLabel>
+      <middleLabel></middleLabel>
+      <endLabel>0...*</endLabel>
+    </AggregationEdge>
+    <AggregationEdge id="51">
+      <start class="ClassNode" reference="26"/>
+      <end class="ClassNode" reference="19"/>
+      <startLocation class="Point2D.Double" id="52" x="50.0" y="20.0"/>
+      <endLocation class="Point2D.Double" id="53" x="60.0" y="20.0"/>
+      <transitionPoints id="54"/>
+      <id id="55" value="aaf067c6-f370-4926-89fc-a65aa1309b00"/>
+      <revision>1</revision>
+      <bentStyle name="AUTO"/>
+      <startLabel>1...*</startLabel>
+      <middleLabel></middleLabel>
+      <endLabel>1</endLabel>
+    </AggregationEdge>
+  </edges>
+</ClassDiagramGraph>]]></SCRIPT>
+	<BR />
+	<BR />
+	<IMG alt="embedded diagram image" src="data:image/png;base64,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
+1IW9ujC8OJG/R5je3wkzB3Vhry4ML060uz+YzcxBXfTt61CHOgr9eR3qUEe7/w4zvC5OhDrURbu6
+/8Lu4kTuPyvwd8LMQd1BqnO5XLG5NpgSqDsYdQMDA1p+48aN9fV11FFI1R09elQv9ffff2u8sbGR
+lJSkm/pXYy1ZWlrSzczMTD/f4m7e1fT0dEVFRQjWndPprKysrK2tnZmZaWlpycrK+umnn2Jnv7eH
+6kLwN7YP9k9375e6r7/+Wi81NDSk8YMHD6zV9/DhQy3Rco0bGhpCsIL2b/26r7vOzk4xs9vt1r1C
+KIElJSVTU1OoiyASEaxucHBQL3Xu3DmNv//+e40TEhL079WrV7WkqalJ4/7+fo0vXryYkpKSnJzc
+1tbmvtKrqqpOnDjh/hloz5mRkZGenm52ob6e6D5OTEzc1+2lw+EYHR3Nzc3Vzm1tbW3rY0SuuLhY
+/IQQdUGrm5ubi4+PLyoqModOBQUFuqmFGre2tiZvpoE5svCYP3qMpsqhQ4c0GXTUo+Ms9x/x5MmT
+srIyTU4diFn3en3ZCFD34sULvdTx48c1Li8v19js/czBXn5+vsbz8/NCqEFvb+/du3c1uHbtmrVG
+xsbGVldXrZuG3GeffWam7zZP9Pjk9m/DabPZGhsbtTfTIeX2j9TJnvaEvmSizp99XXt7uxbeuXPn
+5s2bGly5csVaqE388PCwBh0dHVvnjzbK5jGabxqcPHnS/UfoNEeDN2/ezM7OWvd6fdnI+DZFQvRq
+r1690mZJ25L19fWEzfRfqOXaTekxR44c0fjdZhpoP2atEWsDY26aR/7www9m4TZPDI26xcVFvezn
+n3/u57cm8mZWCFc4Cu68Th90dna21qH2P8eOHdNNLdTnbqaB9k7WNwUe88c8xnyhsBW25qEG2nlq
+8219lF5fNjLUffXVV+bkTf9++eWXWqJ/NTaHl3V1dVpiDjutt6KbW52Ym1o7aWlp1vciOz4xBPs6
+vewXX3yhreOff/65/SMnJiby8vK0KqL4ODME53XXr183d1nnFNqgu+PUTV/zx9ePGBoa0sGnuXn4
+8GHt3Hy9bGSo0+Gf+d7SHApqye3btzVOTU3Vv7du3XLfqJhdlvu2ymMFTU5OmvPD6elpX080K0uD
+t2/fhkad1lp3d7cOfXVM4nWnp+OW6urqyspKDTiv2406HSJpR6cPWvNHu7uVlRUt1IZ4m/2Yx47L
+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" />
+</BODY>
+</HTML>
