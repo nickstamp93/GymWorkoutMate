@@ -43,4 +43,20 @@ public enum EnumEquipment {
         }
     }
 
+    public static EnumEquipment valueOf(int value) {
+        switch (value) {
+            case 1:
+                return BARBELL;
+            case 2:
+                return DUMBBELL;
+            case 3:
+                return MEDICINE_BALL;
+            case 4:
+                return KETTLEBELL;
+            case 5:
+                return BODY_ONLY;
+
+        }
+        return BARBELL;
+    }
 }

@@ -50,4 +50,26 @@ public enum EnumMuscleGroups {
                 return null;
         }
     }
+
+    public static EnumMuscleGroups valueOf(int value) {
+        switch (value) {
+            case 1:
+                return CHEST;
+            case 2:
+                return BACK;
+            case 3:
+                return SHOULDERS;
+            case 4:
+                return BICEPS;
+            case 5:
+                return TRICEPS;
+            case 6:
+                return LEGS;
+            case 7:
+                return ABS;
+
+        }
+        return CHEST;
+    }
+
 }

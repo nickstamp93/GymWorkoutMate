@@ -46,4 +46,23 @@ public enum EnumExerciseTypes {
                 return null;
         }
     }
+
+    public static EnumExerciseTypes valueOf(int value) {
+        switch (value) {
+            case 1:
+                return MUSCLE_GROWTH;
+            case 2:
+                return STRENGTH;
+            case 3:
+                return STAMINA;
+            case 4:
+                return FAT_LOSS;
+            case 5:
+                return RIPPING;
+            case 6:
+                return FITNESS;
+
+        }
+        return MUSCLE_GROWTH;
+    }
 }
