@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
@@ -149,4 +150,37 @@ public class Database extends SQLiteOpenHelper {
         getWritableDatabase().delete(Contract.Workouts.TABLE_NAME, selection, selectionArgs);
     }
 
+
+    public ArrayList<Integer> getCountsByMuscle() {
+        ArrayList<Integer> counts = new ArrayList<>();
+        for (int i = 0; i < EnumMuscleGroups.values().length; i++) {
+            counts.add(0);
+        }
+        for (Exercise exercise : getListExercises()) {
+            switch (exercise.getMuscle().getValue()) {
+                case 1:
+                    counts.set(0, counts.get(0) + 1);
+                    break;
+                case 2:
+                    counts.set(1, counts.get(1) + 1);
+                    break;
+                case 3:
+                    counts.set(2, counts.get(2) + 1);
+                    break;
+                case 4:
+                    counts.set(3, counts.get(3) + 1);
+                    break;
+                case 5:
+                    counts.set(4, counts.get(4) + 1);
+                    break;
+                case 6:
+                    counts.set(5, counts.get(5) + 1);
+                    break;
+                case 7:
+                    counts.set(6, counts.get(6) + 1);
+                    break;
+            }
+        }
+        return counts;
+    }
 }
