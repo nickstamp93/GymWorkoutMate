@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gymworkoutmate.nickstamp.gymworkoutmate">
+    package="com.gymworkoutmate.nickstamp.gymworkoutmate" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".Activity.OverviewActivity"
             android:label="@string/title_activity_overview"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
             android:name=".Activity.ExerciseListActivity"
             android:label="@string/title_activity_exercise_list"
             android:parentActivityName=".Activity.OverviewActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.OverviewActivity" />
@@ -30,7 +30,7 @@
             android:name=".Activity.WorkoutsActivity"
             android:label="@string/title_activity_workouts"
             android:parentActivityName=".Activity.OverviewActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.OverviewActivity" />
@@ -39,10 +39,19 @@
             android:name=".Activity.RoutinesActivity"
             android:label="@string/title_activity_routines"
             android:parentActivityName=".Activity.OverviewActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.OverviewActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.ExerciseDetailsActivity"
+            android:label="@string/title_activity_exercise_details"
+            android:parentActivityName=".Activity.ExerciseListActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.ExerciseListActivity" />
         </activity>
     </application>
 
