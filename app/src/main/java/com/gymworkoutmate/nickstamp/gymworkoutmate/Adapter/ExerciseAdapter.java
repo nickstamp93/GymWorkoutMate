@@ -2,6 +2,7 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -106,7 +107,11 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
 
         @Override
         public void onClick(View v) {
-            context.startActivity(new Intent(context, ExerciseDetailsActivity.class));
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("item", items.get(getAdapterPosition()));
+            Intent intent = new Intent(context, ExerciseDetailsActivity.class);
+            intent.putExtras(bundle);
+            context.startActivity(intent);
         }
     }
 }

@@ -5,10 +5,12 @@ import android.database.Cursor;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumEquipment;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 
+import java.io.Serializable;
+
 /**
  * Created by nickstamp on 10/9/2015.
  */
-public class Exercise {
+public class Exercise implements Serializable {
 
     private int id, img1, img2, mechanics;
     private String title;
@@ -22,8 +24,9 @@ public class Exercise {
         img1 = cursor.getInt(2);
         img2 = cursor.getInt(3);
         muscle = EnumMuscleGroups.valueOf(cursor.getInt(4));
-        mechanics = cursor.getInt(5);
-        equipment = EnumEquipment.valueOf(cursor.getInt(6));
+        other_muscles = cursor.getString(5);
+        mechanics = cursor.getInt(6);
+        equipment = EnumEquipment.valueOf(cursor.getInt(7));
     }
 
     public Exercise(String title, int image1, int image2, EnumMuscleGroups muscle,

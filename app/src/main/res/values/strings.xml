@@ -14,7 +14,7 @@
     <string name="title_activity_exercise_details">ExerciseDetailsActivity</string>
     <string name="placeholder_ex_info"><b>&#8226;Main Muscle Worked </b>: %1$s\n
                         <b>&#8226;Secondary Muscles </b>: %2$s\n
-                        <b>&#8226;Mechanics Type</b> : %3$s\n
+                        <b>&#8226;Mechanics Type </b>: %3$s\n
                         <b>&#8226;Equipment</b> : %4$s</string>
 
     <string name="placeholder_ex_description">1.Grab the pull-up bar with the palms facing forward using the prescribed grip.Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width.For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width.
