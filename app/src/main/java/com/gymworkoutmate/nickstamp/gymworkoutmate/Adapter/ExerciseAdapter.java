@@ -1,6 +1,7 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.ExerciseDetailsActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
@@ -79,7 +81,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
         return items.size();
     }
 
-    class ExerciseViewHolder extends RecyclerView.ViewHolder {
+    class ExerciseViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         int type;
         TextView title;
@@ -99,6 +101,12 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
                 img2 = (ImageView) itemView.findViewById(R.id.image2);
             }
 
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            context.startActivity(new Intent(context, ExerciseDetailsActivity.class));
         }
     }
 }
