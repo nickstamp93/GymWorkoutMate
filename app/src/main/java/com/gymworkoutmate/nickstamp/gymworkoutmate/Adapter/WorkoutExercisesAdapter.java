@@ -24,7 +24,8 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
 
     public WorkoutExercisesAdapter(Context context, ArrayList<Exercise> items) {
         this.context = context;
-        this.items = items;
+        this.items = new ArrayList<>();
+        this.items.addAll(items);
         inflater = LayoutInflater.from(this.context);
 
     }
@@ -58,7 +59,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
 
         TextView title;
         ImageView img1, img2;
-        LinearLayout llExeercisesInWorkout;
+        LinearLayout llExercisesInWorkout;
 
         public WorkoutExerciseViewHolder(View itemView) {
             super(itemView);
@@ -67,7 +68,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
             img1 = (ImageView) itemView.findViewById(R.id.image1);
             img2 = (ImageView) itemView.findViewById(R.id.image2);
 
-            llExeercisesInWorkout = (LinearLayout) itemView.findViewById(R.id.llExerciseInWorkout);
+            llExercisesInWorkout = (LinearLayout) itemView.findViewById(R.id.llExerciseInWorkout);
         }
     }
 }
