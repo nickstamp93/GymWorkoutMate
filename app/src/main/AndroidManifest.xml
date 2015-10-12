@@ -53,6 +53,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.ExerciseListActivity" />
         </activity>
+        <activity
+            android:name=".Activity.EditWorkoutActivity"
+            android:label="@string/title_activity_edit_workout"
+            android:parentActivityName=".Activity.WorkoutsActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.WorkoutsActivity" />
+        </activity>
     </application>
 
 </manifest>

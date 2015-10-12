@@ -18,6 +18,10 @@ public class Workout {
     private EnumMuscleGroups muscle;
     private ArrayList<Exercise> exercises;
 
+    public Workout() {
+        exercises = new ArrayList<>();
+    }
+
     public Workout(Cursor cursor, ArrayList<Exercise> exercises) {
         this.id = cursor.getInt(0);
         this.title = cursor.getString(1);
@@ -26,7 +30,7 @@ public class Workout {
         this.exercises = exercises;
     }
 
-    public Workout(String title, EnumExerciseTypes type, EnumMuscleGroups muscle , ArrayList<Exercise> exercises) {
+    public Workout(String title, EnumExerciseTypes type, EnumMuscleGroups muscle, ArrayList<Exercise> exercises) {
         this.title = title;
         this.type = type;
         this.muscle = muscle;
