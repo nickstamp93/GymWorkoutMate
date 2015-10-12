@@ -5,6 +5,8 @@ import android.database.Cursor;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 
+import java.util.ArrayList;
+
 /**
  * Created by nickstamp on 10/9/2015.
  */
@@ -14,18 +16,21 @@ public class Workout {
     private String title;
     private EnumExerciseTypes type;
     private EnumMuscleGroups muscle;
+    private ArrayList<Exercise> exercises;
 
-    public Workout(Cursor cursor) {
+    public Workout(Cursor cursor, ArrayList<Exercise> exercises) {
         this.id = cursor.getInt(0);
         this.title = cursor.getString(1);
         this.muscle = EnumMuscleGroups.valueOf(cursor.getInt(2));
         this.type = EnumExerciseTypes.valueOf(cursor.getInt(3));
+        this.exercises = exercises;
     }
 
-    public Workout(String title, EnumExerciseTypes type, EnumMuscleGroups muscle) {
+    public Workout(String title, EnumExerciseTypes type, EnumMuscleGroups muscle , ArrayList<Exercise> exercises) {
         this.title = title;
         this.type = type;
         this.muscle = muscle;
+        this.exercises = exercises;
     }
 
     public int getId() {
@@ -58,5 +63,13 @@ public class Workout {
 
     public void setMuscle(EnumMuscleGroups muscle) {
         this.muscle = muscle;
+    }
+
+    public ArrayList<Exercise> getExercises() {
+        return exercises;
+    }
+
+    public void setExercises(ArrayList<Exercise> exercises) {
+        this.exercises = exercises;
     }
 }

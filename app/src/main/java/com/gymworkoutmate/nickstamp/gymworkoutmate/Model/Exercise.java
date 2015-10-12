@@ -6,6 +6,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumEquipment;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by nickstamp on 10/9/2015.

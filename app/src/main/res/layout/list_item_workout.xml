@@ -21,7 +21,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/tvWorkoutSub"
+            android:id="@+id/tvWorkoutSubtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvWorkoutName"
@@ -37,43 +37,44 @@
             android:paddingTop="16dp" />
 
         <LinearLayout
+            android:id="@+id/llWorkoutExercises"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvWorkoutSub"
+            android:layout_below="@id/tvWorkoutSubtitle"
             android:orientation="vertical"
             android:paddingBottom="24dp"
             android:paddingLeft="16dp"
             android:paddingTop="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/bullet"
-                android:drawablePadding="8dp"
-                android:padding="4dp"
-                android:text="Exercise 1"
-                android:textColor="@color/primary_text"
-                android:textSize="20sp" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/bullet"-->
+                <!--android:drawablePadding="8dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:text="Exercise 1"-->
+                <!--android:textColor="@color/primary_text"-->
+                <!--android:textSize="20sp" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/bullet"
-                android:drawablePadding="8dp"
-                android:padding="4dp"
-                android:text="Exercise 2"
-                android:textColor="@color/primary_text"
-                android:textSize="20sp" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/bullet"-->
+                <!--android:drawablePadding="8dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:text="Exercise 2"-->
+                <!--android:textColor="@color/primary_text"-->
+                <!--android:textSize="20sp" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/bullet"
-                android:drawablePadding="8dp"
-                android:padding="4dp"
-                android:text="List Item"
-                android:textColor="@color/primary_text"
-                android:textSize="20sp" />
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/bullet"-->
+                <!--android:drawablePadding="8dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:text="Exercise 3"-->
+                <!--android:textColor="@color/primary_text"-->
+                <!--android:textSize="20sp" />-->
         </LinearLayout>
 
     </RelativeLayout>

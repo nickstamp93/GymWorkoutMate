@@ -70,13 +70,23 @@ public class Database extends SQLiteOpenHelper {
     }
 
     public ArrayList<Workout> getListWorkouts() {
-        Cursor c = getReadableDatabase().rawQuery(
+        Cursor cWorkouts = getReadableDatabase().rawQuery(
                 "SELECT * FROM " + Contract.Workouts.TABLE_NAME +
                         " ORDER BY " + Contract.Workouts._ID, null);
         ArrayList<Workout> items = new ArrayList<>();
-        for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
-            items.add(new Workout(c));
+        for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
+            //for the current Workout , find all its exercises and add them to an arraylist
+            ArrayList<Exercise> exercises = new ArrayList<>();
+            Cursor cExercises = getReadableDatabase().rawQuery(
+                    "SELECT * FROM " + Contract.ExerciseWorkoutConnection.TABLE_NAME +
+                            " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + "='" + cWorkouts.getInt(0) + "'"
+                    , null);
+            for (cExercises.moveToFirst(); !cExercises.isAfterLast(); cExercises.moveToNext()) {
+                exercises.add(getExercise(cExercises.getInt(0)));
+            }
+            items.add(new Workout(cWorkouts, exercises));
         }
+
 
         return items;
     }
@@ -107,7 +117,19 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put(Contract.Workouts.COLUMN_MUSCLE, item.getMuscle().getValue());
         contentValues.put(Contract.Workouts.COLUMN_TYPE, item.getType().getValue());
 
-        getWritableDatabase().insert(Contract.Workouts.TABLE_NAME, "null", contentValues);
+        long id = getWritableDatabase().insert(Contract.Workouts.TABLE_NAME, "null", contentValues);
+
+        for (Exercise ex : item.getExercises()) {
+            contentValues = new ContentValues();
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE, ex.getId());
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT, id);
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_NUMSETS, 5);
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, "10-10-10-8");
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, 90);
+
+            getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
+
+        }
     }
 
     public void update(Routine item) {
@@ -150,6 +172,14 @@ public class Database extends SQLiteOpenHelper {
         getWritableDatabase().delete(Contract.Workouts.TABLE_NAME, selection, selectionArgs);
     }
 
+    public Exercise getExercise(int id) {
+        Cursor c = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.Exercises.TABLE_NAME +
+                        " WHERE " + Contract.Exercises._ID + "='" + id + "'", null);
+
+        c.moveToFirst();
+        return new Exercise(c);
+    }
 
     public ArrayList<Integer> getCountsByMuscle() {
         ArrayList<Integer> counts = new ArrayList<>();
