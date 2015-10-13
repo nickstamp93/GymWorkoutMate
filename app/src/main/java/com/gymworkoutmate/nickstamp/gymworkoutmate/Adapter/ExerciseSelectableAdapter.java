@@ -33,7 +33,6 @@ public class ExerciseSelectableAdapter extends RecyclerView.Adapter<ExerciseSele
         this.items = items;
         inflater = LayoutInflater.from(this.context);
 
-
         selected = new boolean[items.size()];
         for (int i = 0; i < items.size(); i++) {
             if (ids.size() > 0 && items.get(i) != null)
@@ -45,6 +44,11 @@ public class ExerciseSelectableAdapter extends RecyclerView.Adapter<ExerciseSele
 
     }
 
+    /**
+     * Get the selected exercises
+     *
+     * @return the arraylist with the exercises that are checked
+     */
     public ArrayList<Exercise> getSelectedExercises() {
         ArrayList<Exercise> exercises = new ArrayList<>();
         for (int i = 0; i < selected.length; i++) {

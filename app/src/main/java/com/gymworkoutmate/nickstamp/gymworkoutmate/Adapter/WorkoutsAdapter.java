@@ -3,7 +3,6 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +46,8 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
 
         holder.tvWorkoutName.setText(item.getTitle());
         holder.tvWorkoutSubtitle.setText(item.getType().toString() + " , " + item.getMuscle().toString());
+
+        //for each exercise in the workout , create a text view and add it the layout of the item
         for (Exercise ex : item.getExercises()) {
             TextView tv = new TextView(context);
             tv.setText(ex.getTitle());
@@ -85,11 +86,7 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
 
         @Override
         public void onClick(View v) {
-//            Intent intent = new Intent(context, WorkoutDetailsActivity.class);
-//            Bundle bundle = new Bundle();
-//            bundle.putSerializable("item", items.get(getAdapterPosition()));
-//            intent.putExtras(bundle);
-//            context.startActivity(intent);
+
         }
     }
 }

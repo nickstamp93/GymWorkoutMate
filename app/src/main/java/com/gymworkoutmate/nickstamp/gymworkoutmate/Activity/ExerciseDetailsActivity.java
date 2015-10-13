@@ -3,6 +3,7 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,7 +14,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 public class ExerciseDetailsActivity extends AppCompatActivity {
 
-    private TextView tvInfo, tvName;
+    private TextView tvMuscle, tvOtherMuscles, tvMechanics, tvEquipment, tvName;
     private ImageView image1, image2;
     private Exercise exercise;
 
@@ -28,14 +29,26 @@ public class ExerciseDetailsActivity extends AppCompatActivity {
 
         if (exercise == null) {
             finish();
-            Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT);
+            Toast.makeText(this, "Bad Argument", Toast.LENGTH_SHORT);
         }
 
         setUpContent();
 
     }
 
+    /**
+     * Init and Fill the UI Views with the data from the exercise object
+     */
     private void setUpContent() {
+        tvMuscle = (TextView) findViewById(R.id.tvExerciseMuscle);
+        tvOtherMuscles = (TextView) findViewById(R.id.tvExerciseOtherMuscles);
+        tvMechanics = (TextView) findViewById(R.id.tvExerciseMechanics);
+        tvEquipment = (TextView) findViewById(R.id.tvExerciseEquipment);
+        tvName = (TextView) findViewById(R.id.tvExerciseTitle);
+        image1 = (ImageView) findViewById(R.id.image1);
+        image2 = (ImageView) findViewById(R.id.image2);
+
+        //get exercise's values and display them in the UI views
         String other_muscles = "-";
         if (exercise.getOther_muscles() != null) {
             String[] tokens = exercise.getOther_muscles().split("-");
@@ -48,26 +61,18 @@ public class ExerciseDetailsActivity extends AppCompatActivity {
             s.deleteCharAt(s.length() - 1);
             other_muscles = s.toString();
         }
+
         String mechanics = exercise.getMechanics() == 1 ? "Compound" : "Isolation";
         String muscle = exercise.getMuscle().toString();
         String equipment = exercise.getEquipment().toString();
-        String info = getString(
-                R.string.placeholder_ex_info,
-                muscle,
-                other_muscles,
-                mechanics,
-                equipment
-        );
-
-        tvInfo = (TextView) findViewById(R.id.tvExerciseInfo);
-        tvName = (TextView) findViewById(R.id.tvExerciseTitle);
-        image1 = (ImageView) findViewById(R.id.image1);
-        image2 = (ImageView) findViewById(R.id.image2);
 
         image1.setImageResource(exercise.getImg1());
         image2.setImageResource(exercise.getImg2());
         tvName.setText(exercise.getTitle());
-        tvInfo.setText(info);
+        tvMuscle.setText(Html.fromHtml("<b>Muscle</b> : " + muscle));
+        tvOtherMuscles.setText(Html.fromHtml("<b>Other Muscles</b> : " + other_muscles));
+        tvMechanics.setText(Html.fromHtml("<b>Mechanics Type</b> : " + mechanics));
+        tvEquipment.setText(Html.fromHtml("<b>Equipment</b> : " + equipment));
     }
 
     private void setToolbar() {

@@ -3,11 +3,11 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,6 +45,7 @@ public class EditWorkoutActivity extends AppCompatActivity {
         database = Database.getInstance(this);
 
         setUpToolbar();
+
         setUpFab();
 
         workout = new Workout();
@@ -56,6 +57,9 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Init and Set up the views about the info of the workout such as the name , muscle and type
+     */
     private void setUpInfoViews() {
 
         etWorkoutName = (EditText) findViewById(R.id.etWorkoutName);
@@ -180,16 +184,21 @@ public class EditWorkoutActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        if (id == android.R.id.home) {
+            NavUtils.navigateUpFromSameTask(this);
+        }
         if (id == R.id.action_workout_save) {
+            //if there are no exercises selected , alert
             if (workout.getExercises().size() == 0) {
                 Toast.makeText(EditWorkoutActivity.this, "You can't create workout without exercises!", Toast.LENGTH_SHORT).show();
                 return true;
             }
+            //if name has not been set , alert
             if (etWorkoutName.getText().toString().trim().equals("")) {
                 Toast.makeText(EditWorkoutActivity.this, "Enter a name for the Workout!", Toast.LENGTH_SHORT).show();
                 return true;
             }
+            //assign values to the workout and save it to the database
             workout.setTitle(etWorkoutName.getText().toString());
             workout.setMuscle(EnumMuscleGroups.values()[sMuscle.getSelectedItemPosition()]);
             workout.setType(EnumExerciseTypes.values()[sType.getSelectedItemPosition()]);

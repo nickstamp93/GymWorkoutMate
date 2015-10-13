@@ -15,34 +15,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Data.Database;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
-
-import java.util.ArrayList;
 
 public class OverviewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overview);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        setUpToolbar();
 
+        setUpFab();
+
+        setUpDrawer();
+
+    }
+
+    private void setUpDrawer() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -51,28 +44,23 @@ public class OverviewActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
 
-        Database database = Database.getInstance(this);
-//        ArrayList<Exercise> exercises = new ArrayList<>();
-//        exercises.add(database.getExercise(1));
-//        exercises.add(database.getExercise(2));
-//        exercises.add(database.getExercise(3));
-//        database.insert(new Workout("Workout 1", EnumExerciseTypes.MUSCLE_GROWTH, EnumMuscleGroups.CHEST, exercises));
-//        exercises = new ArrayList<>();
-//        exercises.add(database.getExercise(4));
-//        exercises.add(database.getExercise(5));
-//        exercises.add(database.getExercise(6));
-//        database.insert(new Workout("Workout 2", EnumExerciseTypes.MUSCLE_GROWTH, EnumMuscleGroups.SHOULDERS, exercises));
-//        exercises = new ArrayList<>();
-//        exercises.add(database.getExercise(7));
-//        exercises.add(database.getExercise(8));
-//        exercises.add(database.getExercise(9));
-//        exercises.add(database.getExercise(10));
-//        database.insert(new Workout("Workout 3", EnumExerciseTypes.STRENGTH, EnumMuscleGroups.LEGS, exercises));
+    private void setUpToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
+    }
 
-
-        startActivity(new Intent(OverviewActivity.this, WorkoutsActivity.class));
+    private void setUpFab() {
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 
     @Override

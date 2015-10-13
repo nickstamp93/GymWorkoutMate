@@ -49,6 +49,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
         holder.img1.setImageResource(item.getImg1());
         holder.img2.setImageResource(item.getImg2());
 
+        //for each set of the exercise , create a text view and add it to the layout of the item
         for (Set s : item.getSets()) {
             TextView tv = new TextView(context);
             tv.setText(s.getWeight() + "");
@@ -69,7 +70,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
         return items.size();
     }
 
-    class WorkoutExerciseViewHolder extends RecyclerView.ViewHolder {
+    class WorkoutExerciseViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView title;
         ImageView img1, img2;
@@ -83,6 +84,12 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
             img2 = (ImageView) itemView.findViewById(R.id.image2);
 
             llExercisesInWorkout = (LinearLayout) itemView.findViewById(R.id.llExerciseInWorkout);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+
         }
     }
 }

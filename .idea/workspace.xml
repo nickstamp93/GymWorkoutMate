@@ -46,26 +46,21 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="nikos" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b93908f9-1a63-4700-acf6-84bcb2ca23b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_edit_workout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Exercise.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Exercise.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseDetailsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseDetailsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseListActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseSelectableAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseSelectableAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Set.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Set.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutExercisesAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutExercisesAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutsAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutsAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_workout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_workout.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_edit_workout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_edit_workout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_workout_exercise.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_workout_exercise.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_exercise_details.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_exercise_details.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GymWorkoutMate.iws" />
@@ -93,54 +88,7 @@
     <favorites_list name="GymWorkoutMate" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="EditWorkoutActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-              <folding>
-                <element signature="method#setUpFab#0;class#EditWorkoutActivity#0" expanded="false" />
-                <element signature="method#setUpRecyclerView#0;class#EditWorkoutActivity#0" expanded="false" />
-                <element signature="method#setUpToolbar#0;class#EditWorkoutActivity#0" expanded="false" />
-                <element signature="method#onActivityResult#0;class#EditWorkoutActivity#0" expanded="false" />
-                <element signature="e#5148#5181#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkoutsAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6386404">
-              <caret line="130" column="87" selection-start-line="130" selection-start-column="87" selection-end-line="130" selection-end-column="87" />
-              <folding>
-                <element signature="docComment;class#Database#0" expanded="false" />
-                <element signature="e#809#867#0" expanded="false" />
-                <element signature="docComment;method#Database#0;class#Database#0" expanded="false" />
-                <element signature="method#Database#0;class#Database#0" expanded="false" />
-                <element signature="method#onCreate#0;class#Database#0" expanded="false" />
-                <element signature="method#onUpgrade#0;class#Database#0" expanded="false" />
-                <element signature="method#update#0;class#Database#0" expanded="false" />
-                <element signature="method#update#1;class#Database#0" expanded="false" />
-                <element signature="method#deleteWorkouts#0;class#Database#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1643,11 +1591,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_overview.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_exercise_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_exercise_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/FontsOverride.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/GymWorkoutMateApplication.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseDetailsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/bullet.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_workouts.xml" />
@@ -1656,22 +1602,24 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/WorkoutsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item_selectable_exercise.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/exercise_list_selectable.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Set.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item_workout_exercise.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Exercise.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutExercisesAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseSelectableAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_edit_workout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_edit_workout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_workout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_exercise_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseDetailsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_workout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseSelectableAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutExercisesAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_edit_workout.xml" />
       </list>
     </option>
   </component>
@@ -1714,6 +1662,32 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1744,46 +1718,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles.xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1868,28 +1802,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gymworkoutmate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Adapter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1918,32 +1830,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2180,7 +2066,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2189,7 +2075,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2350937" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7649063" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1584327" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2197,7 +2083,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19515885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19515885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2230,46 +2116,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Routine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15205725">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7906977">
-          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Enumeration/EnumMuscleGroups.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15205725">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_exercise_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19245283">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding>
-            <element signature="e#384#424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_header_exercise.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.206897">
           <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2285,7 +2135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6735849">
           <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2296,7 +2145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23018868">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2307,31 +2155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_exercise_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.0">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_exercise_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6301969">
-          <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
-          <folding>
-            <element signature="e#3301#3330#0" expanded="true" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2345,27 +2168,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.503268">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2556391">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.060822897">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2373,7 +2179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12830189">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2384,7 +2189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5509434">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2403,7 +2207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45471698">
           <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2414,7 +2217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5509434">
           <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2425,7 +2227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27370304">
           <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2439,19 +2240,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.70304114">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/exercise_list_selectable.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3041145">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2459,19 +2251,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.96792454">
           <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseDetailsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48658317">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-23/java/util/ArrayList.java">
@@ -2497,38 +2280,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_edit_workout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3469388">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23971377">
-          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="121" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_edit_workout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15205725">
           <caret line="5" column="44" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2536,7 +2291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3841584">
           <caret line="1236" column="17" selection-start-line="1236" selection-start-column="17" selection-end-line="1236" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2544,7 +2298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33254156">
           <caret line="696" column="20" selection-start-line="696" selection-start-column="20" selection-end-line="696" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2552,7 +2305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47704083">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2563,7 +2315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4362245">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="26" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2579,7 +2330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4362245">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2590,7 +2340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2601,19 +2350,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6903553">
           <caret line="16" column="77" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="77" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_workout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53571427">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java">
@@ -2621,43 +2358,9 @@
         <state vertical-scroll-proportion="0.33254156">
           <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding>
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/WorkoutsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.033989266">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseSelectableAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2844365">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutExercisesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51699466">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7906977">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2669,33 +2372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-          <folding>
-            <element signature="method#setUpFab#0;class#EditWorkoutActivity#0" expanded="false" />
-            <element signature="method#setUpRecyclerView#0;class#EditWorkoutActivity#0" expanded="false" />
-            <element signature="method#setUpToolbar#0;class#EditWorkoutActivity#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#EditWorkoutActivity#0" expanded="false" />
-            <element signature="e#5148#5181#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Contract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6100179">
           <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2715,6 +2395,356 @@
             <element signature="method#deleteWorkouts#0;class#Database#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_exercise_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.0">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5394737">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.060822897">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_exercise_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5245283">
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+          <folding>
+            <element signature="e#322#362#0" expanded="true" />
+            <element signature="e#750#783#0" expanded="true" />
+            <element signature="e#812#847#0" expanded="true" />
+            <element signature="e#877#912#0" expanded="true" />
+            <element signature="e#940#973#0" expanded="true" />
+            <element signature="e#6086#6122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3041145">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1-sources.jar!/android/support/v4/app/FragmentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33273703">
+          <caret line="164" column="16" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.060822897">
+          <caret line="35" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.1/appcompat-v7-23.0.1-sources.jar!/android/support/v7/app/AppCompatDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42397138">
+          <caret line="169" column="56" selection-start-line="169" selection-start-column="56" selection-end-line="169" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.1/appcompat-v7-23.0.1-sources.jar!/android/support/v7/app/AppCompatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36314848">
+          <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_workout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.597254">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#3798#3817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58318424">
+          <caret line="187" column="48" selection-start-line="187" selection-start-column="48" selection-end-line="187" selection-end-column="48" />
+          <folding>
+            <element signature="method#setUpFab#0;class#EditWorkoutActivity#0" expanded="false" />
+            <element signature="method#setUpRecyclerView#0;class#EditWorkoutActivity#0" expanded="false" />
+            <element signature="method#setUpToolbar#0;class#EditWorkoutActivity#0" expanded="false" />
+            <element signature="method#onActivityResult#0;class#EditWorkoutActivity#0" expanded="false" />
+            <element signature="e#5278#5311#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.1/appcompat-v7-23.0.1-sources.jar!/android/support/v7/widget/Toolbar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.15205725">
+          <caret line="832" column="31" selection-start-line="832" selection-start-column="31" selection-end-line="832" selection-end-column="31" />
+          <folding>
+            <element signature="docComment;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;field#mPopupContext#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;field#mPopupTheme#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#Toolbar#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#Toolbar#2;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setPopupTheme#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setPopupTheme#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getPopupTheme#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#onRtlPropertiesChanged#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setLogo#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#canShowOverflowMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#canShowOverflowMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#isOverflowMenuShowing#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#isOverflowMenuShowing#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#isOverflowMenuShowPending#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#isOverflowMenuShowPending#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#showOverflowMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#hideOverflowMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#dismissPopupMenus#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#dismissPopupMenus#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#isTitleTruncated#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#isTitleTruncated#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setLogo#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#setLogo#1;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getLogo#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setLogoDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setLogoDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setLogoDescription#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#setLogoDescription#1;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getLogoDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getLogoDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#ensureLogoView#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#hasExpandedActionView#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#hasExpandedActionView#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#collapseActionView#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#collapseActionView#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getTitle#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setTitle#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setTitle#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#setTitle#1;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getSubtitle#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setSubtitle#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setSubtitle#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#setSubtitle#1;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setTitleTextAppearance#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setTitleTextAppearance#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setSubtitleTextAppearance#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setSubtitleTextAppearance#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setTitleTextColor#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setTitleTextColor#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setSubtitleTextColor#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setSubtitleTextColor#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getNavigationContentDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getNavigationContentDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setNavigationContentDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setNavigationContentDescription#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setNavigationContentDescription#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#setNavigationContentDescription#1;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setNavigationIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setNavigationIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setNavigationIcon#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#setNavigationIcon#1;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getNavigationIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getNavigationIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setNavigationOnClickListener#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setOverflowIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setOverflowIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getOverflowIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getOverflowIcon#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#ensureMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#ensureMenuView#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#inflateMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setOnMenuItemClickListener#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setOnMenuItemClickListener#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setContentInsetsRelative#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setContentInsetsRelative#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getContentInsetStart#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getContentInsetEnd#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setContentInsetsAbsolute#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setContentInsetsAbsolute#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getContentInsetLeft#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getContentInsetRight#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#ensureNavButtonView#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#ensureCollapseButtonView#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#addSystemView#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#postShowOverflowMenu#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#onDetachedFromWindow#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#onTouchEvent#0;class#Toolbar#0" expanded="false" />
+            <element signature="e#41479#41565#0" expanded="false" />
+            <element signature="method#onHoverEvent#0;class#Toolbar#0" expanded="false" />
+            <element signature="e#42413#42482#0" expanded="false" />
+            <element signature="method#measureChildConstrained#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#measureChildCollapseMargins#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#measureChildCollapseMargins#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#shouldCollapse#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#shouldCollapse#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#onMeasure#0;class#Toolbar#0" expanded="false" />
+            <element signature="e#51998#52084#0" expanded="false" />
+            <element signature="method#onLayout#0;class#Toolbar#0" expanded="false" />
+            <element signature="e#61422#61491#0" expanded="false" />
+            <element signature="e#62161#62240#0" expanded="false" />
+            <element signature="method#getViewListMeasuredWidth#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#layoutChildLeft#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#layoutChildRight#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getChildTop#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getChildVerticalGravity#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#addCustomViewsWithGravity#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#addCustomViewsWithGravity#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getChildHorizontalGravity#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#shouldLayout#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getHorizontalMargins#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getVerticalMargins#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#generateLayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#generateLayoutParams#1;class#Toolbar#0" expanded="false" />
+            <element signature="method#generateDefaultLayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#checkLayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#isCustomView#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#getWrapper#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#getWrapper#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#removeChildrenForExpandedActionView#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#addChildrenForExpandedActionView#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#isChildOrHidden#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setCollapsible#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setCollapsible#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#setMenuCallbacks#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setMenuCallbacks#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;class#OnMenuItemClickListener#0;class#Toolbar#0" expanded="false" />
+            <element signature="class#OnMenuItemClickListener#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;method#onMenuItemClick#0;class#OnMenuItemClickListener#0;class#Toolbar#0" expanded="false" />
+            <element signature="docComment;class#LayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="class#LayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#LayoutParams#1;class#LayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#LayoutParams#2;class#LayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#LayoutParams#4;class#LayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#LayoutParams#6;class#LayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="e#74665#74737#0" expanded="false" />
+            <element signature="method#copyMarginsFromCompat#0;class#LayoutParams#0;class#Toolbar#0" expanded="false" />
+            <element signature="class#SavedState#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#SavedState#0;class#SavedState#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#writeToParcel#0;class#SavedState#0;class#Toolbar#0" expanded="false" />
+            <element signature="class#75926:76241" expanded="false" />
+            <element signature="class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#initForMenu#0;class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#updateMenuView#0;class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#setCallback#0;class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#onCloseMenu#0;class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#expandItemActionView#0;class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+            <element signature="method#collapseItemActionView#0;class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+            <element signature="e#79329#79399#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#ExpandedActionViewMenuPresenter#0;class#Toolbar#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84794277">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/ExerciseSelectableAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8586762">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <element signature="e#3246#3247#0" expanded="false" />
+            <element signature="e#3281#3282#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72629696">
+          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/WorkoutExercisesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.157424">
+          <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/WorkoutsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5509839">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63506263">
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseDetailsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.09481216">
+          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+          <folding>
+            <element signature="method#onCreate#0;class#ExerciseDetailsActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_edit_workout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3501144">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="e#391#426#0" expanded="true" />
+            <element signature="e#452#487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
