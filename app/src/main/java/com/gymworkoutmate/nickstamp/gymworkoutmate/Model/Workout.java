@@ -74,6 +74,11 @@ public class Workout {
     }
 
     public void setExercises(ArrayList<Exercise> exercises) {
-        this.exercises = exercises;
+        this.exercises.clear();
+        this.exercises.addAll(exercises);
+    }
+
+    public void addExercise(Exercise exercise) {
+        this.exercises.add(exercise);
     }
 }

@@ -48,7 +48,6 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
         holder.tvWorkoutName.setText(item.getTitle());
         holder.tvWorkoutSubtitle.setText(item.getType().toString() + " , " + item.getMuscle().toString());
         for (Exercise ex : item.getExercises()) {
-            Log.i("nikos", ex.getTitle());
             TextView tv = new TextView(context);
             tv.setText(ex.getTitle());
             tv.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));

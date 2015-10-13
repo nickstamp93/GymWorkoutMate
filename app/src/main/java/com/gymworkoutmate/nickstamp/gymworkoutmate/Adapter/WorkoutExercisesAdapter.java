@@ -2,6 +2,7 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Set;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 import java.util.ArrayList;
@@ -24,8 +26,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
 
     public WorkoutExercisesAdapter(Context context, ArrayList<Exercise> items) {
         this.context = context;
-        this.items = new ArrayList<>();
-        this.items.addAll(items);
+        this.items = items;
         inflater = LayoutInflater.from(this.context);
 
     }
@@ -47,6 +48,19 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
         holder.title.setText(item.getTitle());
         holder.img1.setImageResource(item.getImg1());
         holder.img2.setImageResource(item.getImg2());
+
+        for (Set s : item.getSets()) {
+            TextView tv = new TextView(context);
+            tv.setText(s.getWeight() + "");
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            params.setMargins(4, 4, 4, 4);
+            tv.setLayoutParams(params);
+            tv.setBackgroundResource(R.drawable.set_view);
+            tv.setGravity(Gravity.CENTER);
+            tv.setTextColor(context.getResources().getColor(R.color.primary_text));
+
+            holder.llExercisesInWorkout.addView(tv);
+        }
 
     }
 

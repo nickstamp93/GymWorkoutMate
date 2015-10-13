@@ -18,6 +18,7 @@ public class Exercise implements Serializable {
     private EnumMuscleGroups muscle;
     private EnumEquipment equipment;
     private String other_muscles;
+    private ArrayList<Set> sets;
 
     public Exercise(Cursor cursor) {
         id = cursor.getInt(0);
@@ -28,6 +29,7 @@ public class Exercise implements Serializable {
         other_muscles = cursor.getString(5);
         mechanics = cursor.getInt(6);
         equipment = EnumEquipment.valueOf(cursor.getInt(7));
+        sets = new ArrayList<>();
     }
 
     public Exercise(String title, int image1, int image2, EnumMuscleGroups muscle,
@@ -41,6 +43,10 @@ public class Exercise implements Serializable {
         this.equipment = equipment;
     }
 
+
+    public void addSet(Set set) {
+        sets.add(set);
+    }
 
     public int getImg1() {
         return img1;
@@ -105,4 +111,13 @@ public class Exercise implements Serializable {
     public void setId(int id) {
         this.id = id;
     }
+
+    public ArrayList<Set> getSets() {
+        return sets;
+    }
+
+    public void setSets(ArrayList<Set> sets) {
+        this.sets = sets;
+    }
+
 }

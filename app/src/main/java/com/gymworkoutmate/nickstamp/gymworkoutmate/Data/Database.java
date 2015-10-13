@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
@@ -82,7 +83,9 @@ public class Database extends SQLiteOpenHelper {
                             " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + "='" + cWorkouts.getInt(0) + "'"
                     , null);
             for (cExercises.moveToFirst(); !cExercises.isAfterLast(); cExercises.moveToNext()) {
-                exercises.add(getExercise(cExercises.getInt(0)));
+                Exercise e = getExercise(cExercises.getInt(1));
+                if (e != null)
+                    exercises.add(e);
             }
             items.add(new Workout(cWorkouts, exercises));
         }
@@ -120,11 +123,12 @@ public class Database extends SQLiteOpenHelper {
         long id = getWritableDatabase().insert(Contract.Workouts.TABLE_NAME, "null", contentValues);
 
         for (Exercise ex : item.getExercises()) {
+            Log.i("nikos", "Adding ex " + ex.getTitle());
             contentValues = new ContentValues();
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE, ex.getId());
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT, id);
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_NUMSETS, 5);
-            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, "10-10-10-8");
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, "20-15-10");
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, 90);
 
             getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
@@ -177,8 +181,10 @@ public class Database extends SQLiteOpenHelper {
                 "SELECT * FROM " + Contract.Exercises.TABLE_NAME +
                         " WHERE " + Contract.Exercises._ID + "='" + id + "'", null);
 
-        c.moveToFirst();
-        return new Exercise(c);
+        if (c.moveToFirst()) {
+            return new Exercise(c);
+        } else
+            return null;
     }
 
     public ArrayList<Integer> getCountsByMuscle() {

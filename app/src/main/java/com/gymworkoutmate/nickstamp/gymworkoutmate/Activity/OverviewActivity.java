@@ -70,6 +70,9 @@ public class OverviewActivity extends AppCompatActivity
 //        exercises.add(database.getExercise(10));
 //        database.insert(new Workout("Workout 3", EnumExerciseTypes.STRENGTH, EnumMuscleGroups.LEGS, exercises));
 
+
+
+        startActivity(new Intent(OverviewActivity.this, WorkoutsActivity.class));
     }
 
     @Override
