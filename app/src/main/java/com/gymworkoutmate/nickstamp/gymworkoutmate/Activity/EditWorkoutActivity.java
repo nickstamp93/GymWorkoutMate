@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,7 +34,7 @@ public class EditWorkoutActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private WorkoutExercisesAdapter adapter;
 
-    private Workout workout;
+    private Workout workout = null;
     private EditText etWorkoutName;
     private Spinner sType, sMuscle;
 
@@ -44,11 +45,11 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         database = Database.getInstance(this);
 
+        workout = new Workout();
+
         setUpToolbar();
 
         setUpFab();
-
-        workout = new Workout();
 
         setUpInfoViews();
 
@@ -125,6 +126,19 @@ public class EditWorkoutActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        if (requestCode == 200) {
+            if (resultCode == RESULT_OK) {
+                int id = data.getIntExtra("id", 0);
+                for (Exercise e : workout.getExercises()) {
+                    if (e.getId() == id) {
+                        e.setSets(((ArrayList<Set>) data.getExtras().getSerializable("sets")));
+                        for (Set s : e.getSets()) {
+                        }
+                    }
+                }
+                refreshExerciseList(workout.getExercises());
+            }
+        }
         if (requestCode == 100) {
             if (resultCode == RESULT_OK) {
                 ArrayList<Exercise> returnedExercises = (ArrayList<Exercise>) data.getSerializableExtra("exercises");
@@ -161,14 +175,17 @@ public class EditWorkoutActivity extends AppCompatActivity {
                         workout.addExercise(exercise);
                     }
                 }
-                adapter = new WorkoutExercisesAdapter(this, workout.getExercises());
-                recyclerView.setAdapter(adapter);
 
-            }
-            if (resultCode == RESULT_CANCELED) {
+                refreshExerciseList(workout.getExercises());
 
             }
         }
+    }
+
+    private void refreshExerciseList(ArrayList<Exercise> newList) {
+        Log.i("nikos", "refresh list");
+        adapter = new WorkoutExercisesAdapter(this, newList);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override

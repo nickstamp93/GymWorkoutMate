@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditSetsActivity;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Set;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
@@ -55,7 +56,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
         //for each set of the exercise , create a text view and add it to the layout of the item
         for (Set s : item.getSets()) {
             TextView tv = new TextView(context);
-            tv.setText(s.getWeight() + "");
+            tv.setText(s.getReps() + "");
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             params.setMargins(4, 4, 4, 4);
             tv.setLayoutParams(params);
@@ -96,7 +97,8 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
             Bundle bundle = new Bundle();
             bundle.putSerializable("exercise", items.get(getAdapterPosition()));
             intent.putExtras(bundle);
-            context.startActivity(intent);
+            ((EditWorkoutActivity) context).startActivityForResult(intent, 200);
+//            context.startActivity(intent);
         }
     }
 }
