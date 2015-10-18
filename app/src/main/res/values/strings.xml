@@ -23,5 +23,6 @@
                                     \n\n 4.After a second on the contracted position, start to inhale and slowly lower your torso back to the starting position when your arms are fully extended and the lats are fully stretched.
                                     \n\n 5.Repeat this motion for the prescribed amount of repetitions.</string>
     <string name="title_activity_edit_workout">EditWorkoutActivity</string>
+    <string name="title_activity_sets">SetsAct</string>
 
 </resources>

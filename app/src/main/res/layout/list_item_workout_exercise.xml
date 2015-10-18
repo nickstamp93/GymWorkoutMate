@@ -4,11 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
-    android:background="@android:drawable/list_selector_background"
-    android:clickable="true"
     app:contentPadding="4dp">
 
     <RelativeLayout
+        android:id="@+id/exercise_workout_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="?android:attr/selectableItemBackground"
@@ -33,12 +32,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_toRightOf="@id/image2"
+            android:clickable="false"
             android:text="gallgla"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <HorizontalScrollView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/image1">
 

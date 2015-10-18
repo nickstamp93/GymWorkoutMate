@@ -1,6 +1,8 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -10,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditSetsActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Set;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
@@ -84,12 +87,16 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
             img2 = (ImageView) itemView.findViewById(R.id.image2);
 
             llExercisesInWorkout = (LinearLayout) itemView.findViewById(R.id.llExerciseInWorkout);
-            itemView.setOnClickListener(this);
+            itemView.findViewById(R.id.exercise_workout_root).setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-
+            Intent intent = new Intent(context, EditSetsActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("exercise", items.get(getAdapterPosition()));
+            intent.putExtras(bundle);
+            context.startActivity(intent);
         }
     }
 }
