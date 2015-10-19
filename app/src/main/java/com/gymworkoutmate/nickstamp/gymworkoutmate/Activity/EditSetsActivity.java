@@ -11,9 +11,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Set;
@@ -26,6 +28,7 @@ public class EditSetsActivity extends AppCompatActivity {
     private EditText etReps;
     private Button bAdd, bSubstract;
     private int id = 1;
+    private ScrollView scrollview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +48,11 @@ public class EditSetsActivity extends AppCompatActivity {
         bAdd.setOnClickListener(listener);
         bSubstract.setOnClickListener(listener);
 
+        scrollview = (ScrollView) findViewById(R.id.scroll_sets_table);
+
         for (Set s : exercise.getSets()) {
             insertViewRow(s);
         }
-
 
         setUpFab();
     }
@@ -99,6 +103,13 @@ public class EditSetsActivity extends AppCompatActivity {
 
                 insertViewRow(set);
 
+                scrollview.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        scrollview.fullScroll(ScrollView.FOCUS_DOWN);
+                    }
+                });
+
             }
         });
     }
@@ -127,6 +138,13 @@ public class EditSetsActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
+            setResult(RESULT_CANCELED);
+            finish();
+        } else if (id == R.id.menu_item_save_sets) {
+            if (exercise.getSets().size() == 0) {
+                Toast.makeText(this, "You should create some sets!!!", Toast.LENGTH_SHORT).show();
+                return true;
+            }
             Intent i = new Intent();
             Bundle bundle = new Bundle();
             bundle.putSerializable("sets", exercise.getSets());
@@ -134,6 +152,12 @@ public class EditSetsActivity extends AppCompatActivity {
             i.putExtras(bundle);
             setResult(RESULT_OK, i);
             finish();
+        } else if (id == R.id.menu_item_delete_set) {
+            if (exercise.getSets().size() > 0) {
+                this.id--;
+                table.removeViewAt(exercise.getSets().size());
+                exercise.getSets().remove(exercise.getSets().size() - 1);
+            }
         }
         return true;
     }

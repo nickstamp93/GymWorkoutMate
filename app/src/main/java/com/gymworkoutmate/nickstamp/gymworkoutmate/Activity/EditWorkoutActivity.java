@@ -169,8 +169,8 @@ public class EditWorkoutActivity extends AppCompatActivity {
                             found = true;
                     }
                     if (!found) {
-                        exercise.addSet(new Set(20));
-                        exercise.addSet(new Set(15));
+                        exercise.addSet(new Set(10));
+                        exercise.addSet(new Set(10));
                         exercise.addSet(new Set(10));
                         workout.addExercise(exercise);
                     }
