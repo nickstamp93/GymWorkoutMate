@@ -33,7 +33,7 @@ public class OverviewActivity extends AppCompatActivity
 
         setUpDrawer();
 
-        startActivity(new Intent(this, WorkoutsActivity.class));
+//        startActivity(new Intent(this, WorkoutsActivity.class));
     }
 
     private void setUpDrawer() {

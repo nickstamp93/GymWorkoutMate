@@ -120,13 +120,14 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put(Contract.Workouts.COLUMN_MUSCLE, item.getMuscle().getValue());
         contentValues.put(Contract.Workouts.COLUMN_TYPE, item.getType().getValue());
 
-        long id = getWritableDatabase().insert(Contract.Workouts.TABLE_NAME, "null", contentValues);
+        long workoutId = getWritableDatabase().insert(Contract.Workouts.TABLE_NAME, "null", contentValues);
 
         for (Exercise ex : item.getExercises()) {
-            Log.i("nikos", "Adding ex " + ex.getTitle());
-            contentValues = new ContentValues();
+            insertExerciseToWorkout(ex, workoutId);
+
+            /*contentValues = new ContentValues();
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE, ex.getId());
-            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT, id);
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT, workoutId);
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_NUMSETS, ex.getSets().size());
             StringBuilder s = new StringBuilder();
             for (int i = 0; i < ex.getSets().size(); i++) {
@@ -138,9 +139,49 @@ public class Database extends SQLiteOpenHelper {
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, s.toString());
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, 90);
 
-            getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
+            getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);*/
 
         }
+    }
+
+    private void insertExerciseToWorkout(Exercise ex, long workoutId) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE, ex.getId());
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT, workoutId);
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_NUMSETS, ex.getSets().size());
+        StringBuilder s = new StringBuilder();
+        for (int i = 0; i < ex.getSets().size(); i++) {
+            s.append(ex.getSets().get(i).getReps());
+            if (i < ex.getSets().size() - 1)
+                s.append("-");
+
+        }
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, s.toString());
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, 90);
+
+        getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
+    }
+
+    private void updateExerciseOfWorkout(Exercise ex, long workoutId) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE, ex.getId());
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT, workoutId);
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_NUMSETS, ex.getSets().size());
+        StringBuilder s = new StringBuilder();
+        for (int i = 0; i < ex.getSets().size(); i++) {
+            s.append(ex.getSets().get(i).getReps());
+            if (i < ex.getSets().size() - 1)
+                s.append("-");
+
+        }
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, s.toString());
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, 90);
+
+        String[] args = {String.valueOf(workoutId), String.valueOf(ex.getId())};
+        getWritableDatabase().update(Contract.ExerciseWorkoutConnection.TABLE_NAME,
+                contentValues,
+                Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + " = ? AND " + Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE + " = ? ",
+                args);
     }
 
     public void update(Routine item) {
@@ -155,12 +196,61 @@ public class Database extends SQLiteOpenHelper {
 
     public void update(Workout item) {
 
-        ContentValues values = new ContentValues();
-        values.put(Contract.Workouts.COLUMN_TITLE, item.getTitle());
-        values.put(Contract.Workouts.COLUMN_TYPE, item.getType().getValue());
-        values.put(Contract.Workouts.COLUMN_MUSCLE, item.getMuscle().getValue());
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Contract.Workouts.COLUMN_TITLE, item.getTitle());
+        contentValues.put(Contract.Workouts.COLUMN_MUSCLE, item.getMuscle().getValue());
+        contentValues.put(Contract.Workouts.COLUMN_TYPE, item.getType().getValue());
 
-        getReadableDatabase().update(Contract.Workouts.TABLE_NAME, values, Contract.Workouts._ID + " = " + item.getId(), null);
+        getReadableDatabase().update(Contract.Workouts.TABLE_NAME, contentValues, Contract.Workouts._ID + " = " + item.getId(), null);
+
+        //get all the exercises from the current workout
+        ArrayList<Integer> exerciseIds = new ArrayList<>();
+        Cursor cExercises = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.ExerciseWorkoutConnection.TABLE_NAME +
+                        " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + "='" + item.getId() + "'"
+                , null);
+        for (cExercises.moveToFirst(); !cExercises.isAfterLast(); cExercises.moveToNext()) {
+            exerciseIds.add(cExercises.getInt(1));
+        }
+        //delete from database , every exercise in workout which is not in the updated list
+        boolean found;
+        for (int i : exerciseIds) {
+            found = false;
+            for (Exercise e : item.getExercises()) {
+                if (e.getId() == i) {
+                    found = true;
+                }
+            }
+            if (!found) {
+                Log.i("nikos", "Delete ex : " + i);
+                deleteExerciseFromWorkout(i, item.getId());
+            }
+        }
+
+        for (Exercise ex : item.getExercises()) {
+            //for every exercise , if it was in the db , update it , else add it
+            if (exerciseIds.contains(ex.getId())) {
+                //update exercise
+                updateExerciseOfWorkout(ex, item.getId());
+            } else {
+                //add exercise
+                insertExerciseToWorkout(ex, item.getId());
+            }
+        }
+    }
+
+    private void deleteExerciseFromWorkout(int exerciseId, int workoutId) {
+
+        // Define 'where' part of query.
+        String selection = Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE + " = ? AND "
+                + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + " = ?";
+        Log.i("nikos", selection);
+        // Specify arguments in placeholder order.
+        String[] selectionArgs = {String.valueOf(exerciseId), String.valueOf(workoutId)};
+        // Issue SQL statement.
+        Log.i("nikos", getWritableDatabase().delete(Contract.ExerciseWorkoutConnection.TABLE_NAME, selection, selectionArgs) + "");
+
+
     }
 
     public void deleteRoutine(int id) {

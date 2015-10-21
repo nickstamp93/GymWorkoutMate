@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,6 +37,8 @@ public class EditWorkoutActivity extends AppCompatActivity {
     private EditText etWorkoutName;
     private Spinner sType, sMuscle;
 
+    private boolean isCreation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,15 +52,16 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         setUpInfoViews();
 
-
         setUpRecyclerView();
 
-        if (getIntent().getSerializableExtra("workout") == null)
+        if (getIntent().getSerializableExtra("workout") == null) {
             workout = new Workout();
-        else {
+            isCreation = true;
+        } else {
             workout = (Workout) getIntent().getSerializableExtra("workout");
             fillUIFromWorkout();
             refreshExerciseList(workout.getExercises());
+            isCreation = false;
         }
 
     }
@@ -158,15 +160,18 @@ public class EditWorkoutActivity extends AppCompatActivity {
                 boolean found;
 
                 //delete exercises that were unchecked
-                for (Exercise exercise : currentExercises) {
+                for (int i = 0; i < currentExercises.size(); i++) {
+
                     //see if it was already selected
                     found = false;
                     for (Exercise e : returnedExercises) {
-                        if (exercise.getId() == e.getId())
+
+                        if (currentExercises.get(i).getId() == e.getId())
                             found = true;
                     }
                     if (!found) {
-                        currentExercises.remove(exercise);
+                        currentExercises.remove(i);
+                        i--;
                     }
                 }
 
@@ -215,23 +220,34 @@ public class EditWorkoutActivity extends AppCompatActivity {
             NavUtils.navigateUpFromSameTask(this);
         }
         if (id == R.id.action_workout_save) {
+
             //if there are no exercises selected , alert
             if (workout.getExercises().size() == 0) {
-                Toast.makeText(EditWorkoutActivity.this, "You can't create workout without exercises!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditWorkoutActivity.this, "Your workout should have at least one exercise!", Toast.LENGTH_SHORT).show();
                 return true;
             }
             //if name has not been set , alert
             if (etWorkoutName.getText().toString().trim().equals("")) {
-                Toast.makeText(EditWorkoutActivity.this, "Enter a name for the Workout!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditWorkoutActivity.this, "Enter a valid name for your Workout!", Toast.LENGTH_SHORT).show();
                 return true;
             }
-            //assign values to the workout and save it to the database
+            //assign values to the workout
             workout.setTitle(etWorkoutName.getText().toString());
             workout.setMuscle(EnumMuscleGroups.values()[sMuscle.getSelectedItemPosition()]);
             workout.setType(EnumExerciseTypes.values()[sType.getSelectedItemPosition()]);
 
-            database.insert(workout);
-            Toast.makeText(EditWorkoutActivity.this, "Workout Created Successfully!", Toast.LENGTH_SHORT).show();
+            //if it's creation mode , add the new workout in the db
+            if (isCreation) {
+
+                database.insert(workout);
+                Toast.makeText(EditWorkoutActivity.this, "Workout Created Successfully!", Toast.LENGTH_SHORT).show();
+
+                //else it's update mode , so update the workout
+            } else {
+                database.update(workout);
+                Toast.makeText(EditWorkoutActivity.this, "Workout Updated Successfully!", Toast.LENGTH_SHORT).show();
+            }
+
             finish();
 
         }
