@@ -32,6 +32,14 @@ public class Exercise implements Serializable {
         sets = new ArrayList<>();
     }
 
+    public Exercise(Cursor cursor, String setString) {
+        this(cursor);
+        String[] tokens = setString.split("-");
+        for (String s : tokens) {
+            sets.add(new Set(Integer.valueOf(s)));
+        }
+    }
+
     public Exercise(String title, int image1, int image2, EnumMuscleGroups muscle,
                     String other_muscles, int mechanics, EnumEquipment equipment) {
         this.title = title;

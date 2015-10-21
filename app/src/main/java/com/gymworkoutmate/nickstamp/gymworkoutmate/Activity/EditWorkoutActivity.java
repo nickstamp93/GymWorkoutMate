@@ -45,17 +45,29 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         database = Database.getInstance(this);
 
-        workout = new Workout();
-
         setUpToolbar();
 
         setUpFab();
 
         setUpInfoViews();
 
+
         setUpRecyclerView();
 
+        if (getIntent().getSerializableExtra("workout") == null)
+            workout = new Workout();
+        else {
+            workout = (Workout) getIntent().getSerializableExtra("workout");
+            fillUIFromWorkout();
+            refreshExerciseList(workout.getExercises());
+        }
 
+    }
+
+    private void fillUIFromWorkout() {
+        etWorkoutName.setText(workout.getTitle());
+        sType.setSelection(workout.getType().getValue() - 1);
+        sMuscle.setSelection(workout.getMuscle().getValue() - 1);
     }
 
     /**
@@ -114,7 +126,6 @@ public class EditWorkoutActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.rvWorkoutExercises);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new WorkoutExercisesAdapter(this, workout.getExercises());
     }
 
     private void setUpToolbar() {
@@ -183,7 +194,6 @@ public class EditWorkoutActivity extends AppCompatActivity {
     }
 
     private void refreshExerciseList(ArrayList<Exercise> newList) {
-        Log.i("nikos", "refresh list");
         adapter = new WorkoutExercisesAdapter(this, newList);
         recyclerView.setAdapter(adapter);
     }

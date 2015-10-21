@@ -127,8 +127,15 @@ public class Database extends SQLiteOpenHelper {
             contentValues = new ContentValues();
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE, ex.getId());
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT, id);
-            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_NUMSETS, 5);
-            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, "20-15-10");
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_NUMSETS, ex.getSets().size());
+            StringBuilder s = new StringBuilder();
+            for (int i = 0; i < ex.getSets().size(); i++) {
+                s.append(ex.getSets().get(i).getReps());
+                if (i < ex.getSets().size() - 1)
+                    s.append("-");
+
+            }
+            contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, s.toString());
             contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, 90);
 
             getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
@@ -181,8 +188,15 @@ public class Database extends SQLiteOpenHelper {
                 "SELECT * FROM " + Contract.Exercises.TABLE_NAME +
                         " WHERE " + Contract.Exercises._ID + "='" + id + "'", null);
 
+        Cursor sets = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.ExerciseWorkoutConnection.TABLE_NAME +
+                        " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_EXERCISE + "='" + id + "'", null);
+
+        sets.moveToFirst();
+        String stringSets = sets.getString(4);
+
         if (c.moveToFirst()) {
-            return new Exercise(c);
+            return new Exercise(c, stringSets);
         } else
             return null;
     }

@@ -1,14 +1,18 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
@@ -72,20 +76,29 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
 
         TextView tvWorkoutName, tvWorkoutSubtitle;
         LinearLayout llWorkoutExercises;
+        RelativeLayout root;
 
         public WorkoutsHolder(View itemView) {
             super(itemView);
 
+            root = (RelativeLayout) itemView.findViewById(R.id.workout_item_root);
             tvWorkoutName = (TextView) itemView.findViewById(R.id.tvWorkoutName);
             tvWorkoutSubtitle = (TextView) itemView.findViewById(R.id.tvWorkoutSubtitle);
             llWorkoutExercises = (LinearLayout) itemView.findViewById(R.id.llWorkoutExercises);
 
-            itemView.setOnClickListener(this);
+            root.setOnClickListener(this);
 
         }
 
         @Override
         public void onClick(View v) {
+
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("workout", items.get(getAdapterPosition()));
+            Intent intent = new Intent(context, EditWorkoutActivity.class);
+            intent.putExtras(bundle);
+            context.startActivity(intent);
+
 
         }
     }
