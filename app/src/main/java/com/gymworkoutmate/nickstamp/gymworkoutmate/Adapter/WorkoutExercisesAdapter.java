@@ -53,6 +53,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
         holder.img1.setImageResource(item.getImg1());
         holder.img2.setImageResource(item.getImg2());
 
+        holder.llExercisesInWorkout.removeAllViews();
         //for each set of the exercise , create a text view and add it to the layout of the item
         for (Set s : item.getSets()) {
             TextView tv = new TextView(context);
@@ -76,7 +77,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
 
     class WorkoutExerciseViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView title;
+        TextView title, edit, delete;
         ImageView img1, img2;
         LinearLayout llExercisesInWorkout;
 
@@ -86,9 +87,19 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
             title = (TextView) itemView.findViewById(R.id.tvExerciseTitle);
             img1 = (ImageView) itemView.findViewById(R.id.image1);
             img2 = (ImageView) itemView.findViewById(R.id.image2);
+            edit = (TextView) itemView.findViewById(R.id.edit);
+            delete = (TextView) itemView.findViewById(R.id.delete);
 
             llExercisesInWorkout = (LinearLayout) itemView.findViewById(R.id.llExerciseInWorkout);
             itemView.findViewById(R.id.exercise_workout_root).setOnClickListener(this);
+            edit.setOnClickListener(this);
+            delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    items.remove(getAdapterPosition());
+                    notifyItemRemoved(getAdapterPosition());
+                }
+            });
         }
 
         @Override

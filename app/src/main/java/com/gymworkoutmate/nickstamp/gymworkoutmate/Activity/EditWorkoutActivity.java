@@ -145,8 +145,6 @@ public class EditWorkoutActivity extends AppCompatActivity {
                 for (Exercise e : workout.getExercises()) {
                     if (e.getId() == id) {
                         e.setSets(((ArrayList<Set>) data.getExtras().getSerializable("sets")));
-                        for (Set s : e.getSets()) {
-                        }
                     }
                 }
                 refreshExerciseList(workout.getExercises());
@@ -205,7 +203,10 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_edit_workout, menu);
+        if (isCreation)
+            getMenuInflater().inflate(R.menu.activity_add_workout, menu);
+        else
+            getMenuInflater().inflate(R.menu.activity_edit_workout, menu);
         return true;
     }
 
@@ -218,6 +219,11 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         if (id == android.R.id.home) {
             NavUtils.navigateUpFromSameTask(this);
+        }
+        if (id == R.id.action_workout_delete) {
+            database.deleteWorkouts(workout.getId());
+            Toast.makeText(EditWorkoutActivity.this, workout.getTitle() + " deleted!", Toast.LENGTH_SHORT).show();
+            finish();
         }
         if (id == R.id.action_workout_save) {
 

@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_workout_delete"
-        android:icon="@android:drawable/ic_menu_delete"
-        android:orderInCategory="99"
-        android:title="Delete"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/action_workout_save"
         android:orderInCategory="100"
         android:title="Save"

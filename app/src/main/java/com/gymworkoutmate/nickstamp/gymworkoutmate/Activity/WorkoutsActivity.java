@@ -53,8 +53,6 @@ public class WorkoutsActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.rvWorkouts);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new WorkoutsAdapter(this, database.getListWorkouts());
-        recyclerView.setAdapter(adapter);
     }
 
     private void setUpToolbar() {
@@ -63,6 +61,10 @@ public class WorkoutsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    private void refreshRecycler() {
+        adapter = new WorkoutsAdapter(this, database.getListWorkouts());
+        recyclerView.setAdapter(adapter);
+    }
 
     @Override
     public void onBackPressed() {
@@ -70,4 +72,12 @@ public class WorkoutsActivity extends AppCompatActivity {
         NavUtils.navigateUpFromSameTask(this);
     }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        adapter = new WorkoutsAdapter(this, database.getListWorkouts());
+        recyclerView.setAdapter(adapter);
+
+    }
 }

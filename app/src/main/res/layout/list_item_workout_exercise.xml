@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
-    app:contentPadding="4dp">
+    app:contentPadding="8dp">
 
     <RelativeLayout
         android:id="@+id/exercise_workout_root"
@@ -38,9 +38,12 @@
             android:textStyle="bold" />
 
         <HorizontalScrollView
+            android:id="@+id/hscroll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/image1">
+            android:layout_below="@id/image1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
 
             <LinearLayout
                 android:id="@+id/llExerciseInWorkout"
@@ -48,25 +51,38 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="4dp"-->
-                <!--android:background="@drawable/set_view"-->
-                <!--android:gravity="center"-->
-                <!--android:text="10" />-->
-
-                <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_margin="4dp"-->
-                <!--android:background="@drawable/set_view"-->
-                <!--android:gravity="center"-->
-                <!--android:text="10" />-->
             </LinearLayout>
 
-
         </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hscroll"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="EDIT"
+                android:textColor="@color/secondary_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="DELETE"
+                android:textColor="@color/secondary_text"
+                android:textSize="20sp" />
+        </LinearLayout>
 
 
     </RelativeLayout>
