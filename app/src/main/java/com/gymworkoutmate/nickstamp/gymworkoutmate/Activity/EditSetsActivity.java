@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -25,6 +26,7 @@ public class EditSetsActivity extends AppCompatActivity {
 
     private Exercise exercise;
     private TableLayout table;
+    private ImageView img1, img2;
     private EditText etReps;
     private Button bAdd, bSubstract;
     private int id = 1;
@@ -40,6 +42,11 @@ public class EditSetsActivity extends AppCompatActivity {
         etReps = (EditText) findViewById(R.id.etReps);
 
         exercise = (Exercise) getIntent().getExtras().getSerializable("exercise");
+
+        img1 = (ImageView) findViewById(R.id.image1);
+        img2 = (ImageView) findViewById(R.id.image2);
+        img1.setImageResource(exercise.getImg1());
+        img2.setImageResource(exercise.getImg2());
 
         /* Find Tablelayout defined in main.xml */
         table = (TableLayout) findViewById(R.id.table_sets);

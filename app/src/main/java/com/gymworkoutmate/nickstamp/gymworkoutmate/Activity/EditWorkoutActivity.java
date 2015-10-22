@@ -254,4 +254,11 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         return true;
     }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        NavUtils.navigateUpFromSameTask(this);
+    }
 }

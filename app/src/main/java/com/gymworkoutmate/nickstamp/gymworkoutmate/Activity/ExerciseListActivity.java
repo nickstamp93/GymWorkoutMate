@@ -129,6 +129,9 @@ public class ExerciseListActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        NavUtils.navigateUpFromSameTask(this);
+        if (isSelectMode)
+            finish();
+        else
+            NavUtils.navigateUpFromSameTask(this);
     }
 }

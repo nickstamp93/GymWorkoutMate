@@ -100,9 +100,9 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
                 title = (TextView) itemView.findViewById(R.id.tvExerciseTitle);
                 img1 = (ImageView) itemView.findViewById(R.id.image1);
                 img2 = (ImageView) itemView.findViewById(R.id.image2);
+                itemView.setOnClickListener(this);
             }
 
-            itemView.setOnClickListener(this);
         }
 
         @Override
