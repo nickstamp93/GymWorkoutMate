@@ -107,7 +107,7 @@ public class ExerciseSelectableAdapter extends RecyclerView.Adapter<ExerciseSele
         return items.size();
     }
 
-    class ExerciseViewHolder extends RecyclerView.ViewHolder implements CompoundButton.OnCheckedChangeListener {
+    class ExerciseViewHolder extends RecyclerView.ViewHolder implements CompoundButton.OnCheckedChangeListener, View.OnClickListener {
 
         int type;
         TextView title;
@@ -127,6 +127,7 @@ public class ExerciseSelectableAdapter extends RecyclerView.Adapter<ExerciseSele
                 img1 = (ImageView) itemView.findViewById(R.id.image1);
                 img2 = (ImageView) itemView.findViewById(R.id.image2);
 
+                itemView.setOnClickListener(this);
                 checkBox = (CheckBox) itemView.findViewById(R.id.chbExercise);
                 checkBox.setOnCheckedChangeListener(this);
             }
@@ -136,6 +137,12 @@ public class ExerciseSelectableAdapter extends RecyclerView.Adapter<ExerciseSele
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             selected[getAdapterPosition()] = isChecked;
+        }
+
+        @Override
+        public void onClick(View v) {
+            selected[getAdapterPosition()] = !selected[getAdapterPosition()];
+            checkBox.setChecked(selected[getAdapterPosition()]);
         }
     }
 }

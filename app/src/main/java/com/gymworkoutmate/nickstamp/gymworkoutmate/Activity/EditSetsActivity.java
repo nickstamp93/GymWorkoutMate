@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
@@ -29,6 +30,7 @@ public class EditSetsActivity extends AppCompatActivity {
     private ImageView img1, img2;
     private EditText etReps;
     private Button bAdd, bSubstract;
+    private ImageButton bDelete;
     private int id = 1;
     private ScrollView scrollview;
 
@@ -54,6 +56,18 @@ public class EditSetsActivity extends AppCompatActivity {
         bSubstract = (Button) findViewById(R.id.bSubstract);
         bAdd.setOnClickListener(listener);
         bSubstract.setOnClickListener(listener);
+
+        bDelete = (ImageButton) findViewById(R.id.bDelete);
+        bDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (exercise.getSets().size() > 0) {
+                    id--;
+                    table.removeViewAt(exercise.getSets().size());
+                    exercise.getSets().remove(exercise.getSets().size() - 1);
+                }
+            }
+        });
 
         scrollview = (ScrollView) findViewById(R.id.scroll_sets_table);
 
@@ -159,12 +173,6 @@ public class EditSetsActivity extends AppCompatActivity {
             i.putExtras(bundle);
             setResult(RESULT_OK, i);
             finish();
-        } else if (id == R.id.menu_item_delete_set) {
-            if (exercise.getSets().size() > 0) {
-                this.id--;
-                table.removeViewAt(exercise.getSets().size());
-                exercise.getSets().remove(exercise.getSets().size() - 1);
-            }
         }
         return true;
     }
