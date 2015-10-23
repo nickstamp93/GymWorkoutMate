@@ -29,7 +29,7 @@ public class EditSetsActivity extends AppCompatActivity {
     private TableLayout table;
     private ImageView img1, img2;
     private EditText etReps;
-    private Button bAdd, bSubstract;
+    private Button bIncrease, bDecrease;
     private ImageButton bDelete;
     private int id = 1;
     private ScrollView scrollview;
@@ -41,22 +41,36 @@ public class EditSetsActivity extends AppCompatActivity {
 
         setUpToolbar();
 
-        etReps = (EditText) findViewById(R.id.etReps);
+        setUpFab();
 
+        //get exercise object from intent
         exercise = (Exercise) getIntent().getExtras().getSerializable("exercise");
 
+        setUpViews();
+
+
+    }
+
+    /**
+     * init views from the xml and populate from the object passed through the intent
+     */
+    private void setUpViews() {
+
+        //reps edit text
+        etReps = (EditText) findViewById(R.id.etReps);
+
+        //exercise images
         img1 = (ImageView) findViewById(R.id.image1);
         img2 = (ImageView) findViewById(R.id.image2);
         img1.setImageResource(exercise.getImg1());
         img2.setImageResource(exercise.getImg2());
+        //buttons for increasing or decreasing reps
+        bIncrease = (Button) findViewById(R.id.bAdd);
+        bDecrease = (Button) findViewById(R.id.bSubstract);
+        bIncrease.setOnClickListener(listener);
+        bDecrease.setOnClickListener(listener);
 
-        /* Find Tablelayout defined in main.xml */
-        table = (TableLayout) findViewById(R.id.table_sets);
-        bAdd = (Button) findViewById(R.id.bAdd);
-        bSubstract = (Button) findViewById(R.id.bSubstract);
-        bAdd.setOnClickListener(listener);
-        bSubstract.setOnClickListener(listener);
-
+        //delete last set button
         bDelete = (ImageButton) findViewById(R.id.bDelete);
         bDelete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,13 +83,16 @@ public class EditSetsActivity extends AppCompatActivity {
             }
         });
 
+        //table with the sets list
+        table = (TableLayout) findViewById(R.id.table_sets);
+
+        //scroll view of table layout
         scrollview = (ScrollView) findViewById(R.id.scroll_sets_table);
 
+        //populate table layout
         for (Set s : exercise.getSets()) {
             insertViewRow(s);
         }
-
-        setUpFab();
     }
 
     private View.OnClickListener listener = new View.OnClickListener() {
@@ -90,25 +107,34 @@ public class EditSetsActivity extends AppCompatActivity {
         }
     };
 
+    /**
+     * Adds one more row in the table layout , according to the value of the reps edit text
+     *
+     * @param set the set to be added in the table
+     */
     private void insertViewRow(Set set) {
-        /* Create a new row to be added. */
+
+        // Create a new row to be added.
         TableRow tr = new TableRow(EditSetsActivity.this);
         tr.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-                /* Create a Button to be the row-content. */
+        //The views inside the row
         TextView tvNum = new TextView(EditSetsActivity.this);
         TextView tvReps = new TextView(EditSetsActivity.this);
 
+        //populate row's values
         tvNum.setText(id++ + "");
-        tvReps.setText(set.getReps() + "");
         tvNum.setGravity(Gravity.CENTER);
-        tvReps.setGravity(Gravity.CENTER);
-
         tvNum.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
-        /* Add Textviews to row. */
+
+        tvReps.setText(set.getReps() + "");
+        tvReps.setGravity(Gravity.CENTER);
+        tvReps.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+        //Add views to row
         tr.addView(tvNum);
         tr.addView(tvReps);
-        /* Add row to TableLayout. */
-        //tr.setBackgroundResource(R.drawable.sf_gradient_03);
+
+        //Add row to table layout
         table.addView(tr, new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.WRAP_CONTENT));
     }
 
@@ -119,11 +145,14 @@ public class EditSetsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                //Add new set in the exercise's list
                 Set set = new Set(Integer.valueOf(etReps.getText().toString()));
                 exercise.addSet(set);
 
+                //and in the UI
                 insertViewRow(set);
 
+                //scroll to the last position of the table layout
                 scrollview.post(new Runnable() {
                     @Override
                     public void run() {
@@ -159,13 +188,16 @@ public class EditSetsActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
+            //Up pressed , cancel changes
             setResult(RESULT_CANCELED);
             finish();
         } else if (id == R.id.menu_item_save_sets) {
+            //if exercises are 0 , alert user
             if (exercise.getSets().size() == 0) {
                 Toast.makeText(this, "You should create some sets!!!", Toast.LENGTH_SHORT).show();
                 return true;
             }
+            //pass the new sets list through the return intent and finish
             Intent i = new Intent();
             Bundle bundle = new Bundle();
             bundle.putSerializable("sets", exercise.getSets());

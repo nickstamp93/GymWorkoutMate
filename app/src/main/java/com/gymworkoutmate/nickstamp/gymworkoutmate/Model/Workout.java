@@ -11,7 +11,7 @@ import java.util.ArrayList;
 /**
  * Created by nickstamp on 10/9/2015.
  */
-public class Workout implements Serializable{
+public class Workout implements Serializable {
 
     private int id;
     private String title;
@@ -19,22 +19,24 @@ public class Workout implements Serializable{
     private EnumMuscleGroups muscle;
     private ArrayList<Exercise> exercises;
 
+    /**
+     * Default constructor
+     */
     public Workout() {
         exercises = new ArrayList<>();
     }
 
+    /**
+     * Constructor for workout with a list of workouts
+     *
+     * @param cursor    the cursor from the db
+     * @param exercises the list of exercises
+     */
     public Workout(Cursor cursor, ArrayList<Exercise> exercises) {
         this.id = cursor.getInt(0);
         this.title = cursor.getString(1);
         this.muscle = EnumMuscleGroups.valueOf(cursor.getInt(2));
         this.type = EnumExerciseTypes.valueOf(cursor.getInt(3));
-        this.exercises = exercises;
-    }
-
-    public Workout(String title, EnumExerciseTypes type, EnumMuscleGroups muscle, ArrayList<Exercise> exercises) {
-        this.title = title;
-        this.type = type;
-        this.muscle = muscle;
         this.exercises = exercises;
     }
 

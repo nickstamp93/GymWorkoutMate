@@ -93,9 +93,10 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
         @Override
         public void onClick(View v) {
 
+            //launch EditWorkoutActivity , passing the selected workout through the intent
+            Intent intent = new Intent(context, EditWorkoutActivity.class);
             Bundle bundle = new Bundle();
             bundle.putSerializable("workout", items.get(getAdapterPosition()));
-            Intent intent = new Intent(context, EditWorkoutActivity.class);
             intent.putExtras(bundle);
             context.startActivity(intent);
 

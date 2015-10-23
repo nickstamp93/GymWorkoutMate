@@ -53,6 +53,7 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
         holder.img1.setImageResource(item.getImg1());
         holder.img2.setImageResource(item.getImg2());
 
+        //remove all views from layout that contains the set views
         holder.llExercisesInWorkout.removeAllViews();
         //for each set of the exercise , create a text view and add it to the layout of the item
         for (Set s : item.getSets()) {
@@ -89,8 +90,8 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
             img2 = (ImageView) itemView.findViewById(R.id.image2);
             edit = (TextView) itemView.findViewById(R.id.edit);
             delete = (TextView) itemView.findViewById(R.id.delete);
-
             llExercisesInWorkout = (LinearLayout) itemView.findViewById(R.id.llExerciseInWorkout);
+
             itemView.findViewById(R.id.exercise_workout_root).setOnClickListener(this);
             edit.setOnClickListener(this);
             delete.setOnClickListener(new View.OnClickListener() {
@@ -104,12 +105,12 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
 
         @Override
         public void onClick(View v) {
+            //launch EditSetsActivity , passing the selected exercise through the intent
             Intent intent = new Intent(context, EditSetsActivity.class);
             Bundle bundle = new Bundle();
             bundle.putSerializable("exercise", items.get(getAdapterPosition()));
             intent.putExtras(bundle);
             ((EditWorkoutActivity) context).startActivityForResult(intent, 200);
-//            context.startActivity(intent);
         }
     }
 }

@@ -50,32 +50,38 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         setUpFab();
 
-        setUpInfoViews();
+        setUpViews();
 
         setUpRecyclerView();
 
+        //if no object was passed through the intent , it's creation mode
         if (getIntent().getSerializableExtra("workout") == null) {
             workout = new Workout();
             isCreation = true;
+
+            //else it's edit mode
         } else {
             workout = (Workout) getIntent().getSerializableExtra("workout");
             fillUIFromWorkout();
-            refreshExerciseList(workout.getExercises());
             isCreation = false;
         }
 
     }
 
+    /**
+     * fill UI views from the workout's values
+     */
     private void fillUIFromWorkout() {
         etWorkoutName.setText(workout.getTitle());
         sType.setSelection(workout.getType().getValue() - 1);
         sMuscle.setSelection(workout.getMuscle().getValue() - 1);
+        refreshExerciseList(workout.getExercises());
     }
 
     /**
      * Init and Set up the views about the info of the workout such as the name , muscle and type
      */
-    private void setUpInfoViews() {
+    private void setUpViews() {
 
         etWorkoutName = (EditText) findViewById(R.id.etWorkoutName);
 
@@ -111,8 +117,10 @@ public class EditWorkoutActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Launch the exercise list activity
                 Intent intent = new Intent(EditWorkoutActivity.this, ExerciseListActivity.class);
-                //pass the ids of the exercises that are already selected
+
+                //and pass the ids of the exercises that are already selected
                 ArrayList<Integer> ids = new ArrayList<>();
                 for (Exercise e : workout.getExercises()) {
                     ids.add(e.getId());
@@ -139,28 +147,37 @@ public class EditWorkoutActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        //request code is 200 , for activity EditSetActivity , for managing sets of exercise
         if (requestCode == 200) {
+            //if result is ok , user chose to save the changes to the sets
             if (resultCode == RESULT_OK) {
+                //get the exercise that was changed
                 int id = data.getIntExtra("id", 0);
+                //and apply the new sets list to it
                 for (Exercise e : workout.getExercises()) {
                     if (e.getId() == id) {
                         e.setSets(((ArrayList<Set>) data.getExtras().getSerializable("sets")));
                     }
                 }
+                //refresh the exercises list
                 refreshExerciseList(workout.getExercises());
             }
         }
+
+        //request code is 100 , for activity exercise list , for selecting exercises to add
         if (requestCode == 100) {
+            //if result code is ok , must take the returned list of exercises
             if (resultCode == RESULT_OK) {
                 ArrayList<Exercise> returnedExercises = (ArrayList<Exercise>) data.getSerializableExtra("exercises");
                 ArrayList<Exercise> currentExercises = workout.getExercises();
 
+                //At first , must delete the exercise that were unchecked
+                //thus , they were present in the list and they are not now
                 boolean found;
-
-                //delete exercises that were unchecked
+                //So , if an exercise is in the current(the old) list and not in the returned list
+                //delete it
                 for (int i = 0; i < currentExercises.size(); i++) {
 
-                    //see if it was already selected
                     found = false;
                     for (Exercise e : returnedExercises) {
 
@@ -173,10 +190,10 @@ public class EditWorkoutActivity extends AppCompatActivity {
                     }
                 }
 
-                //add exercises that were checked
-                //for every exercise that is returned
+                //Then , must add the exercises that are newly checked , thus , are not in the
+                //current(old) list but are in the returned list
                 for (Exercise exercise : returnedExercises) {
-                    //see if it was already selected
+
                     found = false;
                     for (Exercise e : currentExercises) {
                         if (exercise.getId() == e.getId())
@@ -190,6 +207,7 @@ public class EditWorkoutActivity extends AppCompatActivity {
                     }
                 }
 
+                //refresh exercise list , with the new list
                 refreshExerciseList(workout.getExercises());
 
             }
@@ -203,6 +221,7 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        //if is edit mode , delete option should be present in the menu
         if (isCreation)
             getMenuInflater().inflate(R.menu.activity_add_workout, menu);
         else
@@ -212,20 +231,16 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
             NavUtils.navigateUpFromSameTask(this);
-        }
-        if (id == R.id.action_workout_delete) {
+        } else if (id == R.id.action_workout_delete) {
+            //delete workout and exit
             database.deleteWorkouts(workout.getId());
             Toast.makeText(EditWorkoutActivity.this, workout.getTitle() + " deleted!", Toast.LENGTH_SHORT).show();
             finish();
-        }
-        if (id == R.id.action_workout_save) {
+        } else if (id == R.id.action_workout_save) {
 
             //if there are no exercises selected , alert
             if (workout.getExercises().size() == 0) {
@@ -237,6 +252,7 @@ public class EditWorkoutActivity extends AppCompatActivity {
                 Toast.makeText(EditWorkoutActivity.this, "Enter a valid name for your Workout!", Toast.LENGTH_SHORT).show();
                 return true;
             }
+
             //assign values to the workout
             workout.setTitle(etWorkoutName.getText().toString());
             workout.setMuscle(EnumMuscleGroups.values()[sMuscle.getSelectedItemPosition()]);

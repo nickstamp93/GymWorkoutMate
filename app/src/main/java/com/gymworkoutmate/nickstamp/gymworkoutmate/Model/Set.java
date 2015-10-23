@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by nickstamp on 10/9/2015.
  */
 public class Set implements Serializable {
+
     private int weight, reps;
 
     public Set(int reps) {

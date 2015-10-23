@@ -127,9 +127,13 @@ public class ExerciseSelectableAdapter extends RecyclerView.Adapter<ExerciseSele
                 img1 = (ImageView) itemView.findViewById(R.id.image1);
                 img2 = (ImageView) itemView.findViewById(R.id.image2);
 
-                itemView.setOnClickListener(this);
+
+                //make the check - uncheck process to work both on check box click and item click
+                //for better easier usage.
                 checkBox = (CheckBox) itemView.findViewById(R.id.chbExercise);
                 checkBox.setOnCheckedChangeListener(this);
+
+                itemView.setOnClickListener(this);
             }
 
         }
