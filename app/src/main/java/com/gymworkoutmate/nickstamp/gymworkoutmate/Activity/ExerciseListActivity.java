@@ -1,12 +1,17 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter.ExerciseAdapter;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter.ExerciseSelectableAdapter;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Data.Database;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
@@ -22,10 +27,14 @@ public class ExerciseListActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
 
+    private boolean isSelectMode;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise_list);
+
+        isSelectMode = (getCallingActivity() != null && getCallingActivity().getClassName().equals(EditWorkoutActivity.class.getName()));
 
         initToolbar();
 
@@ -33,14 +42,6 @@ public class ExerciseListActivity extends AppCompatActivity {
 
         setUpRecyclerView();
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
     }
 
     private void init() {
@@ -50,10 +51,20 @@ public class ExerciseListActivity extends AppCompatActivity {
     private void setUpRecyclerView() {
         recyclerView = (RecyclerView) findViewById(R.id.rvExercises);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new ExerciseAdapter(this, getRecylerData());
+
+        if (isSelectMode) {
+            //This Activity was called by EditWorkoutActivity
+            adapter = new ExerciseSelectableAdapter(
+                    this,
+                    getRecylerData(),
+                    getIntent().getIntegerArrayListExtra("ids"));
+        } else {
+            //This Activity was called by main menu
+            adapter = new ExerciseAdapter(this, getRecylerData());
+        }
+
         recyclerView.setAdapter(adapter);
     }
-
 
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -61,6 +72,13 @@ public class ExerciseListActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    /**
+     * Prepares the dataset for the recycler view
+     * Gets all exercises from the db , grouped by muscle and adds a null pointer between different muscle groups
+     * so that the recycler view works fine with two view types(header and item views)
+     *
+     * @return the final data used by the recycler view
+     */
     private ArrayList<Exercise> getRecylerData() {
         ArrayList<Exercise> items = database.getListExercises();
         ArrayList<Integer> counts = database.getCountsByMuscle();
@@ -71,5 +89,49 @@ public class ExerciseListActivity extends AppCompatActivity {
             items.add(position, null);
         }
         return items;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // If calling activity is not null , this activity was started from startActivityForResult()
+        //so it was called from EditWorkoutActivity , should display "Done" button
+        if (isSelectMode) {
+            getMenuInflater().inflate(R.menu.exercise_list_selectable, menu);
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            if (isSelectMode)
+                finish();
+            else
+                NavUtils.navigateUpFromSameTask(this);
+        }
+        if (id == R.id.action_exercises_done) {
+            //pass selected exercises to the EditWorkoutActivity
+            ArrayList<Exercise> exercises = ((ExerciseSelectableAdapter) adapter).getSelectedExercises();
+            Intent intent = new Intent();
+            intent.putExtra("exercises", exercises);
+            setResult(RESULT_OK, intent);
+            finish();
+        }
+
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        if (isSelectMode)
+            finish();
+        else
+            NavUtils.navigateUpFromSameTask(this);
     }
 }

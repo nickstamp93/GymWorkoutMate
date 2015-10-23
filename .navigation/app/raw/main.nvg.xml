@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.ExerciseListActivity"/>
+      <point      
+        x = "2080"      
+        y = "224"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.OverviewActivity"/>
+      <point      
+        x = "1296"      
+        y = "332"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.WorkoutsActivity"/>
+      <point      
+        x = "1984"      
+        y = "400"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.RoutinesActivity"/>
+      <point      
+        x = "2068"      
+        y = "212"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.ExerciseDetailsActivity"/>
+      <point      
+        x = "1560"      
+        y = "260"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity"/>
+      <point      
+        x = "232"      
+        y = "108"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

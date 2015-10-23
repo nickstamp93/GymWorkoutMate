@@ -6,6 +6,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumEquipment;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by nickstamp on 10/9/2015.
@@ -17,7 +18,13 @@ public class Exercise implements Serializable {
     private EnumMuscleGroups muscle;
     private EnumEquipment equipment;
     private String other_muscles;
+    private ArrayList<Set> sets;
 
+    /**
+     * Constructor with empty sets list
+     *
+     * @param cursor the cursor from the db
+     */
     public Exercise(Cursor cursor) {
         id = cursor.getInt(0);
         title = cursor.getString(1);
@@ -27,8 +34,34 @@ public class Exercise implements Serializable {
         other_muscles = cursor.getString(5);
         mechanics = cursor.getInt(6);
         equipment = EnumEquipment.valueOf(cursor.getInt(7));
+        sets = new ArrayList<>();
     }
 
+    /**
+     * Constructor for exercise with sets
+     *
+     * @param cursor    the cursor from the db
+     * @param setString the string from the db containing the sets for this exercise
+     */
+    public Exercise(Cursor cursor, String setString) {
+        this(cursor);
+        String[] tokens = setString.split("-");
+        for (String s : tokens) {
+            sets.add(new Set(Integer.valueOf(s)));
+        }
+    }
+
+    /**
+     * Constructor used for the initial creation of the database
+     *
+     * @param title         the title
+     * @param image1        image 1 resource
+     * @param image2        image 2 recource
+     * @param muscle        main muscle group worked
+     * @param other_muscles other muscle worked (e.g shoulders-triceps)
+     * @param mechanics     the mechanics type of the exercise
+     * @param equipment     equipment needed
+     */
     public Exercise(String title, int image1, int image2, EnumMuscleGroups muscle,
                     String other_muscles, int mechanics, EnumEquipment equipment) {
         this.title = title;
@@ -40,6 +73,10 @@ public class Exercise implements Serializable {
         this.equipment = equipment;
     }
 
+
+    public void addSet(Set set) {
+        sets.add(set);
+    }
 
     public int getImg1() {
         return img1;
@@ -104,4 +141,13 @@ public class Exercise implements Serializable {
     public void setId(int id) {
         this.id = id;
     }
+
+    public ArrayList<Set> getSets() {
+        return sets;
+    }
+
+    public void setSets(ArrayList<Set> sets) {
+        this.sets = sets;
+    }
+
 }

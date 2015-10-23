@@ -1,44 +1,68 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.ExerciseDetailsActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 import java.util.ArrayList;
 
 /**
- * Created by nickstamp on 10/10/2015.
+ * Created by nickstamp on 10/12/2015.
  */
-public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.ExerciseViewHolder> {
+public class ExerciseSelectableAdapter extends RecyclerView.Adapter<ExerciseSelectableAdapter.ExerciseViewHolder> {
 
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_ITEM = 1;
 
     private ArrayList<Exercise> items;
+    private boolean[] selected;
     private Context context;
     private LayoutInflater inflater;
 
-    public ExerciseAdapter(Context context, ArrayList<Exercise> items) {
+    public ExerciseSelectableAdapter(Context context, ArrayList<Exercise> items, ArrayList<Integer> ids) {
         this.context = context;
         this.items = items;
         inflater = LayoutInflater.from(this.context);
 
+        selected = new boolean[items.size()];
+        for (int i = 0; i < items.size(); i++) {
+            if (ids.size() > 0 && items.get(i) != null)
+                if (ids.contains(items.get(i).getId()))
+                    selected[i] = true;
+                else
+                    selected[i] = false;
+        }
+
+    }
+
+    /**
+     * Get the selected exercises
+     *
+     * @return the arraylist with the exercises that are checked
+     */
+    public ArrayList<Exercise> getSelectedExercises() {
+        ArrayList<Exercise> exercises = new ArrayList<>();
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i]) {
+                exercises.add(items.get(i));
+            }
+        }
+        return exercises;
     }
 
     @Override
     public ExerciseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         if (viewType == TYPE_ITEM) {
-            View view = inflater.inflate(R.layout.list_item_exercise, parent, false);
+            View view = inflater.inflate(R.layout.list_item_selectable_exercise, parent, false);
 
             ExerciseViewHolder holder = new ExerciseViewHolder(view, viewType);
             return holder;
@@ -66,6 +90,7 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
             holder.title.setText(item.getTitle());
             holder.img1.setImageResource(item.getImg1());
             holder.img2.setImageResource(item.getImg2());
+            holder.checkBox.setChecked(selected[position]);
         }
     }
 
@@ -82,11 +107,12 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
         return items.size();
     }
 
-    class ExerciseViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class ExerciseViewHolder extends RecyclerView.ViewHolder implements CompoundButton.OnCheckedChangeListener, View.OnClickListener {
 
         int type;
         TextView title;
         ImageView img1, img2;
+        CheckBox checkBox;
 
         public ExerciseViewHolder(View itemView, int viewType) {
             super(itemView);
@@ -100,18 +126,27 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
                 title = (TextView) itemView.findViewById(R.id.tvExerciseTitle);
                 img1 = (ImageView) itemView.findViewById(R.id.image1);
                 img2 = (ImageView) itemView.findViewById(R.id.image2);
+
+
+                //make the check - uncheck process to work both on check box click and item click
+                //for better easier usage.
+                checkBox = (CheckBox) itemView.findViewById(R.id.chbExercise);
+                checkBox.setOnCheckedChangeListener(this);
+
                 itemView.setOnClickListener(this);
             }
 
         }
 
         @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            selected[getAdapterPosition()] = isChecked;
+        }
+
+        @Override
         public void onClick(View v) {
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("item", items.get(getAdapterPosition()));
-            Intent intent = new Intent(context, ExerciseDetailsActivity.class);
-            intent.putExtras(bundle);
-            context.startActivity(intent);
+            selected[getAdapterPosition()] = !selected[getAdapterPosition()];
+            checkBox.setChecked(selected[getAdapterPosition()]);
         }
     }
 }
