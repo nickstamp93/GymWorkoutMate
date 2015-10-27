@@ -5,10 +5,12 @@ import android.database.Cursor;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 
+import java.io.Serializable;
+
 /**
  * Created by nickstamp on 10/9/2015.
  */
-public class Routine {
+public class Routine implements Serializable {
 
     private String title;
     private int id, days;

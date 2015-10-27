@@ -6,7 +6,7 @@
     android:layout_marginTop="4dp">
 
     <RelativeLayout
-        android:id="@+id/workout_item_root"
+        android:id="@+id/routine_item_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="?android:attr/selectableItemBackground"
