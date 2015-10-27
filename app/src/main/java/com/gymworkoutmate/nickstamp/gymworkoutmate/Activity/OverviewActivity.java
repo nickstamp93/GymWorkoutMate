@@ -15,6 +15,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Data.Database;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 public class OverviewActivity extends AppCompatActivity
@@ -32,7 +35,10 @@ public class OverviewActivity extends AppCompatActivity
         setUpFab();
 
         setUpDrawer();
-
+//
+//        Database.getInstance(this).insert(new Routine("Hyper Growth", EnumExerciseTypes.MUSCLE_GROWTH, 4));
+//        Database.getInstance(this).insert(new Routine("Fit Routine", EnumExerciseTypes.FITNESS, 5));
+//        Database.getInstance(this).insert(new Routine("Extreme Fat loss", EnumExerciseTypes.FAT_LOSS, 6));
 //        startActivity(new Intent(this, WorkoutsActivity.class));
     }
 

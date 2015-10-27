@@ -24,7 +24,7 @@ public class RoutinesAdapter extends RecyclerView.Adapter<RoutinesAdapter.Routin
     private ArrayList<Routine> items;
     private Context context;
     private LayoutInflater inflater;
-    private final int resId = R.layout.list_item_workout;
+    private final int resId = R.layout.list_item_routine;
 
     public RoutinesAdapter(Context context, ArrayList<Routine> items) {
         this.context = context;
@@ -85,7 +85,7 @@ public class RoutinesAdapter extends RecyclerView.Adapter<RoutinesAdapter.Routin
             tvDays.add(tvSaturday);
             tvDays.add(tvSunday);
 
-            root.setOnClickListener(this);
+//            root.setOnClickListener(this);
 
         }
 

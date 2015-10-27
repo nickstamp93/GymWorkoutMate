@@ -60,7 +60,7 @@ public class Database extends SQLiteOpenHelper {
     public ArrayList<Routine> getListRoutines() {
         Cursor c = getReadableDatabase().rawQuery(
                 "SELECT * FROM " + Contract.Routines.TABLE_NAME +
-                        " ORDER BY " + Contract.Routines.COLUMN_TITLE, null);
+                        " ORDER BY " + Contract.Routines._ID, null);
         ArrayList<Routine> items = new ArrayList<>();
         for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
             items.add(new Routine(c));

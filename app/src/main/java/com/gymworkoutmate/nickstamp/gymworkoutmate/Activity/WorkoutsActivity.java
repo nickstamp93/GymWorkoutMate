@@ -61,23 +61,16 @@ public class WorkoutsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    private void refreshRecycler() {
-        adapter = new WorkoutsAdapter(this, database.getListWorkouts());
-        recyclerView.setAdapter(adapter);
-    }
-
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         NavUtils.navigateUpFromSameTask(this);
     }
 
-
     @Override
     protected void onResume() {
         super.onResume();
         adapter = new WorkoutsAdapter(this, database.getListWorkouts());
         recyclerView.setAdapter(adapter);
-
     }
 }
