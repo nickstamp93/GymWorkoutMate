@@ -35,11 +35,7 @@ public class OverviewActivity extends AppCompatActivity
         setUpFab();
 
         setUpDrawer();
-//
-//        Database.getInstance(this).insert(new Routine("Hyper Growth", EnumExerciseTypes.MUSCLE_GROWTH, 4));
-//        Database.getInstance(this).insert(new Routine("Fit Routine", EnumExerciseTypes.FITNESS, 5));
-//        Database.getInstance(this).insert(new Routine("Extreme Fat loss", EnumExerciseTypes.FAT_LOSS, 6));
-//        startActivity(new Intent(this, WorkoutsActivity.class));
+
     }
 
     private void setUpDrawer() {

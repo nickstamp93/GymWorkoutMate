@@ -85,7 +85,7 @@ public class RoutinesAdapter extends RecyclerView.Adapter<RoutinesAdapter.Routin
             tvDays.add(tvSaturday);
             tvDays.add(tvSunday);
 
-//            root.setOnClickListener(this);
+            root.setOnClickListener(this);
 
         }
 

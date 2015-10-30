@@ -70,14 +70,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b93908f9-1a63-4700-acf6-84bcb2ca23b6" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\res\layout\content_edit_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_edit_routine_activity.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditRoutineActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditRoutineActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/RoutinesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/RoutinesActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Routine.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Routine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/RoutinesAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/RoutinesAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/WorkoutsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/WorkoutsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_routines.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_routines.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/day_view_busy.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/day_view_busy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/day_view_rest.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/day_view_rest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_routine.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_routine.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GymWorkoutMate.iws" />
@@ -109,8 +109,28 @@
       <file leaf-file-name="OverviewActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58733207">
-              <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.030411448">
+              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoutinesActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/RoutinesActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditRoutineActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditRoutineActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -1597,7 +1617,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_overview.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_exercise_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/FontsOverride.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/GymWorkoutMateApplication.java" />
@@ -1631,23 +1650,24 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditSetsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Exercise.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Set.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item_workout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/set_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/day_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_routine.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_edit_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item_routine.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Routine.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_routines.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/WorkoutsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/RoutinesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/RoutinesAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/day_view_busy.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/day_view_rest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Routine.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/RoutinesAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_routine.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditRoutineActivity.java" />
       </list>
     </option>
   </component>
@@ -1690,17 +1710,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1729,56 +1738,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -1799,72 +1758,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="gymworkoutmate" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gymworkoutmate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gymworkoutmate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GymWorkoutMate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gymworkoutmate" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adapter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1891,7 +1784,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GymWorkoutMate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -1923,7 +1827,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PocketWallet" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="4556586b" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.1.101:5555" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_4_API_22" />
     <property name="FullScreen" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v21" />
@@ -2174,7 +2078,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2350937" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06473595" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7972743" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2183,6 +2087,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19440243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2194,7 +2099,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2316,13 +2220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Contract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.9580712">
-          <caret line="92" column="26" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/ExerciseDetailsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030411448">
@@ -2416,20 +2313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6386404">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5205724">
-          <caret line="242" column="14" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditSetsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2463,7 +2346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2478,30 +2360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_routine.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6735849">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="e#1310#1329#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_edit_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_workout.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2509,22 +2367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6471698">
           <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditRoutineActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Routine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21288015">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -2604,7 +2446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2612,73 +2453,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35892513">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/RoutinesActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Routine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7005758">
-          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.42418426">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding>
+            <element signature="e#1737#1738#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/RoutinesAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Contract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38963532">
-          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state vertical-scroll-proportion="1.9961612">
+          <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45489442">
-          <caret line="62" column="60" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
-          <folding>
-            <element signature="docComment;class#Database#0" expanded="false" />
-            <element signature="method#getInstance#0;class#Database#0" expanded="false" />
-            <element signature="e#784#842#0" expanded="false" />
-            <element signature="docComment;method#Database#0;class#Database#0" expanded="false" />
-            <element signature="method#Database#0;class#Database#0" expanded="false" />
-            <element signature="method#onCreate#0;class#Database#0" expanded="false" />
-            <element signature="method#onUpgrade#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#getListWorkouts#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#getListExercises#0;class#Database#0" expanded="false" />
-            <element signature="method#getListExercises#0;class#Database#0" expanded="false" />
-            <element signature="e#4000#4061#0" expanded="false" />
-            <element signature="method#insert#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#insert#1;class#Database#0" expanded="false" />
-            <element signature="method#insert#1;class#Database#0" expanded="false" />
-            <element signature="e#5149#5202#0" expanded="false" />
-            <element signature="docComment;method#insertExerciseToWorkout#0;class#Database#0" expanded="false" />
-            <element signature="method#insertExerciseToWorkout#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#updateExerciseOfWorkout#0;class#Database#0" expanded="false" />
-            <element signature="method#updateExerciseOfWorkout#0;class#Database#0" expanded="false" />
-            <element signature="method#update#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#update#1;class#Database#0" expanded="false" />
-            <element signature="method#update#1;class#Database#0" expanded="false" />
-            <element signature="e#9174#9197#0" expanded="false" />
-            <element signature="e#9699#9742#0" expanded="false" />
-            <element signature="e#10363#10445#0" expanded="false" />
-            <element signature="docComment;method#deleteExerciseFromWorkout#0;class#Database#0" expanded="false" />
-            <element signature="method#deleteExerciseFromWorkout#0;class#Database#0" expanded="false" />
-            <element signature="method#deleteRoutine#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#deleteWorkouts#0;class#Database#0" expanded="false" />
-            <element signature="method#deleteWorkouts#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#getExercise#0;class#Database#0" expanded="false" />
-            <element signature="method#getExercise#0;class#Database#0" expanded="false" />
-            <element signature="docComment;method#getCountsByMuscle#0;class#Database#0" expanded="false" />
-            <element signature="method#getCountsByMuscle#0;class#Database#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="416" column="27" selection-start-line="416" selection-start-column="27" selection-end-line="416" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Workout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9463327">
+          <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_edit_routine_activity.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.608229">
+          <caret line="144" column="5" selection-start-line="139" selection-start-column="0" selection-end-line="144" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_routine.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36415094">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Adapter/RoutinesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30053666">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/RoutinesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditRoutineActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/OverviewActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58733207">
-          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.030411448">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding />
         </state>
       </provider>

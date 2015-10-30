@@ -57,16 +57,52 @@ public class Database extends SQLiteOpenHelper {
 
     }
 
+    /**
+     * @return a list with all the routines
+     */
     public ArrayList<Routine> getListRoutines() {
-        Cursor c = getReadableDatabase().rawQuery(
+        //get all routines
+        Cursor cRoutines = getReadableDatabase().rawQuery(
                 "SELECT * FROM " + Contract.Routines.TABLE_NAME +
                         " ORDER BY " + Contract.Routines._ID, null);
-        ArrayList<Routine> items = new ArrayList<>();
-        for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
-            items.add(new Routine(c));
+        ArrayList<Routine> routines = new ArrayList<>();
+        //for every routine
+        for (cRoutines.moveToFirst(); !cRoutines.isAfterLast(); cRoutines.moveToNext()) {
+
+            //find the workouts for this routine
+            int routineId = cRoutines.getInt(0);
+            ArrayList<Workout> workouts = getListWorkouts(routineId);
+
+            //and create the new routine and add it to the returned Arraylist
+            routines.add(new Routine(cRoutines, workouts));
         }
 
-        return items;
+        return routines;
+    }
+
+    /**
+     * @param routineId the id of the routine
+     * @return a list with all the workouts of the given routine
+     */
+    private ArrayList<Workout> getListWorkouts(int routineId) {
+
+        ArrayList<Workout> workouts = new ArrayList<>();
+
+        //get all the workouts of this routine from the workout-routine connection table
+        Cursor cWorkouts = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.WorkoutRoutineConnection.TABLE_NAME +
+                        " WHERE " + Contract.WorkoutRoutineConnection.COLUMN_ROUTINE + "='" + routineId + "'"
+                , null);
+
+        for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
+            int workoutId = cWorkouts.getInt(1);
+
+            Workout workout = getWorkout(workoutId);
+            workout.setExercises(getListExercises(workoutId));
+
+        }
+
+        return workouts;
     }
 
     /**
@@ -81,22 +117,33 @@ public class Database extends SQLiteOpenHelper {
         //for every workout , find the exercises that it contains
         for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
             //construct an arraylist with the workout's exercises
-            ArrayList<Exercise> exercises = new ArrayList<>();
-            Cursor cExercises = getReadableDatabase().rawQuery(
-                    "SELECT * FROM " + Contract.ExerciseWorkoutConnection.TABLE_NAME +
-                            " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + "='" + cWorkouts.getInt(0) + "'"
-                    , null);
-            for (cExercises.moveToFirst(); !cExercises.isAfterLast(); cExercises.moveToNext()) {
-                Exercise e = getExercise(cExercises.getInt(1), cWorkouts.getInt(0));
-                if (e != null)
-                    exercises.add(e);
-            }
+
+            int workoutId = cWorkouts.getInt(0);
+
             //create the new workout with the exercise list and add it to the workouts list to be returned
-            items.add(new Workout(cWorkouts, exercises));
+            items.add(new Workout(cWorkouts, getListExercises(workoutId)));
         }
 
 
         return items;
+    }
+
+    /**
+     * @param workoutId the id of the workout
+     * @return a list with all the exercises of the given workout
+     */
+    private ArrayList<Exercise> getListExercises(int workoutId) {
+        ArrayList<Exercise> exercises = new ArrayList<>();
+        Cursor cExercises = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.ExerciseWorkoutConnection.TABLE_NAME +
+                        " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + "='" + workoutId + "'"
+                , null);
+        for (cExercises.moveToFirst(); !cExercises.isAfterLast(); cExercises.moveToNext()) {
+            Exercise e = getExercise(cExercises.getInt(1), workoutId);
+            if (e != null)
+                exercises.add(e);
+        }
+        return exercises;
     }
 
     /**
@@ -115,13 +162,19 @@ public class Database extends SQLiteOpenHelper {
         return items;
     }
 
-    public long insert(Routine item) {
+    public void insert(Routine item) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(Contract.Routines.COLUMN_TITLE, item.getTitle());
         contentValues.put(Contract.Routines.COLUMN_DAYS, item.getDays());
         contentValues.put(Contract.Routines.COLUMN_TYPE, item.getType().getValue());
 
-        return getWritableDatabase().insert(Contract.Routines.TABLE_NAME, "null", contentValues);
+        long routineId = getWritableDatabase().insert(Contract.Routines.TABLE_NAME, "null", contentValues);
+
+        int day = 1;
+        for (Workout workout : item.getWorkouts()) {
+            insertWorkoutToRoutine(workout.getId(), (int) routineId, day);
+            day += 2;
+        }
     }
 
 
@@ -172,6 +225,16 @@ public class Database extends SQLiteOpenHelper {
 
         //insert the workout-exercise connection
         getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
+    }
+
+    private void insertWorkoutToRoutine(int workoutId, int routineId, int day) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Contract.WorkoutRoutineConnection.COLUMN_WORKOUT, workoutId);
+        contentValues.put(Contract.WorkoutRoutineConnection.COLUMN_ROUTINE, routineId);
+        contentValues.put(Contract.WorkoutRoutineConnection.COLUMN_DAY, day);
+
+        //insert the workout-routine connection
+        getWritableDatabase().insert(Contract.WorkoutRoutineConnection.TABLE_NAME, "null", contentValues);
     }
 
     /**
@@ -340,6 +403,18 @@ public class Database extends SQLiteOpenHelper {
 
         if (c.moveToFirst()) {
             return new Exercise(c, stringSets);
+        } else
+            return null;
+    }
+
+    public Workout getWorkout(int workoutId) {
+        //find the exercise
+        Cursor c = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.Workouts.TABLE_NAME +
+                        " WHERE " + Contract.Workouts._ID + "='" + workoutId + "'", null);
+
+        if (c.moveToFirst()) {
+            return new Workout(c);
         } else
             return null;
     }

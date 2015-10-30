@@ -6,6 +6,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by nickstamp on 10/9/2015.
@@ -16,6 +17,7 @@ public class Routine implements Serializable {
     private int id, days;
     private EnumExerciseTypes type;
     private EnumMuscleGroups muscle;
+    private ArrayList<Workout> workouts;
 
     public Routine() {
 
@@ -27,11 +29,13 @@ public class Routine implements Serializable {
         this.days = days;
     }
 
-    public Routine(Cursor c) {
+    public Routine(Cursor c, ArrayList<Workout> workouts) {
         id = c.getInt(0);
         title = c.getString(1);
         days = c.getInt(2);
         type = EnumExerciseTypes.valueOf(c.getInt(3));
+
+        this.workouts = workouts;
 
     }
 
@@ -73,5 +77,13 @@ public class Routine implements Serializable {
 
     public void setMuscle(EnumMuscleGroups muscle) {
         this.muscle = muscle;
+    }
+
+    public ArrayList<Workout> getWorkouts() {
+        return workouts;
+    }
+
+    public void setWorkouts(ArrayList<Workout> workouts) {
+        this.workouts = workouts;
     }
 }
