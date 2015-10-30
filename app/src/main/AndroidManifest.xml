@@ -78,10 +78,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.RoutinesActivity" />
         </activity>
-        <activity
-            android:name=".Activity.TabbedActivity"
-            android:label="@string/title_activity_tabbed" >
-        </activity>
     </application>
 
 </manifest>
