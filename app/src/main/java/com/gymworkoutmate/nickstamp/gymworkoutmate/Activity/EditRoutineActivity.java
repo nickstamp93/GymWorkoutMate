@@ -63,7 +63,7 @@ public class EditRoutineActivity extends AppCompatActivity {
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         for (int i = 0; i < EnumWeekDays.values().length; i++) {
-            adapter.addFragment(FragmentRoutineDay.newInstance(i, routine.getWorkouts()), EnumWeekDays.values()[i].toString());
+            adapter.addFragment(FragmentRoutineDay.newInstance(i, routine.getWorkouts().get(i)), EnumWeekDays.values()[i].toString());
         }
         viewPager.setAdapter(adapter);
 
@@ -82,7 +82,7 @@ public class EditRoutineActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 ArrayList<Workout> returnedWorkout = (ArrayList<Workout>) data.getSerializableExtra("workouts");
                 int day = data.getIntExtra("day", 0);
-                ArrayList<Workout> currentWorkout = routine.getWorkouts();
+                ArrayList<Workout> currentWorkout = routine.getWorkouts().get(day);
                 //TODO current workouts of the right day
 
                 //At first , must delete the exercise that were unchecked

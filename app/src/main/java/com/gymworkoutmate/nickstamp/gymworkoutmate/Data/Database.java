@@ -12,6 +12,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by nickstamp on 10/9/2015.
@@ -71,12 +72,13 @@ public class Database extends SQLiteOpenHelper {
 
             //find the workouts for this routine
             int routineId = cRoutines.getInt(0);
-            ArrayList<Workout> workouts = getListWorkouts(routineId);
+            HashMap<Integer, ArrayList<Workout>> workouts = getListWorkouts(routineId);
 
             //and create the new routine and add it to the returned Arraylist
             routines.add(new Routine(cRoutines, workouts));
         }
 
+        //TODO replace arraylist of workouts with hashmap with respect to the day
         return routines;
     }
 
@@ -84,9 +86,12 @@ public class Database extends SQLiteOpenHelper {
      * @param routineId the id of the routine
      * @return a list with all the workouts of the given routine
      */
-    private ArrayList<Workout> getListWorkouts(int routineId) {
+    private HashMap<Integer, ArrayList<Workout>> getListWorkouts(int routineId) {
 
-        ArrayList<Workout> workouts = new ArrayList<>();
+        HashMap<Integer, ArrayList<Workout>> workouts = new HashMap<>();
+        for (int i = 0; i < 7; i++) {
+            workouts.put(i, new ArrayList<Workout>());
+        }
 
         //get all the workouts of this routine from the workout-routine connection table
         Cursor cWorkouts = getReadableDatabase().rawQuery(
@@ -96,9 +101,12 @@ public class Database extends SQLiteOpenHelper {
 
         for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
             int workoutId = cWorkouts.getInt(1);
+            int day = cWorkouts.getInt(3);
 
             Workout workout = getWorkout(workoutId);
             workout.setExercises(getListExercises(workoutId));
+
+            workouts.get(day).add(workout);
 
         }
 
@@ -170,10 +178,10 @@ public class Database extends SQLiteOpenHelper {
 
         long routineId = getWritableDatabase().insert(Contract.Routines.TABLE_NAME, "null", contentValues);
 
-        int day = 1;
-        for (Workout workout : item.getWorkouts()) {
-            insertWorkoutToRoutine(workout.getId(), (int) routineId, day);
-            day += 2;
+        for (int i = 0; i < 7; i++) {
+            for (Workout workout : item.getWorkouts().get(i)) {
+                insertWorkoutToRoutine(workout.getId(), (int) routineId, i);
+            }
         }
     }
 

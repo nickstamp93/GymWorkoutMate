@@ -48,6 +48,14 @@ public class RoutinesAdapter extends RecyclerView.Adapter<RoutinesAdapter.Routin
         holder.tvRoutineName.setText(item.getTitle());
         holder.tvRoutineType.setText(item.getType().toString());
 
+        for (int i = 0; i < 7; i++) {
+            if (item.getWorkouts().get(i).size() == 0) {
+                holder.tvDays.get(i).setBackgroundResource(R.drawable.day_view_rest);
+            } else {
+                holder.tvDays.get(i).setBackgroundResource(R.drawable.day_view_busy);
+            }
+        }
+
     }
 
     @Override
