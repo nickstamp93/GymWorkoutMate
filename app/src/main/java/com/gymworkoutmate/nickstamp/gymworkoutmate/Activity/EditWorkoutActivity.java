@@ -237,7 +237,7 @@ public class EditWorkoutActivity extends AppCompatActivity {
             NavUtils.navigateUpFromSameTask(this);
         } else if (id == R.id.action_workout_delete) {
             //delete workout and exit
-            database.deleteWorkouts(workout.getId());
+            database.deleteWorkout(workout.getId());
             Toast.makeText(EditWorkoutActivity.this, workout.getTitle() + " deleted!", Toast.LENGTH_SHORT).show();
             finish();
         } else if (id == R.id.action_workout_save) {

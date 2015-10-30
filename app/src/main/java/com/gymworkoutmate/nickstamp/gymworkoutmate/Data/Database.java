@@ -78,7 +78,6 @@ public class Database extends SQLiteOpenHelper {
             routines.add(new Routine(cRoutines, workouts));
         }
 
-        //TODO replace arraylist of workouts with hashmap with respect to the day
         return routines;
     }
 
@@ -378,13 +377,17 @@ public class Database extends SQLiteOpenHelper {
      *
      * @param id the id of the workout to be deleted
      */
-    public void deleteWorkouts(int id) {
+    public void deleteWorkout(int id) {
 
         String selection = Contract.Workouts._ID + " = ?";
 
         String[] selectionArgs = {String.valueOf(id)};
 
         getWritableDatabase().delete(Contract.Workouts.TABLE_NAME, selection, selectionArgs);
+
+        selection = Contract.WorkoutRoutineConnection.COLUMN_WORKOUT + " = ?";
+
+        getWritableDatabase().delete(Contract.WorkoutRoutineConnection.TABLE_NAME, selection, selectionArgs);
     }
 
     /**
