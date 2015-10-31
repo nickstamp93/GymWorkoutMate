@@ -26,7 +26,6 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
 
     private View placeholder;
     private View content;
-    private View root;
 
     private int pos;
 
@@ -58,10 +57,7 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
         View view = inflater.inflate(R.layout.fragment_day_view, container, false);
 
         placeholder = view.findViewById(R.id.placeholder);
-        content = view.findViewById(R.id.workoutCard);
-        root = view.findViewById(R.id.dayViewRoot);
-
-        root.setOnClickListener(this);
+        content = view.findViewById(R.id.workout_item_root);
 
         if (workouts.size() == 0) {
             placeholder.setVisibility(View.VISIBLE);
@@ -70,6 +66,9 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
             placeholder.setVisibility(View.GONE);
             content.setVisibility(View.VISIBLE);
         }
+
+        placeholder.setOnClickListener(this);
+        content.setOnClickListener(this);
 
         //TODO make a loop to display all the workouts for the current day (with exercises ?)
         return view;
@@ -87,7 +86,7 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
             ids.add(w.getId());
         }
         intent.putIntegerArrayListExtra("ids", ids);
-        intent.putExtra("day" , ARG_PAGE);
+        intent.putExtra("day", ARG_PAGE);
 
         startActivityForResult(intent, 100);
     }

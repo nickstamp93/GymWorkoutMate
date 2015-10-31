@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity;
@@ -76,17 +75,15 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
 
         TextView tvWorkoutName, tvWorkoutSubtitle;
         LinearLayout llWorkoutExercises;
-        RelativeLayout root;
 
         public WorkoutsHolder(View itemView) {
             super(itemView);
 
-            root = (RelativeLayout) itemView.findViewById(R.id.workout_item_root);
             tvWorkoutName = (TextView) itemView.findViewById(R.id.tvWorkoutName);
             tvWorkoutSubtitle = (TextView) itemView.findViewById(R.id.tvWorkoutSubtitle);
             llWorkoutExercises = (LinearLayout) itemView.findViewById(R.id.llWorkoutExercises);
 
-            root.setOnClickListener(this);
+            itemView.setOnClickListener(this);
 
         }
 

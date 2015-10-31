@@ -83,8 +83,6 @@ public class EditRoutineActivity extends AppCompatActivity {
                 ArrayList<Workout> returnedWorkout = (ArrayList<Workout>) data.getSerializableExtra("workouts");
                 int day = data.getIntExtra("day", 0);
                 ArrayList<Workout> currentWorkout = routine.getWorkouts().get(day);
-                //TODO current workouts of the right day
-
                 //At first , must delete the exercise that were unchecked
                 //thus , they were present in the list and they are not now
                 boolean found;
