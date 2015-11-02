@@ -3,6 +3,7 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -12,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -23,6 +25,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumWeekDays;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Fragment.FragmentRoutineDay;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Fragment.FragmentWorkouts;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
@@ -55,6 +58,8 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
         database = Database.getInstance(this);
 
         setUpToolbar();
+
+//        setUpFab();
 
         setUpViews();
 
@@ -115,6 +120,16 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
         sType.setSelection(routine.getType().getValue() - 1);
     }
 
+//
+//    private void setUpFab() {
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
+//    }
 
     private void setUpToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

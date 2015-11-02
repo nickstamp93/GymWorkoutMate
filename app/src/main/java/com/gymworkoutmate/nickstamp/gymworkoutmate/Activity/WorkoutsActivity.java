@@ -49,6 +49,7 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
         setUpWorkoutsFragment();
 
 
+        //TODO hide button on select mode
     }
 
     private void setUpWorkoutsFragment() {
@@ -72,6 +73,7 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
             }
         });
     }
+
     private void setUpToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

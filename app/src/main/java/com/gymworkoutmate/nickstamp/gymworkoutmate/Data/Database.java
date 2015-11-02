@@ -273,18 +273,78 @@ public class Database extends SQLiteOpenHelper {
                 args);
     }
 
-    public void update(Routine item) {
+    public void update(Routine routine) {
 
         ContentValues values = new ContentValues();
-        values.put(Contract.Routines.COLUMN_TITLE, item.getTitle());
-        values.put(Contract.Routines.COLUMN_DAYS, item.getDays());
-        values.put(Contract.Routines.COLUMN_TYPE, item.getType().getValue());
+        values.put(Contract.Routines.COLUMN_TITLE, routine.getTitle());
+        values.put(Contract.Routines.COLUMN_DAYS, routine.getDays());
+        values.put(Contract.Routines.COLUMN_TYPE, routine.getType().getValue());
 
-        getReadableDatabase().update(Contract.Routines.TABLE_NAME, values, Contract.Routines._ID + " = " + item.getId(), null);
+        getReadableDatabase().update(Contract.Routines.TABLE_NAME, values, Contract.Routines._ID + " = " + routine.getId(), null);
 
         //TODO update the routine-workout table accroding to the new routine item
         //that means delete the connections that are no longer valid and add the new ones
 
+
+        //and the workout-exercise connection table
+
+        //get the workouts of the routine to be updated (from the db)
+        //and create hashmap with their ids per day
+        HashMap<Integer, ArrayList<Integer>> workoutIds = new HashMap<>();
+        for (int day = 0; day < 7; day++) {
+            workoutIds.put(day, new ArrayList<Integer>());
+        }
+        Cursor cWorkouts = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.WorkoutRoutineConnection.TABLE_NAME +
+                        " WHERE " + Contract.WorkoutRoutineConnection.COLUMN_ROUTINE + "='" + routine.getId() + "'"
+                , null);
+        for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
+            //add the id of the workout in the correct day
+            workoutIds.get(cWorkouts.getInt(3)).add(cWorkouts.getInt(1));
+        }
+
+        //First , must delete workouts that were present in a day in the store routine and now are not
+        boolean found;
+        //for every day
+        for (int day = 0; day < 7; day++) {
+            //for every workout stored already in the given day
+            //search it in the new routine
+            for (int id : workoutIds.get(day)) {
+                found = false;
+                for (Workout w : routine.getWorkouts().get(day)) {
+                    if (w.getId() == id)
+                        found = true;
+                }
+                if (!found) {
+                    deleteWorkoutFromRoutine(id, routine.getId(), day);
+                }
+            }
+        }
+
+
+        //now for the updates/insertions
+        for (int day = 0; day < 7; day++) {
+
+            for (Workout workout : routine.getWorkouts().get(day)) {
+
+                //for every workout in the updated routine, if it was in the db , update it
+                if (!workoutIds.get(day).contains(workout.getId())) {
+                    insertWorkoutToRoutine(workout.getId(), routine.getId(), day);
+                }
+            }
+        }
+
+
+    }
+
+    private void deleteWorkoutFromRoutine(int workoutId, int routineId, int day) {
+        String selection = Contract.WorkoutRoutineConnection.COLUMN_WORKOUT + " = ? AND "
+                + Contract.WorkoutRoutineConnection.COLUMN_ROUTINE + " = ? AND " +
+                Contract.WorkoutRoutineConnection.COLUMN_DAY + " = ?";
+
+        String[] selectionArgs = {String.valueOf(workoutId), String.valueOf(routineId), String.valueOf(day)};
+
+        getWritableDatabase().delete(Contract.WorkoutRoutineConnection.TABLE_NAME, selection, selectionArgs);
     }
 
     /**
