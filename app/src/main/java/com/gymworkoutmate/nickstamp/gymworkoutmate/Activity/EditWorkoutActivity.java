@@ -223,9 +223,9 @@ public class EditWorkoutActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         //if is edit mode , delete option should be present in the menu
         if (isCreation)
-            getMenuInflater().inflate(R.menu.activity_add_workout, menu);
+            getMenuInflater().inflate(R.menu.activity_add_item, menu);
         else
-            getMenuInflater().inflate(R.menu.activity_edit_workout, menu);
+            getMenuInflater().inflate(R.menu.activity_edit_item, menu);
         return true;
     }
 
@@ -235,12 +235,12 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         if (id == android.R.id.home) {
             NavUtils.navigateUpFromSameTask(this);
-        } else if (id == R.id.action_workout_delete) {
+        } else if (id == R.id.action_delete) {
             //delete workout and exit
             database.deleteWorkout(workout.getId());
             Toast.makeText(EditWorkoutActivity.this, workout.getTitle() + " deleted!", Toast.LENGTH_SHORT).show();
             finish();
-        } else if (id == R.id.action_workout_save) {
+        } else if (id == R.id.action_save) {
 
             //if there are no exercises selected , alert
             if (workout.getExercises().size() == 0) {

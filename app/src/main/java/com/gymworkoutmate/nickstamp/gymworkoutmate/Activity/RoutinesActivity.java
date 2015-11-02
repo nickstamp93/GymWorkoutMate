@@ -45,7 +45,7 @@ public class RoutinesActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RoutinesActivity.this, EditWorkoutActivity.class));
+                startActivity(new Intent(RoutinesActivity.this, EditRoutineActivity.class));
             }
         });
     }

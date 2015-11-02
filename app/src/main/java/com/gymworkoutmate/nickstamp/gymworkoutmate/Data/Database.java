@@ -281,6 +281,10 @@ public class Database extends SQLiteOpenHelper {
         values.put(Contract.Routines.COLUMN_TYPE, item.getType().getValue());
 
         getReadableDatabase().update(Contract.Routines.TABLE_NAME, values, Contract.Routines._ID + " = " + item.getId(), null);
+
+        //TODO update the routine-workout table accroding to the new routine item
+        //that means delete the connections that are no longer valid and add the new ones
+
     }
 
     /**

@@ -27,11 +27,13 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
     private Context context;
     private LayoutInflater inflater;
     private final int resId = R.layout.list_item_workout;
+    private boolean clickable;
 
-    public WorkoutsAdapter(Context context, ArrayList<Workout> items) {
+    public WorkoutsAdapter(Context context, ArrayList<Workout> items, boolean clickable) {
         this.context = context;
         this.items = items;
         inflater = LayoutInflater.from(context);
+        this.clickable = clickable;
 
     }
 
@@ -83,7 +85,8 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
             tvWorkoutSubtitle = (TextView) itemView.findViewById(R.id.tvWorkoutSubtitle);
             llWorkoutExercises = (LinearLayout) itemView.findViewById(R.id.llWorkoutExercises);
 
-            itemView.setOnClickListener(this);
+            if (clickable)
+                itemView.setOnClickListener(this);
 
         }
 

@@ -4,6 +4,7 @@ import android.database.Cursor;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumWeekDays;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -21,7 +22,11 @@ public class Routine implements Serializable {
     private HashMap<Integer, ArrayList<Workout>> workouts;
 
     public Routine() {
-
+        //create an empty hashmap in order to be populated
+        workouts = new HashMap<>();
+        for (int i = 0; i < EnumWeekDays.values().length; i++) {
+            workouts.put(i, new ArrayList<Workout>());
+        }
     }
 
     public Routine(String title, EnumExerciseTypes type, int days) {
