@@ -31,9 +31,11 @@ public class FragmentWorkouts extends Fragment {
     private static final String ARG_WORKOUTS = "WORKOUTS";
     private static final String ARG_SELECT = "SELECT_MODE";
     private static final String ARG_CLICKABLE = "CLICKABLE";
+    private static final String ARG_TARGET = "TARGET";
 
     private ArrayList<Workout> workouts;
     private boolean isSelectMode, clickableAdapter;
+    private Class targetAcitivity;
 
     private OnWorkoutFragmentInteraction mListener;
 
@@ -46,12 +48,13 @@ public class FragmentWorkouts extends Fragment {
     /**
      * @return A new instance of fragment FragmentWorkouts.
      */
-    public static FragmentWorkouts newInstance(ArrayList<Workout> list, boolean isSelectMode, boolean clickable) {
+    public static FragmentWorkouts newInstance(ArrayList<Workout> list, boolean isSelectMode, boolean clickable, Class targetActivity) {
         FragmentWorkouts fragment = new FragmentWorkouts();
         Bundle args = new Bundle();
         args.putSerializable(ARG_WORKOUTS, list);
         args.putBoolean(ARG_SELECT, isSelectMode);
         args.putBoolean(ARG_CLICKABLE, clickable);
+        args.putSerializable(ARG_TARGET, targetActivity);
         fragment.setArguments(args);
         return fragment;
     }
@@ -67,6 +70,7 @@ public class FragmentWorkouts extends Fragment {
             workouts = (ArrayList<Workout>) getArguments().getSerializable(ARG_WORKOUTS);
             isSelectMode = getArguments().getBoolean(ARG_SELECT);
             clickableAdapter = getArguments().getBoolean(ARG_CLICKABLE);
+            targetAcitivity = (Class) getArguments().getSerializable(ARG_TARGET);
         }
     }
 
@@ -96,7 +100,7 @@ public class FragmentWorkouts extends Fragment {
             }
             adapter = new WorkoutsSelectableAdapter(getContext(), workouts, ids);
         } else {
-            adapter = new WorkoutsAdapter(getContext(), workouts, clickableAdapter);
+            adapter = new WorkoutsAdapter(getContext(), workouts, clickableAdapter, targetAcitivity);
         }
         recyclerView.setAdapter(adapter);
 

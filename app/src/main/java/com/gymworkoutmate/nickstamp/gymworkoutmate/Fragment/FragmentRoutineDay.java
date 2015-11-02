@@ -61,7 +61,6 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.i("nikos" , "on create");
         position = getArguments().getInt(ARG_POS);
         workouts = (ArrayList<Workout>) getArguments().getSerializable(ARG_WORKOUTS);
     }
@@ -84,7 +83,7 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
     }
 
 
-    public ArrayList<Workout> getWorkouts(){
+    public ArrayList<Workout> getWorkouts() {
         return workouts;
     }
 
@@ -107,7 +106,7 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
 
             transaction = getChildFragmentManager().beginTransaction();
             //create a new instance of workouts fragmentWorkouts containing the workouts of this day
-            fragmentWorkouts = FragmentWorkouts.newInstance(workouts, false, false);
+            fragmentWorkouts = FragmentWorkouts.newInstance(workouts, false, true, WorkoutsActivity.class);
             transaction.replace(R.id.container, fragmentWorkouts);
             transaction.commit();
         }

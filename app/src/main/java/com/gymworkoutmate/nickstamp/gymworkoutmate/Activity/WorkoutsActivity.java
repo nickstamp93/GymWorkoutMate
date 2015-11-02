@@ -55,7 +55,7 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
     private void setUpWorkoutsFragment() {
         transaction = getSupportFragmentManager().beginTransaction();
 
-        fragmentWorkouts = FragmentWorkouts.newInstance(database.getListWorkouts(), isSelectMode, true);
+        fragmentWorkouts = FragmentWorkouts.newInstance(database.getListWorkouts(), isSelectMode, true, EditWorkoutActivity.class);
         transaction.add(R.id.container, fragmentWorkouts);
         transaction.commit();
     }
@@ -105,9 +105,9 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
         }
         if (id == R.id.action_done) {
             //pass selected workout to the EditRoutineActivity
-            ArrayList<Workout> Workout = ((WorkoutsSelectableAdapter) fragmentWorkouts.getAdapter()).getSelectedWorkouts();
+            ArrayList<Workout> workouts = ((WorkoutsSelectableAdapter) fragmentWorkouts.getAdapter()).getSelectedWorkouts();
             Intent intent = new Intent();
-            intent.putExtra("workouts", Workout);
+            intent.putExtra("workouts", workouts);
             intent.putExtra("day", getIntent().getIntExtra("day", 0));
             setResult(RESULT_OK, intent);
             finish();
@@ -131,7 +131,7 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
         if (isSelectMode) {
             adapter = new WorkoutsSelectableAdapter(this, database.getListWorkouts(), getIntent().getIntegerArrayListExtra("ids"));
         } else {
-            adapter = new WorkoutsAdapter(this, database.getListWorkouts(), true);
+            adapter = new WorkoutsAdapter(this, database.getListWorkouts(), true, EditWorkoutActivity.class);
         }
         fragmentWorkouts.changeAdapter(adapter);
     }

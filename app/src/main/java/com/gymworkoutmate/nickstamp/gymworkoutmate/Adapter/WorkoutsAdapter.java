@@ -5,13 +5,16 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditRoutineActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.WorkoutsActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
@@ -28,12 +31,15 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
     private LayoutInflater inflater;
     private final int resId = R.layout.list_item_workout;
     private boolean clickable;
+    private Class targetActivity;
 
-    public WorkoutsAdapter(Context context, ArrayList<Workout> items, boolean clickable) {
+
+    public WorkoutsAdapter(Context context, ArrayList<Workout> items, boolean clickable, Class targetActivity) {
         this.context = context;
         this.items = items;
         inflater = LayoutInflater.from(context);
         this.clickable = clickable;
+        this.targetActivity = targetActivity;
 
     }
 
@@ -93,13 +99,28 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
         @Override
         public void onClick(View v) {
 
-            //launch EditWorkoutActivity , passing the selected workout through the intent
-            Intent intent = new Intent(context, EditWorkoutActivity.class);
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("workout", items.get(getAdapterPosition()));
-            intent.putExtras(bundle);
-            context.startActivity(intent);
+            if (targetActivity == WorkoutsActivity.class) {
+                //Launch the workouts activity
+                Intent intent = new Intent(context, WorkoutsActivity.class);
 
+                //and pass the ids of the workouts that are already already in this day
+                //so that they will be already checked
+                ArrayList<Integer> ids = new ArrayList<>();
+                for (Workout w : items) {
+                    ids.add(w.getId());
+                }
+                intent.putIntegerArrayListExtra("ids", ids);
+
+                ((EditRoutineActivity) context).startActivityForResult(intent, 100);
+            } else if (targetActivity == EditWorkoutActivity.class) {
+
+                //launch EditWorkoutActivity , passing the selected workout through the intent
+                Intent intent = new Intent(context, EditWorkoutActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("workout", items.get(getAdapterPosition()));
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+            }
 
         }
     }

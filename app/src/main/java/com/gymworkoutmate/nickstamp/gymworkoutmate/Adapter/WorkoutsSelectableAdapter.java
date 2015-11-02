@@ -73,6 +73,8 @@ public class WorkoutsSelectableAdapter extends RecyclerView.Adapter<WorkoutsSele
 
         holder.tvWorkoutName.setText(item.getTitle());
         holder.tvWorkoutSubtitle.setText(item.getType().toString() + " , " + item.getMuscle().toString());
+        holder.checkBox.setChecked(selected[position]);
+
 
         //for each exercise in the workout , create a text view and add it the layout of the item
         for (Exercise ex : item.getExercises()) {
