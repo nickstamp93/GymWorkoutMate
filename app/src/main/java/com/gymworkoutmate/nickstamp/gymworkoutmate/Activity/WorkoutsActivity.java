@@ -22,11 +22,14 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 import java.util.ArrayList;
 
-public class WorkoutsActivity extends AppCompatActivity implements FragmentWorkouts.OnWorkoutFragmentInteraction {
+public class WorkoutsActivity extends AppCompatActivity {
 
     private Database database;
     private RecyclerView.Adapter adapter;
 
+    private FloatingActionButton fab;
+
+    //The fragment with the list of workout included in this activity
     private FragmentWorkouts fragmentWorkouts;
     private FragmentTransaction transaction;
 
@@ -46,12 +49,17 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
         //if the calling activity is EditRoutine , then this is launched for picking workouts to add , so it is select mode
         isSelectMode = (getCallingActivity() != null && getCallingActivity().getClassName().equals(EditRoutineActivity.class.getName()));
 
+        //if it is select mode , the fab must not be visible
+        if (isSelectMode)
+            fab.hide();
+
         setUpWorkoutsFragment();
 
-
-        //TODO hide button on select mode
     }
 
+    /**
+     * Set up the fragment with the list of workouts
+     */
     private void setUpWorkoutsFragment() {
         transaction = getSupportFragmentManager().beginTransaction();
 
@@ -65,7 +73,7 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
     }
 
     private void setUpFab() {
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,11 +112,10 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
                 NavUtils.navigateUpFromSameTask(this);
         }
         if (id == R.id.action_done) {
-            //pass selected workout to the EditRoutineActivity
+            //pass selected workouts to the calling activity
             ArrayList<Workout> workouts = ((WorkoutsSelectableAdapter) fragmentWorkouts.getAdapter()).getSelectedWorkouts();
             Intent intent = new Intent();
             intent.putExtra("workouts", workouts);
-            intent.putExtra("day", getIntent().getIntExtra("day", 0));
             setResult(RESULT_OK, intent);
             finish();
         }
@@ -128,6 +135,9 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
     @Override
     protected void onResume() {
         super.onResume();
+        //The adapter is recreated every time the activity resumes
+        //thus , the first time and every time the user returns to this activity
+        //in order to always be updated according to the db
         if (isSelectMode) {
             adapter = new WorkoutsSelectableAdapter(this, database.getListWorkouts(), getIntent().getIntegerArrayListExtra("ids"));
         } else {
@@ -136,8 +146,4 @@ public class WorkoutsActivity extends AppCompatActivity implements FragmentWorko
         fragmentWorkouts.changeAdapter(adapter);
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
-    }
 }

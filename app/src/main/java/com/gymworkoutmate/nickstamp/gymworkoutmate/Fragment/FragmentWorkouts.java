@@ -17,14 +17,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link OnWorkoutFragmentInteraction} interface
- * to handle interaction events.
- * Use the {@link FragmentWorkouts#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class FragmentWorkouts extends Fragment {
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,8 +29,6 @@ public class FragmentWorkouts extends Fragment {
     private ArrayList<Workout> workouts;
     private boolean isSelectMode, clickableAdapter;
     private Class targetAcitivity;
-
-    private OnWorkoutFragmentInteraction mListener;
 
     //the View for the fragment
     private View fragmentView;
@@ -113,23 +104,6 @@ public class FragmentWorkouts extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        try {
-            mListener = (OnWorkoutFragmentInteraction) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnWorkoutFragmentInteraction");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
     public RecyclerView.Adapter getAdapter() {
         return adapter;
     }
@@ -139,19 +113,5 @@ public class FragmentWorkouts extends Fragment {
         recyclerView.setAdapter(adapter);
     }
 
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p/>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnWorkoutFragmentInteraction {
-        public void onFragmentInteraction(Uri uri);
-    }
 
 }

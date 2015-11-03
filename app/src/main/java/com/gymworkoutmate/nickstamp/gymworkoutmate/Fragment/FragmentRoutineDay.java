@@ -100,6 +100,11 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
         //if there are no workouts  , show the placeholder view (rest day view)
         if (workouts.size() == 0) {
             placeholder.setVisibility(View.VISIBLE);
+            if (fragmentWorkouts != null) {
+                transaction = getChildFragmentManager().beginTransaction();
+                transaction.remove(fragmentWorkouts);
+                transaction.commit();
+            }
         } else {
             //else there are some workouts so must add a workouts fragmentWorkouts
             placeholder.setVisibility(View.GONE);
@@ -160,6 +165,7 @@ public class FragmentRoutineDay extends Fragment implements View.OnClickListener
             }
         }
     }
+
 
     @Override
     public void onClick(View v) {

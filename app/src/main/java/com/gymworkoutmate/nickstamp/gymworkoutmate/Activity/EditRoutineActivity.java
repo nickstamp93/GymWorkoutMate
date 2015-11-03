@@ -1,8 +1,8 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -22,7 +22,6 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumWeekDays;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Fragment.FragmentRoutineDay;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Fragment.FragmentWorkouts;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
@@ -31,7 +30,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class EditRoutineActivity extends AppCompatActivity implements FragmentWorkouts.OnWorkoutFragmentInteraction {
+public class EditRoutineActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
 
@@ -73,7 +72,6 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
         }
 
         setupViewPager();
-
 
     }
 
@@ -123,6 +121,9 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+    /**
+     * Set upa the viewpager and the fragments inside each tab
+     */
     private void setupViewPager() {
         viewPager = (ViewPager) findViewById(R.id.routineViewPager);
 
@@ -147,11 +148,8 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         //just call super , so that the onActivityResult of the FragmentRoutineDay is called
-    }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-
+        adapter.fragmentList.get(tabLayout.getSelectedTabPosition()).onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
@@ -174,16 +172,17 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
             database.deleteRoutine(routine.getId());
             finish();
         } else if (id == R.id.action_save) {
+            //Create a hashmap with a list of workouts for each day of the week
             HashMap<Integer, ArrayList<Workout>> newHash = new HashMap<>();
             int days = 0;
             for (int i = 0; i < 7; i++) {
-                //TODO get workouts of each day
                 newHash.put(i, adapter.fragmentList.get(i).getWorkouts());
                 if (adapter.fragmentList.get(i).getWorkouts().size() > 0)
                     days++;
             }
+            //if there are no workouts selected , alert the user
             if (days == 0) {
-                Toast.makeText(EditRoutineActivity.this, "You should have at least one workout day!", Toast.LENGTH_SHORT).show();
+                Snackbar.make(etRoutineName, "You should have at least one workout day!", Snackbar.LENGTH_LONG).show();
                 return true;
             }
             routine.setWorkouts(newHash);
@@ -194,10 +193,10 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
 
             if (isCreation) {
                 database.insert(routine);
-                Toast.makeText(EditRoutineActivity.this, "Routine Created !", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditRoutineActivity.this, "Routine Created !", Toast.LENGTH_LONG).show();
             } else {
                 database.update(routine);
-                Toast.makeText(EditRoutineActivity.this, "Routine Updated !", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditRoutineActivity.this, "Routine Updated !", Toast.LENGTH_LONG).show();
             }
             finish();
         }
@@ -206,6 +205,9 @@ public class EditRoutineActivity extends AppCompatActivity implements FragmentWo
     }
 
 
+    /**
+     * The adapter used by the viewpager
+     */
     class ViewPagerAdapter extends FragmentPagerAdapter {
 
         private final List<FragmentRoutineDay> fragmentList = new ArrayList<>();

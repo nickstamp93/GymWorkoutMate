@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.ExerciseDetailsActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -64,8 +65,8 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
             Exercise item = items.get(position);
 
             holder.title.setText(item.getTitle());
-            holder.img1.setImageResource(item.getImg1());
-            holder.img2.setImageResource(item.getImg2());
+            Picasso.with(context).load(item.getImg1()).into(holder.img1);
+            Picasso.with(context).load(item.getImg2()).into(holder.img2);
         }
     }
 
