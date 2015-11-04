@@ -12,6 +12,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by nickstamp on 10/9/2015.
@@ -57,16 +58,58 @@ public class Database extends SQLiteOpenHelper {
 
     }
 
+    /**
+     * @return a list with all the routines
+     */
     public ArrayList<Routine> getListRoutines() {
-        Cursor c = getReadableDatabase().rawQuery(
+        //get all routines
+        Cursor cRoutines = getReadableDatabase().rawQuery(
                 "SELECT * FROM " + Contract.Routines.TABLE_NAME +
-                        " ORDER BY " + Contract.Routines.COLUMN_TITLE, null);
-        ArrayList<Routine> items = new ArrayList<>();
-        for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
-            items.add(new Routine(c));
+                        " ORDER BY " + Contract.Routines._ID, null);
+        ArrayList<Routine> routines = new ArrayList<>();
+        //for every routine
+        for (cRoutines.moveToFirst(); !cRoutines.isAfterLast(); cRoutines.moveToNext()) {
+
+            //find the workouts for this routine
+            int routineId = cRoutines.getInt(0);
+            HashMap<Integer, ArrayList<Workout>> workouts = getListWorkouts(routineId);
+
+            //and create the new routine and add it to the returned Arraylist
+            routines.add(new Routine(cRoutines, workouts));
         }
 
-        return items;
+        return routines;
+    }
+
+    /**
+     * @param routineId the id of the routine
+     * @return a list with all the workouts of the given routine
+     */
+    private HashMap<Integer, ArrayList<Workout>> getListWorkouts(int routineId) {
+
+        HashMap<Integer, ArrayList<Workout>> workouts = new HashMap<>();
+        for (int i = 0; i < 7; i++) {
+            workouts.put(i, new ArrayList<Workout>());
+        }
+
+        //get all the workouts of this routine from the workout-routine connection table
+        Cursor cWorkouts = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.WorkoutRoutineConnection.TABLE_NAME +
+                        " WHERE " + Contract.WorkoutRoutineConnection.COLUMN_ROUTINE + "='" + routineId + "'"
+                , null);
+
+        for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
+            int workoutId = cWorkouts.getInt(1);
+            int day = cWorkouts.getInt(3);
+
+            Workout workout = getWorkout(workoutId);
+            workout.setExercises(getListExercises(workoutId));
+
+            workouts.get(day).add(workout);
+
+        }
+
+        return workouts;
     }
 
     /**
@@ -81,22 +124,33 @@ public class Database extends SQLiteOpenHelper {
         //for every workout , find the exercises that it contains
         for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
             //construct an arraylist with the workout's exercises
-            ArrayList<Exercise> exercises = new ArrayList<>();
-            Cursor cExercises = getReadableDatabase().rawQuery(
-                    "SELECT * FROM " + Contract.ExerciseWorkoutConnection.TABLE_NAME +
-                            " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + "='" + cWorkouts.getInt(0) + "'"
-                    , null);
-            for (cExercises.moveToFirst(); !cExercises.isAfterLast(); cExercises.moveToNext()) {
-                Exercise e = getExercise(cExercises.getInt(1), cWorkouts.getInt(0));
-                if (e != null)
-                    exercises.add(e);
-            }
+
+            int workoutId = cWorkouts.getInt(0);
+
             //create the new workout with the exercise list and add it to the workouts list to be returned
-            items.add(new Workout(cWorkouts, exercises));
+            items.add(new Workout(cWorkouts, getListExercises(workoutId)));
         }
 
 
         return items;
+    }
+
+    /**
+     * @param workoutId the id of the workout
+     * @return a list with all the exercises of the given workout
+     */
+    private ArrayList<Exercise> getListExercises(int workoutId) {
+        ArrayList<Exercise> exercises = new ArrayList<>();
+        Cursor cExercises = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.ExerciseWorkoutConnection.TABLE_NAME +
+                        " WHERE " + Contract.ExerciseWorkoutConnection.COLUMN_WORKOUT + "='" + workoutId + "'"
+                , null);
+        for (cExercises.moveToFirst(); !cExercises.isAfterLast(); cExercises.moveToNext()) {
+            Exercise e = getExercise(cExercises.getInt(1), workoutId);
+            if (e != null)
+                exercises.add(e);
+        }
+        return exercises;
     }
 
     /**
@@ -115,13 +169,19 @@ public class Database extends SQLiteOpenHelper {
         return items;
     }
 
-    public long insert(Routine item) {
+    public void insert(Routine item) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(Contract.Routines.COLUMN_TITLE, item.getTitle());
         contentValues.put(Contract.Routines.COLUMN_DAYS, item.getDays());
         contentValues.put(Contract.Routines.COLUMN_TYPE, item.getType().getValue());
 
-        return getWritableDatabase().insert(Contract.Routines.TABLE_NAME, "null", contentValues);
+        long routineId = getWritableDatabase().insert(Contract.Routines.TABLE_NAME, "null", contentValues);
+
+        for (int i = 0; i < 7; i++) {
+            for (Workout workout : item.getWorkouts().get(i)) {
+                insertWorkoutToRoutine(workout.getId(), (int) routineId, i);
+            }
+        }
     }
 
 
@@ -174,6 +234,16 @@ public class Database extends SQLiteOpenHelper {
         getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
     }
 
+    private void insertWorkoutToRoutine(int workoutId, int routineId, int day) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Contract.WorkoutRoutineConnection.COLUMN_WORKOUT, workoutId);
+        contentValues.put(Contract.WorkoutRoutineConnection.COLUMN_ROUTINE, routineId);
+        contentValues.put(Contract.WorkoutRoutineConnection.COLUMN_DAY, day);
+
+        //insert the workout-routine connection
+        getWritableDatabase().insert(Contract.WorkoutRoutineConnection.TABLE_NAME, "null", contentValues);
+    }
+
     /**
      * Update an exercise that is included in a workout
      *
@@ -203,14 +273,78 @@ public class Database extends SQLiteOpenHelper {
                 args);
     }
 
-    public void update(Routine item) {
+    public void update(Routine routine) {
 
         ContentValues values = new ContentValues();
-        values.put(Contract.Routines.COLUMN_TITLE, item.getTitle());
-        values.put(Contract.Routines.COLUMN_DAYS, item.getDays());
-        values.put(Contract.Routines.COLUMN_TYPE, item.getType().getValue());
+        values.put(Contract.Routines.COLUMN_TITLE, routine.getTitle());
+        values.put(Contract.Routines.COLUMN_DAYS, routine.getDays());
+        values.put(Contract.Routines.COLUMN_TYPE, routine.getType().getValue());
 
-        getReadableDatabase().update(Contract.Routines.TABLE_NAME, values, Contract.Routines._ID + " = " + item.getId(), null);
+        getReadableDatabase().update(Contract.Routines.TABLE_NAME, values, Contract.Routines._ID + " = " + routine.getId(), null);
+
+        //TODO update the routine-workout table accroding to the new routine item
+        //that means delete the connections that are no longer valid and add the new ones
+
+
+        //and the workout-exercise connection table
+
+        //get the workouts of the routine to be updated (from the db)
+        //and create hashmap with their ids per day
+        HashMap<Integer, ArrayList<Integer>> workoutIds = new HashMap<>();
+        for (int day = 0; day < 7; day++) {
+            workoutIds.put(day, new ArrayList<Integer>());
+        }
+        Cursor cWorkouts = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.WorkoutRoutineConnection.TABLE_NAME +
+                        " WHERE " + Contract.WorkoutRoutineConnection.COLUMN_ROUTINE + "='" + routine.getId() + "'"
+                , null);
+        for (cWorkouts.moveToFirst(); !cWorkouts.isAfterLast(); cWorkouts.moveToNext()) {
+            //add the id of the workout in the correct day
+            workoutIds.get(cWorkouts.getInt(3)).add(cWorkouts.getInt(1));
+        }
+
+        //First , must delete workouts that were present in a day in the store routine and now are not
+        boolean found;
+        //for every day
+        for (int day = 0; day < 7; day++) {
+            //for every workout stored already in the given day
+            //search it in the new routine
+            for (int id : workoutIds.get(day)) {
+                found = false;
+                for (Workout w : routine.getWorkouts().get(day)) {
+                    if (w.getId() == id)
+                        found = true;
+                }
+                if (!found) {
+                    deleteWorkoutFromRoutine(id, routine.getId(), day);
+                }
+            }
+        }
+
+
+        //now for the updates/insertions
+        for (int day = 0; day < 7; day++) {
+
+            for (Workout workout : routine.getWorkouts().get(day)) {
+
+                //for every workout in the updated routine, if it was in the db , update it
+                if (!workoutIds.get(day).contains(workout.getId())) {
+                    insertWorkoutToRoutine(workout.getId(), routine.getId(), day);
+                }
+            }
+        }
+
+
+    }
+
+    private void deleteWorkoutFromRoutine(int workoutId, int routineId, int day) {
+        String selection = Contract.WorkoutRoutineConnection.COLUMN_WORKOUT + " = ? AND "
+                + Contract.WorkoutRoutineConnection.COLUMN_ROUTINE + " = ? AND " +
+                Contract.WorkoutRoutineConnection.COLUMN_DAY + " = ?";
+
+        String[] selectionArgs = {String.valueOf(workoutId), String.valueOf(routineId), String.valueOf(day)};
+
+        getWritableDatabase().delete(Contract.WorkoutRoutineConnection.TABLE_NAME, selection, selectionArgs);
     }
 
     /**
@@ -307,13 +441,17 @@ public class Database extends SQLiteOpenHelper {
      *
      * @param id the id of the workout to be deleted
      */
-    public void deleteWorkouts(int id) {
+    public void deleteWorkout(int id) {
 
         String selection = Contract.Workouts._ID + " = ?";
 
         String[] selectionArgs = {String.valueOf(id)};
 
         getWritableDatabase().delete(Contract.Workouts.TABLE_NAME, selection, selectionArgs);
+
+        selection = Contract.WorkoutRoutineConnection.COLUMN_WORKOUT + " = ?";
+
+        getWritableDatabase().delete(Contract.WorkoutRoutineConnection.TABLE_NAME, selection, selectionArgs);
     }
 
     /**
@@ -340,6 +478,18 @@ public class Database extends SQLiteOpenHelper {
 
         if (c.moveToFirst()) {
             return new Exercise(c, stringSets);
+        } else
+            return null;
+    }
+
+    public Workout getWorkout(int workoutId) {
+        //find the exercise
+        Cursor c = getReadableDatabase().rawQuery(
+                "SELECT * FROM " + Contract.Workouts.TABLE_NAME +
+                        " WHERE " + Contract.Workouts._ID + "='" + workoutId + "'", null);
+
+        if (c.moveToFirst()) {
+            return new Workout(c);
         } else
             return null;
     }

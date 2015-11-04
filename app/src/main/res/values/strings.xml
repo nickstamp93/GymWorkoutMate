@@ -24,5 +24,9 @@
                                     \n\n 5.Repeat this motion for the prescribed amount of repetitions.</string>
     <string name="title_activity_edit_workout">EditWorkoutActivity</string>
     <string name="title_activity_sets">SetsAct</string>
+    <string name="title_activity_edit_routine">EditRoutineActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

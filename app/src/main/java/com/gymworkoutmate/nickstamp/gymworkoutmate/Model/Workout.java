@@ -33,11 +33,22 @@ public class Workout implements Serializable {
      * @param exercises the list of exercises
      */
     public Workout(Cursor cursor, ArrayList<Exercise> exercises) {
+        this(cursor);
+        this.exercises = exercises;
+    }
+
+    /**
+     * Constructor for workout from cursor
+     *
+     * @param cursor the cursor from the db
+     */
+    public Workout(Cursor cursor) {
         this.id = cursor.getInt(0);
         this.title = cursor.getString(1);
         this.muscle = EnumMuscleGroups.valueOf(cursor.getInt(2));
         this.type = EnumExerciseTypes.valueOf(cursor.getInt(3));
-        this.exercises = exercises;
+
+        this.exercises = new ArrayList<>();
     }
 
     public int getId() {

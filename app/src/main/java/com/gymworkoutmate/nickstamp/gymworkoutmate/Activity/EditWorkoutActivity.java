@@ -3,6 +3,7 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -65,7 +66,6 @@ public class EditWorkoutActivity extends AppCompatActivity {
             fillUIFromWorkout();
             isCreation = false;
         }
-
     }
 
     /**
@@ -223,9 +223,9 @@ public class EditWorkoutActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         //if is edit mode , delete option should be present in the menu
         if (isCreation)
-            getMenuInflater().inflate(R.menu.activity_add_workout, menu);
+            getMenuInflater().inflate(R.menu.activity_add_item, menu);
         else
-            getMenuInflater().inflate(R.menu.activity_edit_workout, menu);
+            getMenuInflater().inflate(R.menu.activity_edit_item, menu);
         return true;
     }
 
@@ -235,21 +235,21 @@ public class EditWorkoutActivity extends AppCompatActivity {
 
         if (id == android.R.id.home) {
             NavUtils.navigateUpFromSameTask(this);
-        } else if (id == R.id.action_workout_delete) {
+        } else if (id == R.id.action_delete) {
             //delete workout and exit
-            database.deleteWorkouts(workout.getId());
+            database.deleteWorkout(workout.getId());
             Toast.makeText(EditWorkoutActivity.this, workout.getTitle() + " deleted!", Toast.LENGTH_SHORT).show();
             finish();
-        } else if (id == R.id.action_workout_save) {
+        } else if (id == R.id.action_save) {
 
             //if there are no exercises selected , alert
             if (workout.getExercises().size() == 0) {
-                Toast.makeText(EditWorkoutActivity.this, "Your workout should have at least one exercise!", Toast.LENGTH_SHORT).show();
+                Snackbar.make(etWorkoutName, "You should have at least one exercise in the workout!", Snackbar.LENGTH_LONG).show();
                 return true;
             }
             //if name has not been set , alert
             if (etWorkoutName.getText().toString().trim().equals("")) {
-                Toast.makeText(EditWorkoutActivity.this, "Enter a valid name for your Workout!", Toast.LENGTH_SHORT).show();
+                Snackbar.make(etWorkoutName, "You should enter a valid name for the workout!", Snackbar.LENGTH_LONG).show();
                 return true;
             }
 
@@ -262,16 +262,15 @@ public class EditWorkoutActivity extends AppCompatActivity {
             if (isCreation) {
 
                 database.insert(workout);
-                Toast.makeText(EditWorkoutActivity.this, "Workout Created Successfully!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditWorkoutActivity.this, "Workout Created !", Toast.LENGTH_LONG).show();
 
                 //else it's update mode , so update the workout
             } else {
                 database.update(workout);
-                Toast.makeText(EditWorkoutActivity.this, "Workout Updated Successfully!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditWorkoutActivity.this, "Workout Updated !", Toast.LENGTH_LONG).show();
             }
 
             finish();
-
         }
 
         return true;

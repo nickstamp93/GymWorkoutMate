@@ -96,7 +96,7 @@ public class ExerciseListActivity extends AppCompatActivity {
         // If calling activity is not null , this activity was started from startActivityForResult()
         //so it was called from EditWorkoutActivity , should display "Done" button
         if (isSelectMode) {
-            getMenuInflater().inflate(R.menu.exercise_list_selectable, menu);
+            getMenuInflater().inflate(R.menu.menu_list_selectable, menu);
         }
         return true;
     }
@@ -114,7 +114,7 @@ public class ExerciseListActivity extends AppCompatActivity {
             else
                 NavUtils.navigateUpFromSameTask(this);
         }
-        if (id == R.id.action_exercises_done) {
+        if (id == R.id.action_done) {
             //pass selected exercises to the EditWorkoutActivity
             ArrayList<Exercise> exercises = ((ExerciseSelectableAdapter) adapter).getSelectedExercises();
             Intent intent = new Intent();

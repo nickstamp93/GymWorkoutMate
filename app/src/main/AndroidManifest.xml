@@ -70,6 +70,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity" />
         </activity>
+        <activity
+            android:name=".Activity.EditRoutineActivity"
+            android:label="@string/title_activity_edit_routine"
+            android:parentActivityName=".Activity.RoutinesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.RoutinesActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -4,19 +4,29 @@ import android.database.Cursor;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumWeekDays;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by nickstamp on 10/9/2015.
  */
-public class Routine {
+public class Routine implements Serializable {
 
     private String title;
     private int id, days;
     private EnumExerciseTypes type;
     private EnumMuscleGroups muscle;
+    private HashMap<Integer, ArrayList<Workout>> workouts;
 
     public Routine() {
-
+        //create an empty hashmap in order to be populated
+        workouts = new HashMap<>();
+        for (int i = 0; i < EnumWeekDays.values().length; i++) {
+            workouts.put(i, new ArrayList<Workout>());
+        }
     }
 
     public Routine(String title, EnumExerciseTypes type, int days) {
@@ -25,11 +35,13 @@ public class Routine {
         this.days = days;
     }
 
-    public Routine(Cursor c) {
+    public Routine(Cursor c, HashMap<Integer, ArrayList<Workout>> workouts) {
         id = c.getInt(0);
         title = c.getString(1);
         days = c.getInt(2);
         type = EnumExerciseTypes.valueOf(c.getInt(3));
+
+        this.workouts = workouts;
 
     }
 
@@ -71,5 +83,13 @@ public class Routine {
 
     public void setMuscle(EnumMuscleGroups muscle) {
         this.muscle = muscle;
+    }
+
+    public HashMap<Integer, ArrayList<Workout>> getWorkouts() {
+        return workouts;
+    }
+
+    public void setWorkouts(HashMap<Integer, ArrayList<Workout>> workouts) {
+        this.workouts = workouts;
     }
 }

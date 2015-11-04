@@ -1,20 +1,17 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditRoutineActivity;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.WorkoutsActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Workout;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
@@ -22,25 +19,44 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 import java.util.ArrayList;
 
 /**
- * Created by nickstamp on 10/12/2015.
+ * Created by nickstamp on 10/30/2015.
  */
-public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.WorkoutsHolder> {
+public class WorkoutsSelectableAdapter extends RecyclerView.Adapter<WorkoutsSelectableAdapter.WorkoutsHolder> {
 
     private ArrayList<Workout> items;
     private Context context;
+    private boolean[] selected;
     private LayoutInflater inflater;
-    private final int resId = R.layout.list_item_workout;
-    private boolean clickable;
-    private Class targetActivity;
+    private final int resId = R.layout.list_item_workout_selectable;
 
-
-    public WorkoutsAdapter(Context context, ArrayList<Workout> items, boolean clickable, Class targetActivity) {
+    public WorkoutsSelectableAdapter(Context context, ArrayList<Workout> items, ArrayList<Integer> ids) {
         this.context = context;
         this.items = items;
         inflater = LayoutInflater.from(context);
-        this.clickable = clickable;
-        this.targetActivity = targetActivity;
 
+        selected = new boolean[items.size()];
+        for (int i = 0; i < items.size(); i++) {
+            if (ids.size() > 0 && items.get(i) != null)
+                if (ids.contains(items.get(i).getId()))
+                    selected[i] = true;
+                else
+                    selected[i] = false;
+        }
+    }
+
+    /**
+     * Get the selected exercises
+     *
+     * @return the arraylist with the exercises that are checked
+     */
+    public ArrayList<Workout> getSelectedWorkouts() {
+        ArrayList<Workout> workouts = new ArrayList<>();
+        for (int i = 0; i < selected.length; i++) {
+            if (selected[i]) {
+                workouts.add(items.get(i));
+            }
+        }
+        return workouts;
     }
 
     @Override
@@ -57,6 +73,8 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
 
         holder.tvWorkoutName.setText(item.getTitle());
         holder.tvWorkoutSubtitle.setText(item.getType().toString() + " , " + item.getMuscle().toString());
+        holder.checkBox.setChecked(selected[position]);
+
 
         //for each exercise in the workout , create a text view and add it the layout of the item
         for (Exercise ex : item.getExercises()) {
@@ -79,49 +97,37 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
         return items.size();
     }
 
-    class WorkoutsHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class WorkoutsHolder extends RecyclerView.ViewHolder implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
         TextView tvWorkoutName, tvWorkoutSubtitle;
         LinearLayout llWorkoutExercises;
+        RelativeLayout root;
+        CheckBox checkBox;
 
         public WorkoutsHolder(View itemView) {
             super(itemView);
 
+            root = (RelativeLayout) itemView.findViewById(R.id.workout_item_root);
             tvWorkoutName = (TextView) itemView.findViewById(R.id.tvWorkoutName);
             tvWorkoutSubtitle = (TextView) itemView.findViewById(R.id.tvWorkoutSubtitle);
             llWorkoutExercises = (LinearLayout) itemView.findViewById(R.id.llWorkoutExercises);
 
-            if (clickable)
-                itemView.setOnClickListener(this);
+            checkBox = (CheckBox) itemView.findViewById(R.id.checkbox);
+
+            checkBox.setOnCheckedChangeListener(this);
+            root.setOnClickListener(this);
 
         }
 
         @Override
         public void onClick(View v) {
+            selected[getAdapterPosition()] = !selected[getAdapterPosition()];
+            checkBox.setChecked(selected[getAdapterPosition()]);
+        }
 
-            if (targetActivity == WorkoutsActivity.class) {
-                //Launch the workouts activity
-                Intent intent = new Intent(context, WorkoutsActivity.class);
-
-                //and pass the ids of the workouts that are already already in this day
-                //so that they will be already checked
-                ArrayList<Integer> ids = new ArrayList<>();
-                for (Workout w : items) {
-                    ids.add(w.getId());
-                }
-                intent.putIntegerArrayListExtra("ids", ids);
-
-                ((EditRoutineActivity) context).startActivityForResult(intent, 100);
-            } else if (targetActivity == EditWorkoutActivity.class) {
-
-                //launch EditWorkoutActivity , passing the selected workout through the intent
-                Intent intent = new Intent(context, EditWorkoutActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("workout", items.get(getAdapterPosition()));
-                intent.putExtras(bundle);
-                context.startActivity(intent);
-            }
-
+        @Override
+        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            selected[getAdapterPosition()] = isChecked;
         }
     }
 }

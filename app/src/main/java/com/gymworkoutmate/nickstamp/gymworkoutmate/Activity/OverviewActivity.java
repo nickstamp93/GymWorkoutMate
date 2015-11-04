@@ -15,6 +15,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Data.Database;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 public class OverviewActivity extends AppCompatActivity
@@ -29,11 +32,8 @@ public class OverviewActivity extends AppCompatActivity
 
         setUpToolbar();
 
-        setUpFab();
-
         setUpDrawer();
 
-//        startActivity(new Intent(this, WorkoutsActivity.class));
     }
 
     private void setUpDrawer() {
@@ -51,17 +51,6 @@ public class OverviewActivity extends AppCompatActivity
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-    }
-
-    private void setUpFab() {
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
@@ -108,7 +97,7 @@ public class OverviewActivity extends AppCompatActivity
         } else if (id == R.id.nav_exercises) {
             startActivity(new Intent(OverviewActivity.this, ExerciseListActivity.class));
         } else if (id == R.id.nav_settings) {
-            Toast.makeText(OverviewActivity.this, "Under Construction", Toast.LENGTH_SHORT).show();
+            Snackbar.make(toolbar, "You should enter a valid name for the workout!", Snackbar.LENGTH_LONG).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
