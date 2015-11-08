@@ -78,6 +78,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.RoutinesActivity" />
         </activity>
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName=".Activity.OverviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.RoutinesActivity" />
+        </activity>
     </application>
 
 </manifest>

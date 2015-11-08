@@ -1,8 +1,9 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
+import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
@@ -10,20 +11,32 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.TextView;
 
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Data.Database;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.User;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.View.CircularImageView;
 
 public class OverviewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private static final String PREF_KEY_NAME = "pref_username";
+    private static final String PREF_KEY_AGE = "pref_age";
+    private static final String PREF_KEY_HEIGHT = "pref_height";
+    private static final String PREF_KEY_WEIGHT = "pref_weight";
+    private static final String PREF_KEY_BMI = "pref_bmi";
+    private static final String PREF_KEY_FAT = "pref_fat";
+    private static final String PREF_KEY_SEX = "pref_sex";
+
     private Toolbar toolbar;
+
+    private SharedPreferences prefs;
+
+    private User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +45,26 @@ public class OverviewActivity extends AppCompatActivity
 
         setUpToolbar();
 
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+        createUser();
+
+        createUser();
+
         setUpDrawer();
 
+
+    }
+
+    private void createUser() {
+        String name = prefs.getString(PREF_KEY_NAME, "John Who");
+        int age = prefs.getInt(PREF_KEY_AGE, 20);
+        int height = prefs.getInt(PREF_KEY_HEIGHT, 180);
+        double weight = prefs.getFloat(PREF_KEY_WEIGHT, (float) 80);
+        double bmi = prefs.getFloat(PREF_KEY_BMI, (float) 23.5);
+        double fat = prefs.getFloat(PREF_KEY_FAT, (float) 20);
+        boolean male = prefs.getBoolean(PREF_KEY_SEX, true);
+        currentUser = new User(name, age, height, weight, bmi, fat, male);
     }
 
     private void setUpDrawer() {
@@ -45,6 +76,21 @@ public class OverviewActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        View nav_header = LayoutInflater.from(this).inflate(R.layout.nav_header_overview, null);
+        CircularImageView profile = (CircularImageView) nav_header.findViewById(R.id.profile_photo);
+        profile.setImageResource(R.drawable.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OverviewActivity.this, EditProfileActivity.class));
+            }
+        });
+        ((TextView) nav_header.findViewById(R.id.tvUsername)).setText(currentUser.getName());
+        ((TextView) nav_header.findViewById(R.id.tvUserSecondaryText))
+                .setText(currentUser.getHeight() + " cm , " + currentUser.getWeight() + " Kg");
+        navigationView.addHeaderView(nav_header);
+
     }
 
     private void setUpToolbar() {
