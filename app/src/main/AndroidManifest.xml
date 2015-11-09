@@ -84,7 +84,7 @@
             android:parentActivityName=".Activity.OverviewActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.RoutinesActivity" />
+                android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.OverviewActivity" />
         </activity>
     </application>
 
