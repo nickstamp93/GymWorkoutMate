@@ -17,26 +17,28 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.User;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.View.CircularImageView;
 
 public class OverviewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private static final String PREF_KEY_NAME = "pref_username";
-    private static final String PREF_KEY_AGE = "pref_age";
-    private static final String PREF_KEY_HEIGHT = "pref_height";
-    private static final String PREF_KEY_WEIGHT = "pref_weight";
-    private static final String PREF_KEY_BMI = "pref_bmi";
-    private static final String PREF_KEY_FAT = "pref_fat";
-    private static final String PREF_KEY_SEX = "pref_sex";
+
+    public final static String TAG_ISMALE = "sex";
+    public final static String TAG_NAME = "name";
+    public final static String TAG_BIRTHDATE = "birth";
+    public final static String TAG_WEIGHT = "weight";
+    public final static String TAG_HEIGHT = "height";
+    public final static String TAG_BMI = "bmi";
+    public final static String TAG_FAT = "fat";
+
+
+    private TextView tvUsername, tvSubtitle;
 
     private Toolbar toolbar;
 
     private SharedPreferences prefs;
 
-    private User currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,24 +49,16 @@ public class OverviewActivity extends AppCompatActivity
 
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
-        createUser();
-
-        createUser();
-
         setUpDrawer();
-
 
     }
 
-    private void createUser() {
-        String name = prefs.getString(PREF_KEY_NAME, "John Who");
-        int age = prefs.getInt(PREF_KEY_AGE, 20);
-        int height = prefs.getInt(PREF_KEY_HEIGHT, 180);
-        double weight = prefs.getFloat(PREF_KEY_WEIGHT, (float) 80);
-        double bmi = prefs.getFloat(PREF_KEY_BMI, (float) 23.5);
-        double fat = prefs.getFloat(PREF_KEY_FAT, (float) 20);
-        boolean male = prefs.getBoolean(PREF_KEY_SEX, true);
-        currentUser = new User(name, age, height, weight, bmi, fat, male);
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        tvUsername.setText(prefs.getString(TAG_NAME, "John Smith"));
+        tvSubtitle.setText(prefs.getInt(TAG_HEIGHT, 180) + " cm , " + prefs.getFloat(TAG_WEIGHT, 80) + " Kg");
     }
 
     private void setUpDrawer() {
@@ -86,9 +80,8 @@ public class OverviewActivity extends AppCompatActivity
                 startActivity(new Intent(OverviewActivity.this, EditProfileActivity.class));
             }
         });
-        ((TextView) nav_header.findViewById(R.id.tvUsername)).setText(currentUser.getName());
-        ((TextView) nav_header.findViewById(R.id.tvUserSecondaryText))
-                .setText(currentUser.getHeight() + " cm , " + currentUser.getWeight() + " Kg");
+        tvUsername = ((TextView) nav_header.findViewById(R.id.tvUsername));
+        tvSubtitle = ((TextView) nav_header.findViewById(R.id.tvUserSecondaryText));
         navigationView.addHeaderView(nav_header);
 
     }
