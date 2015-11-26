@@ -1,10 +1,13 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
@@ -12,9 +15,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.ImageUtils;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
 import java.text.SimpleDateFormat;
@@ -23,11 +28,15 @@ import java.util.Date;
 
 public class EditProfileActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, CompoundButton.OnCheckedChangeListener, View.OnClickListener {
 
+    private final int REQUEST_CODE_IMAGE = 1;
+
     private SwitchCompat switchSex;
     private EditText etName, etWeight, etHeight, etBmi, etFat, etBirthDate, etSex;
     private boolean isMale;
+    private String photoPath;
     private Date birthDate;
     private Button addHeight, subHeight, addWeight, subWeight, calcBMI, addFat, subFat;
+    private ImageView profilePhoto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +52,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     }
 
     private void setUpViews() {
+        profilePhoto = ((ImageView) findViewById(R.id.profile_photo));
+        profilePhoto.setOnClickListener(this);
+
         switchSex = (SwitchCompat) findViewById(R.id.switch_sex);
 
         etSex = (EditText) findViewById(R.id.input_sex);
@@ -54,6 +66,9 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         etFat = (EditText) findViewById(R.id.input_fat);
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+        Uri imageUri = Uri.parse(prefs.getString(OverviewActivity.TAG_PHOTO_PATH, ""));
+        ImageUtils.loadProfileImage(EditProfileActivity.this, imageUri, profilePhoto);
 
         isMale = prefs.getBoolean(OverviewActivity.TAG_ISMALE, true);
         switchSex.setChecked(isMale);
@@ -100,6 +115,24 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
     }
 
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) {
+        super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
+
+
+        switch (requestCode) {
+            case REQUEST_CODE_IMAGE:
+                if (resultCode == RESULT_OK) {
+
+                    Uri imageUri = imageReturnedIntent.getData();
+                    photoPath = imageUri.toString();
+                    ImageUtils.loadProfileImage(EditProfileActivity.this, imageUri, profilePhoto);
+                }
+        }
+    }
+
+
     public void showDatePickerDialog(View v) {
         Calendar date = Calendar.getInstance();
         date.set(Calendar.YEAR, 1985);
@@ -128,7 +161,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
             public void onClick(View view) {
                 saveData();
                 Toast.makeText(EditProfileActivity.this, "Changes Saved", Toast.LENGTH_LONG).show();
-                finish();
+                NavUtils.navigateUpFromSameTask(EditProfileActivity.this);
             }
         });
     }
@@ -142,6 +175,7 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
         editor.putInt(OverviewActivity.TAG_HEIGHT, Integer.valueOf(etHeight.getText().toString()));
         editor.putFloat(OverviewActivity.TAG_BMI, Float.valueOf(etBmi.getText().toString()));
         editor.putFloat(OverviewActivity.TAG_FAT, Float.valueOf(etFat.getText().toString()));
+        editor.putString(OverviewActivity.TAG_PHOTO_PATH, photoPath);
 
         editor.commit();
     }
@@ -184,6 +218,12 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
     public void onClick(View v) {
         double current;
         switch (v.getId()) {
+            case R.id.profile_photo:
+                Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
+                photoPickerIntent.setType("image/*");
+                startActivityForResult(photoPickerIntent, REQUEST_CODE_IMAGE);
+
+                break;
             case R.id.bAddWeight:
                 current = Double.valueOf(etWeight.getText().toString());
                 current += 1;

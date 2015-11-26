@@ -2,6 +2,7 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
@@ -15,16 +16,18 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.ImageUtils;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.View.CircularImageView;
 
 public class OverviewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
     public final static String TAG_ISMALE = "sex";
+    public final static String TAG_PHOTO_PATH = "photoPath";
     public final static String TAG_NAME = "name";
     public final static String TAG_BIRTHDATE = "birth";
     public final static String TAG_WEIGHT = "weight";
@@ -72,8 +75,10 @@ public class OverviewActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         View nav_header = LayoutInflater.from(this).inflate(R.layout.nav_header_overview, null);
-        CircularImageView profile = (CircularImageView) nav_header.findViewById(R.id.profile_photo);
-        profile.setImageResource(R.drawable.profile);
+        ImageView profile = (ImageView) nav_header.findViewById(R.id.profile_photo);
+
+        Uri imageUri = Uri.parse(prefs.getString(OverviewActivity.TAG_PHOTO_PATH, ""));
+        ImageUtils.loadProfileImage(this, imageUri, profile);
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     android:background="@drawable/header_back"
@@ -12,19 +11,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <com.gymworkoutmate.nickstamp.gymworkoutmate.View.CircularImageView
+    <ImageView
         android:id="@+id/profile_photo"
         android:layout_width="68dp"
         android:layout_height="68dp"
         android:clickable="true"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:border="true"
-        app:border_color="@color/secondary_text"
-        app:border_width="1dp"
-        app:selector="true"
-        app:selector_color="@android:color/transparent"
-        app:selector_stroke_color="@color/primary_dark"
-        app:selector_stroke_width="1dp" />
+        android:background="?android:selectableItemBackground"
+        android:layout_marginTop="@dimen/nav_header_vertical_spacing" />
 
     <TextView
         android:id="@+id/tvUsername"
