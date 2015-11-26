@@ -2,6 +2,7 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -19,21 +20,15 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.Constants;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.ImageUtils;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class OverviewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-
-    public final static String TAG_ISMALE = "sex";
-    public final static String TAG_PHOTO_PATH = "photoPath";
-    public final static String TAG_NAME = "name";
-    public final static String TAG_BIRTHDATE = "birth";
-    public final static String TAG_WEIGHT = "weight";
-    public final static String TAG_HEIGHT = "height";
-    public final static String TAG_BMI = "bmi";
-    public final static String TAG_FAT = "fat";
 
 
     private TextView tvUsername, tvSubtitle;
@@ -60,8 +55,8 @@ public class OverviewActivity extends AppCompatActivity
     protected void onResume() {
         super.onResume();
 
-        tvUsername.setText(prefs.getString(TAG_NAME, "John Smith"));
-        tvSubtitle.setText(prefs.getInt(TAG_HEIGHT, 180) + " cm , " + prefs.getFloat(TAG_WEIGHT, 80) + " Kg");
+        tvUsername.setText(prefs.getString(Constants.TAG_NAME, "John Smith"));
+        tvSubtitle.setText(prefs.getInt(Constants.TAG_HEIGHT, 180) + " cm , " + prefs.getFloat(Constants.TAG_WEIGHT, 80) + " Kg");
     }
 
     private void setUpDrawer() {
@@ -77,8 +72,10 @@ public class OverviewActivity extends AppCompatActivity
         View nav_header = LayoutInflater.from(this).inflate(R.layout.nav_header_overview, null);
         ImageView profile = (ImageView) nav_header.findViewById(R.id.profile_photo);
 
-        Uri imageUri = Uri.parse(prefs.getString(OverviewActivity.TAG_PHOTO_PATH, ""));
+        //get the uri of the preferred profile image
+        Uri imageUri = Uri.parse(prefs.getString(Constants.TAG_PHOTO_PATH, ""));
         ImageUtils.loadProfileImage(this, imageUri, profile);
+
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

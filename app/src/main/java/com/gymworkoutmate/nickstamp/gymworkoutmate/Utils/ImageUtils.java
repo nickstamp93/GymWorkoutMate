@@ -20,24 +20,31 @@ import com.squareup.picasso.Picasso;
  */
 public class ImageUtils {
 
+    /**
+     * Load the profile image , transform it to circle shape before loading it
+     * @param context the context
+     * @param uri the uri of the image file to be loaded
+     * @param imageView the Image view
+     */
     public static void loadProfileImage(Context context, Uri uri, ImageView imageView) {
-        Resources r = context.getResources();
-        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 120, r.getDisplayMetrics());
+
         Picasso.with(context).load(uri)
                 .placeholder(R.drawable.ic_profile_placeholder)
                 .error(R.drawable.ic_profile_placeholder)
-                .resize((int) px, (int) px)
-                .transform(new RoundedTransformation(120, 0))
+                .transform(new RoundedTransformation(R.dimen.profile_image_size, 0))
+                .resizeDimen(R.dimen.profile_image_size, R.dimen.profile_image_size)
                 .centerCrop()
                 .into(imageView);
     }
 
+    /**
+     * Class representing a circular trasnformation of a View . Used for the profile image
+     * to be shown as a circular image .
+     */
     static class RoundedTransformation implements com.squareup.picasso.Transformation {
         private final int radius;
         private final int margin;  // dp
 
-        // radius is corner radii in dp
-        // margin is the board in dp
         public RoundedTransformation(final int radius, final int margin) {
             this.radius = radius;
             this.margin = margin;

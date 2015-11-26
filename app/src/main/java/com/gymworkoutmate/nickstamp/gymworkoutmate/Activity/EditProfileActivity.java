@@ -1,5 +1,6 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -8,9 +9,11 @@ import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -19,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.Constants;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.ImageUtils;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
@@ -67,20 +71,22 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
-        Uri imageUri = Uri.parse(prefs.getString(OverviewActivity.TAG_PHOTO_PATH, ""));
+        //load the saved image in the view
+        Uri imageUri = Uri.parse(prefs.getString(Constants.TAG_PHOTO_PATH, ""));
+        photoPath = imageUri.toString();
         ImageUtils.loadProfileImage(EditProfileActivity.this, imageUri, profilePhoto);
 
-        isMale = prefs.getBoolean(OverviewActivity.TAG_ISMALE, true);
+        isMale = prefs.getBoolean(Constants.TAG_ISMALE, true);
         switchSex.setChecked(isMale);
         switchSex.setOnCheckedChangeListener(this);
         onCheckedChanged(switchSex, isMale);
 
-        etName.setText(prefs.getString(OverviewActivity.TAG_NAME, "John Who"));
-        etBirthDate.setText(prefs.getString(OverviewActivity.TAG_BIRTHDATE, "1 Jan 1985"));
-        etWeight.setText(prefs.getFloat(OverviewActivity.TAG_WEIGHT, 80) + "");
-        etHeight.setText(prefs.getInt(OverviewActivity.TAG_HEIGHT, 180) + "");
-        etBmi.setText(prefs.getFloat(OverviewActivity.TAG_BMI, 25) + "");
-        etFat.setText(prefs.getFloat(OverviewActivity.TAG_FAT, 20) + "");
+        etName.setText(prefs.getString(Constants.TAG_NAME, "John Who"));
+        etBirthDate.setText(prefs.getString(Constants.TAG_BIRTHDATE, "1 Jan 1985"));
+        etWeight.setText(prefs.getFloat(Constants.TAG_WEIGHT, 80) + "");
+        etHeight.setText(prefs.getInt(Constants.TAG_HEIGHT, 180) + "");
+        etBmi.setText(prefs.getFloat(Constants.TAG_BMI, 25) + "");
+        etFat.setText(prefs.getFloat(Constants.TAG_FAT, 20) + "");
 
         etHeight.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -117,15 +123,15 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) {
-        super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
-
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
 
         switch (requestCode) {
+            //when coming back from "choose image" intent
             case REQUEST_CODE_IMAGE:
                 if (resultCode == RESULT_OK) {
 
-                    Uri imageUri = imageReturnedIntent.getData();
+                    Uri imageUri = intent.getData();
                     photoPath = imageUri.toString();
                     ImageUtils.loadProfileImage(EditProfileActivity.this, imageUri, profilePhoto);
                 }
@@ -168,14 +174,14 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
 
     private void saveData() {
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
-        editor.putBoolean(OverviewActivity.TAG_ISMALE, isMale);
-        editor.putString(OverviewActivity.TAG_NAME, etName.getText().toString());
-        editor.putString(OverviewActivity.TAG_BIRTHDATE, etBirthDate.getText().toString());
-        editor.putFloat(OverviewActivity.TAG_WEIGHT, Float.valueOf(etWeight.getText().toString()));
-        editor.putInt(OverviewActivity.TAG_HEIGHT, Integer.valueOf(etHeight.getText().toString()));
-        editor.putFloat(OverviewActivity.TAG_BMI, Float.valueOf(etBmi.getText().toString()));
-        editor.putFloat(OverviewActivity.TAG_FAT, Float.valueOf(etFat.getText().toString()));
-        editor.putString(OverviewActivity.TAG_PHOTO_PATH, photoPath);
+        editor.putBoolean(Constants.TAG_ISMALE, isMale);
+        editor.putString(Constants.TAG_NAME, etName.getText().toString());
+        editor.putString(Constants.TAG_BIRTHDATE, etBirthDate.getText().toString());
+        editor.putFloat(Constants.TAG_WEIGHT, Float.valueOf(etWeight.getText().toString()));
+        editor.putInt(Constants.TAG_HEIGHT, Integer.valueOf(etHeight.getText().toString()));
+        editor.putFloat(Constants.TAG_BMI, Float.valueOf(etBmi.getText().toString()));
+        editor.putFloat(Constants.TAG_FAT, Float.valueOf(etFat.getText().toString()));
+        editor.putString(Constants.TAG_PHOTO_PATH, photoPath);
 
         editor.commit();
     }
@@ -259,5 +265,43 @@ public class EditProfileActivity extends AppCompatActivity implements DatePicker
                 etFat.setText(current + "");
                 break;
         }
+    }
+
+    private void showExitDialog() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setPositiveButton("Stay", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                dialog.dismiss();
+            }
+        });
+        builder.setNegativeButton("Exit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                dialog.dismiss();
+                NavUtils.navigateUpFromSameTask(EditProfileActivity.this);
+            }
+        });
+        builder.setTitle("Caution");
+        builder.setIcon(android.R.drawable.ic_dialog_alert);
+        builder.setMessage("Unsaved changes will be lost");
+
+        builder.create().show();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            showExitDialog();
+        }
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        showExitDialog();
     }
 }
