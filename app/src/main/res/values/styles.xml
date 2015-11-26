@@ -18,4 +18,9 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="transparent">
+        <item name="android:textSize">5sp</item>
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
 </resources>

@@ -33,6 +33,17 @@ public class EditSetsActivity extends AppCompatActivity {
     private ImageButton bDelete;
     private int id = 1;
     private ScrollView scrollview;
+    private View.OnClickListener listener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            if (v.getId() == R.id.bAdd) {
+                etReps.setText((Integer.valueOf(etReps.getText().toString()) + 1) + "");
+            } else {
+                if (Integer.valueOf(etReps.getText().toString()) > 1)
+                    etReps.setText((Integer.valueOf(etReps.getText().toString()) - 1) + "");
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,18 +105,6 @@ public class EditSetsActivity extends AppCompatActivity {
             insertViewRow(s);
         }
     }
-
-    private View.OnClickListener listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            if (v.getId() == R.id.bAdd) {
-                etReps.setText((Integer.valueOf(etReps.getText().toString()) + 1) + "");
-            } else {
-                if (Integer.valueOf(etReps.getText().toString()) > 1)
-                    etReps.setText((Integer.valueOf(etReps.getText().toString()) - 1) + "");
-            }
-        }
-    };
 
     /**
      * Adds one more row in the table layout , according to the value of the reps edit text

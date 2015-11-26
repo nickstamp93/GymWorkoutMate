@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gymworkoutmate.nickstamp.gymworkoutmate" >
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -77,6 +79,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.RoutinesActivity" />
+        </activity>
+        <activity
+            android:name=".Activity.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName=".Activity.OverviewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.OverviewActivity" />
         </activity>
     </application>
 

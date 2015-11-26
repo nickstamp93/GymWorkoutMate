@@ -1,8 +1,11 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
+import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
@@ -10,20 +13,30 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Data.Database;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumExerciseTypes;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Routine;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.Constants;
+import com.gymworkoutmate.nickstamp.gymworkoutmate.Utils.ImageUtils;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class OverviewActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+    private TextView tvUsername, tvSubtitle;
+
     private Toolbar toolbar;
+
+    private SharedPreferences prefs;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +45,18 @@ public class OverviewActivity extends AppCompatActivity
 
         setUpToolbar();
 
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
         setUpDrawer();
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        tvUsername.setText(prefs.getString(Constants.TAG_NAME, "John Smith"));
+        tvSubtitle.setText(prefs.getInt(Constants.TAG_HEIGHT, 180) + " cm , " + prefs.getFloat(Constants.TAG_WEIGHT, 80) + " Kg");
     }
 
     private void setUpDrawer() {
@@ -45,6 +68,24 @@ public class OverviewActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        View nav_header = LayoutInflater.from(this).inflate(R.layout.nav_header_overview, null);
+        ImageView profile = (ImageView) nav_header.findViewById(R.id.profile_photo);
+
+        //get the uri of the preferred profile image
+        Uri imageUri = Uri.parse(prefs.getString(Constants.TAG_PHOTO_PATH, ""));
+        ImageUtils.loadProfileImage(this, imageUri, profile);
+
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OverviewActivity.this, EditProfileActivity.class));
+            }
+        });
+        tvUsername = ((TextView) nav_header.findViewById(R.id.tvUsername));
+        tvSubtitle = ((TextView) nav_header.findViewById(R.id.tvUserSecondaryText));
+        navigationView.addHeaderView(nav_header);
+
     }
 
     private void setUpToolbar() {
