@@ -1,13 +1,13 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Data;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.provider.BaseColumns;
 
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumEquipment;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
-import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
 
 import java.util.ArrayList;
 
@@ -105,10 +105,10 @@ public class Contract {
         public static final String COLUMN_ROUTINE = "routineId";
         public static final String COLUMN_DAY = "day_of_week";
     }
-    public static void createExercises(SQLiteDatabase db) {
 
+    public static void createExercises(Context context, SQLiteDatabase db) {
         ArrayList<Exercise> initExercises = new ArrayList<>();
-        initExercises.add(new Exercise("Bench Press - Medium Grip", R.drawable.bench_press_medium1, R.drawable.bench_press_medium1
+        /*initExercises.add(new Exercise("Bench Press - Medium Grip", R.drawable.bench_press_medium1, R.drawable.bench_press_medium1
                 , EnumMuscleGroups.CHEST, "3-5", 1, EnumEquipment.BARBELL));
         initExercises.add(new Exercise("Incline Dumbbell Flyes", R.drawable.incline_dumbell_flyes1, R.drawable.incline_dumbell_flyes2
                 , EnumMuscleGroups.CHEST, null, 1, EnumEquipment.DUMBBELL));
@@ -127,6 +127,26 @@ public class Contract {
         initExercises.add(new Exercise("Full Squats", R.drawable.full_squat1, R.drawable.full_squat2
                 , EnumMuscleGroups.LEGS, "2", 1, EnumEquipment.BARBELL));
         initExercises.add(new Exercise("Incline Crunches", R.drawable.decline_crunch1, R.drawable.decline_crunch2
+                , EnumMuscleGroups.ABS, null, 0, EnumEquipment.BARBELL));*/
+        initExercises.add(new Exercise("Bench Press - Medium Grip", "bench_press_medium1", "bench_press_medium2"
+                , EnumMuscleGroups.CHEST, "3-5", 1, EnumEquipment.BARBELL));
+        initExercises.add(new Exercise("Incline Dumbbell Flyes", "incline_dumbell_flyes1", "incline_dumbell_flyes2"
+                , EnumMuscleGroups.CHEST, null, 1, EnumEquipment.DUMBBELL));
+        initExercises.add(new Exercise("Pullups", "pullups1", "pullups2"
+                , EnumMuscleGroups.BACK, "4", 1, EnumEquipment.BODY_ONLY));
+        initExercises.add(new Exercise("Standing Military Press", "military_press1", "military_press2"
+                , EnumMuscleGroups.SHOULDERS, "5", 1, EnumEquipment.BARBELL));
+        initExercises.add(new Exercise("Biceps Curls", "barbell_cur1", "barbell_cur2"
+                , EnumMuscleGroups.BICEPS, null, 0, EnumEquipment.BARBELL));
+        initExercises.add(new Exercise("Incline Hammer Curls", "incline_hammer_curls1", "incline_hammer_curls2"
+                , EnumMuscleGroups.BICEPS, null, 0, EnumEquipment.DUMBBELL));
+        initExercises.add(new Exercise("Concentration Curls", "concentration_curls1", "concentration_curls2"
+                , EnumMuscleGroups.BICEPS, null, 0, EnumEquipment.DUMBBELL));
+        initExercises.add(new Exercise("Bench Dips", "bench_dips1", "bench_dips2"
+                , EnumMuscleGroups.TRICEPS, "1-3", 1, EnumEquipment.BODY_ONLY));
+        initExercises.add(new Exercise("Full Squats", "full_squat1", "full_squat1"
+                , EnumMuscleGroups.LEGS, "2", 1, EnumEquipment.BARBELL));
+        initExercises.add(new Exercise("Incline Crunches", "decline_crunch1", "decline_crunch1"
                 , EnumMuscleGroups.ABS, null, 0, EnumEquipment.BARBELL));
 
         for (Exercise item : initExercises) {

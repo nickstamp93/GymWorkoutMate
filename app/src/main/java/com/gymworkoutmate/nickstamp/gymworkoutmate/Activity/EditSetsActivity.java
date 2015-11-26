@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Set;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.squareup.picasso.Picasso;
 
 public class EditSetsActivity extends AppCompatActivity {
 
@@ -73,8 +74,9 @@ public class EditSetsActivity extends AppCompatActivity {
         //exercise images
         img1 = (ImageView) findViewById(R.id.image1);
         img2 = (ImageView) findViewById(R.id.image2);
-        img1.setImageResource(exercise.getImg1());
-        img2.setImageResource(exercise.getImg2());
+
+        Picasso.with(this).load("file:///android_asset/Exercises/" + exercise.getImg1() + ".jpg").into(img1);
+        Picasso.with(this).load("file:///android_asset/Exercises/" + exercise.getImg2() + ".jpg").into(img2);
         //buttons for increasing or decreasing reps
         bIncrease = (Button) findViewById(R.id.bAdd);
         bDecrease = (Button) findViewById(R.id.bSubstract);

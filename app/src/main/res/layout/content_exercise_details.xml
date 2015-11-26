@@ -28,16 +28,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:src="@drawable/pullups1" />
+                android:layout_weight="1" />
 
             <ImageView
                 android:id="@+id/image2"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:src="@drawable/pullups2" />
+                android:layout_weight="1" />
 
         </TableRow>
 

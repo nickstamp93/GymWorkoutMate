@@ -65,8 +65,9 @@ public class ExerciseAdapter extends RecyclerView.Adapter<ExerciseAdapter.Exerci
             Exercise item = items.get(position);
 
             holder.title.setText(item.getTitle());
-            Picasso.with(context).load(item.getImg1()).into(holder.img1);
-            Picasso.with(context).load(item.getImg2()).into(holder.img2);
+
+            Picasso.with(context).load("file:///android_asset/Exercises/" + item.getImg1() + ".jpg").into(holder.img1);
+            Picasso.with(context).load("file:///android_asset/Exercises/" + item.getImg2() + ".jpg").into(holder.img2);
         }
     }
 

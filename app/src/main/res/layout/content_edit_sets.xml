@@ -26,15 +26,13 @@
                 android:id="@+id/image1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:padding="4dp"
-                android:src="@drawable/pullups1" />
+                android:padding="4dp" />
 
             <ImageView
                 android:id="@+id/image2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:padding="4dp"
-                android:src="@drawable/pullups1" />
+                android:padding="4dp"/>
 
         </LinearLayout>
 

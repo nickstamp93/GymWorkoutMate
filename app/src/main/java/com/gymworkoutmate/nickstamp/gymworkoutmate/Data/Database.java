@@ -20,6 +20,7 @@ import java.util.HashMap;
 public class Database extends SQLiteOpenHelper {
 
     private static Database sInstance;
+    private Context context;
 
     public static synchronized Database getInstance(Context context) {
 
@@ -39,6 +40,7 @@ public class Database extends SQLiteOpenHelper {
      */
     private Database(Context context) {
         super(context, Contract.DATABASE_NAME, null, Contract.DATABASE_VERSION);
+        this.context = context;
     }
 
     @Override
@@ -49,7 +51,7 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL(Contract.SQL_CREATE_TABLE_EXERCISE_WORKOUTS_CONNECTION);
         db.execSQL(Contract.SQL_CREATE_TABLE_WORKOUTS_ROUTINES_CONNECTION);
 
-        Contract.createExercises(db);
+        Contract.createExercises(context , db);
 
     }
 
