@@ -19,6 +19,7 @@ public class Exercise implements Serializable {
     private EnumEquipment equipment;
     private String other_muscles;
     private ArrayList<Set> sets;
+    private int resttime;
 
     /**
      * Constructor with empty sets list
@@ -35,6 +36,7 @@ public class Exercise implements Serializable {
         mechanics = cursor.getInt(6);
         equipment = EnumEquipment.valueOf(cursor.getInt(7));
         sets = new ArrayList<>();
+        resttime = 90;
     }
 
     /**
@@ -150,4 +152,11 @@ public class Exercise implements Serializable {
         this.sets = sets;
     }
 
+    public int getResttime() {
+        return resttime;
+    }
+
+    public void setResttime(int resttime) {
+        this.resttime = resttime;
+    }
 }

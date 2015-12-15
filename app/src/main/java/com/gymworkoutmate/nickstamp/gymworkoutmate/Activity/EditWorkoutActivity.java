@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -153,9 +154,12 @@ public class EditWorkoutActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 //get the exercise that was changed
                 int id = data.getIntExtra("id", 0);
+                int resttime = data.getIntExtra("resttime", 10);
+                Log.i("nikos" , resttime + "");
                 //and apply the new sets list to it
                 for (Exercise e : workout.getExercises()) {
                     if (e.getId() == id) {
+                        e.setResttime(resttime);
                         e.setSets(((ArrayList<Set>) data.getExtras().getSerializable("sets")));
                     }
                 }

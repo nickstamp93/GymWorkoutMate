@@ -51,7 +51,7 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL(Contract.SQL_CREATE_TABLE_EXERCISE_WORKOUTS_CONNECTION);
         db.execSQL(Contract.SQL_CREATE_TABLE_WORKOUTS_ROUTINES_CONNECTION);
 
-        Contract.createExercises(context , db);
+        Contract.createExercises(context, db);
 
     }
 
@@ -230,7 +230,7 @@ public class Database extends SQLiteOpenHelper {
 
         }
         contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_SETS, s.toString());
-        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, 90);
+        contentValues.put(Contract.ExerciseWorkoutConnection.COLUMN_RESTTIME, exercise.getResttime());
 
         //insert the workout-exercise connection
         getWritableDatabase().insert(Contract.ExerciseWorkoutConnection.TABLE_NAME, "null", contentValues);
