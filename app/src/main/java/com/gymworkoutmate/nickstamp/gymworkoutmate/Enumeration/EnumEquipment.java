@@ -6,8 +6,8 @@ package com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration;
 public enum EnumEquipment {
     BARBELL(1),
     DUMBBELL(2),
-    MEDICINE_BALL(3),
-    KETTLEBELL(4),
+    MACHINE(3),
+    CABLE(4),
     BODY_ONLY(5);
 
     private int value;
@@ -29,11 +29,11 @@ public enum EnumEquipment {
             case DUMBBELL:
                 return "Dumbbells";
 
-            case MEDICINE_BALL:
-                return "Medicine Ball";
+            case MACHINE:
+                return "Machine";
 
-            case KETTLEBELL:
-                return "Kettlebell";
+            case CABLE:
+                return "Cable";
 
             case BODY_ONLY:
                 return "Body Only";
@@ -50,9 +50,9 @@ public enum EnumEquipment {
             case 2:
                 return DUMBBELL;
             case 3:
-                return MEDICINE_BALL;
+                return MACHINE;
             case 4:
-                return KETTLEBELL;
+                return CABLE;
             case 5:
                 return BODY_ONLY;
 

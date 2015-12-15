@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,6 +57,8 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
         holder.tvWorkoutName.setText(item.getTitle());
         holder.tvWorkoutSubtitle.setText(item.getType().toString() + " , " + item.getMuscle().toString());
 
+        if (holder.llWorkoutExercises.getChildCount() != 0)
+            holder.llWorkoutExercises.removeAllViews();
         //for each exercise in the workout , create a text view and add it the layout of the item
         for (Exercise ex : item.getExercises()) {
             TextView tv = new TextView(context);
@@ -71,6 +72,7 @@ public class WorkoutsAdapter extends RecyclerView.Adapter<WorkoutsAdapter.Workou
             tv.setTextColor(context.getResources().getColor(R.color.primary_text));
             holder.llWorkoutExercises.addView(tv);
         }
+
 
     }
 
