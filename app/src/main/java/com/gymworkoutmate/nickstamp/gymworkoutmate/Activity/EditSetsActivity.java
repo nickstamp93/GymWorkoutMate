@@ -1,10 +1,13 @@
 package com.gymworkoutmate.nickstamp.gymworkoutmate.Activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -22,8 +26,9 @@ import android.widget.Toast;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Set;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.squareup.picasso.Picasso;
 
-public class EditSetsActivity extends AppCompatActivity {
+public class EditSetsActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Exercise exercise;
     private TableLayout table;
@@ -33,17 +38,8 @@ public class EditSetsActivity extends AppCompatActivity {
     private ImageButton bDelete;
     private int id = 1;
     private ScrollView scrollview;
-    private View.OnClickListener listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            if (v.getId() == R.id.bAdd) {
-                etReps.setText((Integer.valueOf(etReps.getText().toString()) + 1) + "");
-            } else {
-                if (Integer.valueOf(etReps.getText().toString()) > 1)
-                    etReps.setText((Integer.valueOf(etReps.getText().toString()) - 1) + "");
-            }
-        }
-    };
+    private View bResttime;
+    private TextView tvResttime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +55,6 @@ public class EditSetsActivity extends AppCompatActivity {
 
         setUpViews();
 
-
     }
 
     /**
@@ -73,13 +68,14 @@ public class EditSetsActivity extends AppCompatActivity {
         //exercise images
         img1 = (ImageView) findViewById(R.id.image1);
         img2 = (ImageView) findViewById(R.id.image2);
-        img1.setImageResource(exercise.getImg1());
-        img2.setImageResource(exercise.getImg2());
+
+        Picasso.with(this).load("file:///android_asset/Exercises/" + exercise.getImg1() + ".jpg").into(img1);
+        Picasso.with(this).load("file:///android_asset/Exercises/" + exercise.getImg2() + ".jpg").into(img2);
         //buttons for increasing or decreasing reps
         bIncrease = (Button) findViewById(R.id.bAdd);
         bDecrease = (Button) findViewById(R.id.bSubstract);
-        bIncrease.setOnClickListener(listener);
-        bDecrease.setOnClickListener(listener);
+        bIncrease.setOnClickListener(this);
+        bDecrease.setOnClickListener(this);
 
         //delete last set button
         bDelete = (ImageButton) findViewById(R.id.bDelete);
@@ -93,6 +89,12 @@ public class EditSetsActivity extends AppCompatActivity {
                 }
             }
         });
+
+        tvResttime = (TextView) findViewById(R.id.tvResttime);
+        tvResttime.setText(exercise.getResttime() + "s");
+
+        bResttime = findViewById(R.id.bResttime);
+        bResttime.setOnClickListener(this);
 
         //table with the sets list
         table = (TableLayout) findViewById(R.id.table_sets);
@@ -169,6 +171,7 @@ public class EditSetsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // If calling activity is not null , this activity was started from startActivityForResult()
@@ -199,8 +202,9 @@ public class EditSetsActivity extends AppCompatActivity {
             //pass the new sets list through the return intent and finish
             Intent i = new Intent();
             Bundle bundle = new Bundle();
-            bundle.putSerializable("sets", exercise.getSets());
             bundle.putInt("id", exercise.getId());
+            bundle.putSerializable("sets", exercise.getSets());
+            bundle.putInt("resttime", exercise.getResttime());
             i.putExtras(bundle);
             setResult(RESULT_OK, i);
             finish();
@@ -213,4 +217,50 @@ public class EditSetsActivity extends AppCompatActivity {
         super.onBackPressed();
         setResult(RESULT_CANCELED);
     }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.bResttime) {
+            //TODO launch number picker
+            showNumberDialog();
+        } else if (v.getId() == R.id.bAdd) {
+            etReps.setText((Integer.valueOf(etReps.getText().toString()) + 1) + "");
+        } else {
+            if (Integer.valueOf(etReps.getText().toString()) > 1)
+                etReps.setText((Integer.valueOf(etReps.getText().toString()) - 1) + "");
+        }
+    }
+
+    private void showNumberDialog() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(EditSetsActivity.this);
+        alertDialog.setTitle("Rest Time");
+
+        final EditText input = new EditText(EditSetsActivity.this);
+        input.setText(exercise.getResttime() + "");
+        input.setInputType(InputType.TYPE_CLASS_NUMBER);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT);
+        input.setLayoutParams(lp);
+        alertDialog.setView(input);
+
+        alertDialog.setPositiveButton("OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        exercise.setResttime(Integer.valueOf(input.getText().toString()));
+                        tvResttime.setText(exercise.getResttime() + "s");
+                        dialog.dismiss();
+                    }
+                });
+
+        alertDialog.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+
+        alertDialog.show();
+    }
+
 }

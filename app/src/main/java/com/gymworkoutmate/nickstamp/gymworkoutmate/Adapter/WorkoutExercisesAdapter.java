@@ -17,6 +17,7 @@ import com.gymworkoutmate.nickstamp.gymworkoutmate.Activity.EditWorkoutActivity;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Set;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -50,8 +51,9 @@ public class WorkoutExercisesAdapter extends RecyclerView.Adapter<WorkoutExercis
         Exercise item = items.get(position);
 
         holder.title.setText(item.getTitle());
-        holder.img1.setImageResource(item.getImg1());
-        holder.img2.setImageResource(item.getImg2());
+
+        Picasso.with(context).load("file:///android_asset/Exercises/" + item.getImg1() + ".jpg").into(holder.img1);
+        Picasso.with(context).load("file:///android_asset/Exercises/" + item.getImg2() + ".jpg").into(holder.img2);
 
         //remove all views from layout that contains the set views
         holder.llExercisesInWorkout.removeAllViews();

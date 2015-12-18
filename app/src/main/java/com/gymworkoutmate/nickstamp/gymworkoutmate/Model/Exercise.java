@@ -13,12 +13,13 @@ import java.util.ArrayList;
  */
 public class Exercise implements Serializable {
 
-    private int id, img1, img2, mechanics;
-    private String title;
+    private int id, mechanics;
+    private String title, img1, img2;
     private EnumMuscleGroups muscle;
     private EnumEquipment equipment;
     private String other_muscles;
     private ArrayList<Set> sets;
+    private int resttime;
 
     /**
      * Constructor with empty sets list
@@ -28,13 +29,14 @@ public class Exercise implements Serializable {
     public Exercise(Cursor cursor) {
         id = cursor.getInt(0);
         title = cursor.getString(1);
-        img1 = cursor.getInt(2);
-        img2 = cursor.getInt(3);
+        img1 = cursor.getString(2);
+        img2 = cursor.getString(3);
         muscle = EnumMuscleGroups.valueOf(cursor.getInt(4));
         other_muscles = cursor.getString(5);
         mechanics = cursor.getInt(6);
         equipment = EnumEquipment.valueOf(cursor.getInt(7));
         sets = new ArrayList<>();
+        resttime = 90;
     }
 
     /**
@@ -55,14 +57,14 @@ public class Exercise implements Serializable {
      * Constructor used for the initial creation of the database
      *
      * @param title         the title
-     * @param image1        image 1 resource
-     * @param image2        image 2 recource
+     * @param image1        image 1 file name
+     * @param image2        image 2 file name
      * @param muscle        main muscle group worked
      * @param other_muscles other muscle worked (e.g shoulders-triceps)
      * @param mechanics     the mechanics type of the exercise
      * @param equipment     equipment needed
      */
-    public Exercise(String title, int image1, int image2, EnumMuscleGroups muscle,
+    public Exercise(String title, String image1, String image2, EnumMuscleGroups muscle,
                     String other_muscles, int mechanics, EnumEquipment equipment) {
         this.title = title;
         img1 = image1;
@@ -78,19 +80,19 @@ public class Exercise implements Serializable {
         sets.add(set);
     }
 
-    public int getImg1() {
+    public String getImg1() {
         return img1;
     }
 
-    public void setImg1(int img1) {
+    public void setImg1(String img1) {
         this.img1 = img1;
     }
 
-    public int getImg2() {
+    public String getImg2() {
         return img2;
     }
 
-    public void setImg2(int img2) {
+    public void setImg2(String img2) {
         this.img2 = img2;
     }
 
@@ -150,4 +152,11 @@ public class Exercise implements Serializable {
         this.sets = sets;
     }
 
+    public int getResttime() {
+        return resttime;
+    }
+
+    public void setResttime(int resttime) {
+        this.resttime = resttime;
+    }
 }

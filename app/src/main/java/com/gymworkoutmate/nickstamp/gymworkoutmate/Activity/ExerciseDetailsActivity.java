@@ -11,6 +11,7 @@ import android.widget.Toast;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Enumeration.EnumMuscleGroups;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.Model.Exercise;
 import com.gymworkoutmate.nickstamp.gymworkoutmate.R;
+import com.squareup.picasso.Picasso;
 
 public class ExerciseDetailsActivity extends AppCompatActivity {
 
@@ -66,8 +67,8 @@ public class ExerciseDetailsActivity extends AppCompatActivity {
         String muscle = exercise.getMuscle().toString();
         String equipment = exercise.getEquipment().toString();
 
-        image1.setImageResource(exercise.getImg1());
-        image2.setImageResource(exercise.getImg2());
+        Picasso.with(this).load("file:///android_asset/Exercises/" + exercise.getImg1() + ".jpg").into(image1);
+        Picasso.with(this).load("file:///android_asset/Exercises/" + exercise.getImg2() + ".jpg").into(image2);
         tvName.setText(exercise.getTitle());
         tvMuscle.setText(Html.fromHtml("<b>Muscle</b> : " + muscle));
         tvOtherMuscles.setText(Html.fromHtml("<b>Other Muscles</b> : " + other_muscles));
