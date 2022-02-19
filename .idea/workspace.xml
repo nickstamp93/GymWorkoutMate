@@ -31,30 +31,1217 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="nikos" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Data/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditSetsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditSetsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Exercise.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Model/Exercise.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_edit_sets.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_edit_sets.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/34100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/34100_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/34100_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/4e.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/4e_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/achaia_channel.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/acheloos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/acheloos_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/acheloos_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/action24.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/aigaio.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/akritas.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alert.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alert_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alfa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alfa_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alfasports.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alfasports_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alithia.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alpha.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alpha_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alpha_gatv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alphacy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/alphacy_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/amfipolis_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ant1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ant1_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ant1_europe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ant1cy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ant1cy_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/apt_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/art.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/arttv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/arttv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/astra.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/astra_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/atlas.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/attica.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/attica_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/axion_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/banana.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/banana_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/baraza.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/baraza_classic.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/baraza_greek_hits.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/barazahd.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/bci.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/best.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/best_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/blue_sky.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/cannali.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/capital.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/capitol.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/center_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/cetn.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/channel9.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/channel9_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/channel_4u.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/choice.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/choice_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/city.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/city_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/corfu.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/corfu_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/creta.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/creta_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/cretetv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/cretetv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/cysports.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/delta.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/delta_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diaspora.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diavata.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diavata_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/digital.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/digital_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diktyo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diktyo1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diktyo1_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diktyo_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/dion.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/dion_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/dion_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/diras_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/dr_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ecclesia.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/edgesport.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/egnatia.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/egnatia_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ellada_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ena.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ena_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ena_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/eoe.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/epiloges.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/epiloges_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/epirus.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/epirus_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/epsilon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/epsilon_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/epsilon_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ert1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ert1_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ert2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ert2_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ert3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ert3_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertalex.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertalext_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertnews.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertplay1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertplay2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertplay3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertplay4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/erts.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertsports.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertsports2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertsports3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertsports4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertsports5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertsports6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertsports_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertw.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertworld.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ertworld_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/etv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/etv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/euro_channel.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/euronews.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/europe_1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/extra.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/extra_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/extracy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/faros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/faros2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/faros_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/filopoli.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/flash.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/flash_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/food.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/galaxy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/galaxy_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/galaxy_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/galaxy_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/gnomi_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/gold.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/grcinema.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/grcinema_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/grd.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/groovy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/groovy_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/hellenic.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/high.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/high_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/hlektra.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/hlektra_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/home_shop.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ionian.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ionian_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ippodromies.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ippodromies_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/irida.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/irida_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/itv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kanali_6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kanali_9.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kontra.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kontra_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kosmos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kosmos_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kriti_tv1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/kydon_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/lampsi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/lampsi_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/lepanto.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/lepanto_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/live_tv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/london.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/london_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/lychnos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/lychnos_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/madtv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/madtv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/madtv_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/madtvcy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/magic.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/maktv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/maktv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/maron.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/maron_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/maroussiotika.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/max_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/mega.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/mega_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/megacy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/mesogeios.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/mesogeios_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/messatida.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/messinia.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/mgr.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/montreal.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/montreal_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/mpaxalo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/mtv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/music_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/my_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/myradio.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nasa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nea.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nea_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nerit.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nerit_plus.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/net.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/netmax.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/netmax_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/netmax_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/netv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/netv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ngr.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nickelodeon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/notioi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/notos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nrg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nrg_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/nstv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/odie_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/omega.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/omega_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/one.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/one_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/one_world.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/open.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/open_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/opt.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/orestiada_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/ort.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/panik.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/panik_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/patrida_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/pella.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/pella_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/plp.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/plp_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/pluscy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/pluton.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/protothema.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/r_channel.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/reloadplay.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/reloadplay_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rik1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rik1_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rik2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rik2_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rikhd.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/riksat.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/riksat_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rodopi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rodopi_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/rodos_tv4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/samiaki.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/samiaki_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/sat.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/sbc_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/seen.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/seen_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/sigma.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/sigma_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/sitia_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/skai.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/skai_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/smile.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/smile_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/star.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/star_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/star_ken_ella.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/star_tv_drama.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/start.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/start_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/starve.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_classic_rock.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_everything_80s.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_flashback_70s.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_greatest_hits.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_hit_list.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_hot_country.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_pop_adult.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_rock_alternative.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_todays_latin_pop.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/stingray_urban_beat.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/super_28.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/super_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/superb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/superb_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/superchannel.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/superchannel_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/syros.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/syros_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/teletime.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/thessalia_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/thrakinet.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/thrakinet_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/time_channel.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/top.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/top_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/top_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/trm.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/trt.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/trt_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tth.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tts.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tv100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tv100_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tv12.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tv_10.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tv_thess.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tvm.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tvmall.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/tvs.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/vergina.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/vergina_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/vima_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/volcano.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/vouli.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/vouli2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/vouli_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/vouli_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/voulicy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/wb.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/west_channel.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/wixlar.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/xalastra_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/xplore.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/xtv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/zeus.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/zeus_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/zoom.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/zougla.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/ch/zougla_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/10.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1000.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1001.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1002.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1004.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1005.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1007.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1008.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/101.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1011.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1012.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1013.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1014.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1015.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1020.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1024.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1028.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/103.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1031.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1032.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1033.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1036.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1038.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1039.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/104.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1044.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1045.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1046.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1048.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1049.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/105.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1051.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1054.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1057.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1058.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/106.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1063.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1064.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1066.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1067.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1068.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1069.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/107.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1073.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1075.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1077.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/108.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1081.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1082.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1083.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1089.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/109.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1090.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1091.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1093.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1094.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1095.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1096.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1097.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1098.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1099.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/11.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/110.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1102.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1104.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1105.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1107.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1108.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/111.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1112.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1113.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1116.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1117.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/112.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1120.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1124.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1125.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1127.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/113.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1130.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1136.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1139.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/114.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1141.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1145.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1148.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/115.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1152.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1153.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1154.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1155.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1156.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1157.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1158.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1159.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/116.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1160.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1162.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1164.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1165.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1168.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1169.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/117.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1170.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1171.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1172.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1173.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1175.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1178.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/118.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1180.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1183.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1184.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1185.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1186.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1187.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1188.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1189.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/119.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1190.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1191.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1197.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1198.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1199.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/12.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1204.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1208.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1210.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1211.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1214.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1215.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1216.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1218.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/122.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1221.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1222.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1224.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1225.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1226.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1227.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1228.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/123.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1230.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1233.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1237.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/124.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/125.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1252.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/126.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/127.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/128.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/129.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/13.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/130.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/131.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/132.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/133.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/134.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/135.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/136.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/137.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/138.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1384.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/139.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/140.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/142.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/143.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1430.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/144.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/145.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/146.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/147.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/149.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/150.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/151.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/152.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/153.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/154.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/155.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/156.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/157.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/158.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/159.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1593.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/160.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/161.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/162.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/163.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/164.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/165.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/166.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/169.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/170.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1706.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1707.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1708.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1709.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1710.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1711.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1713.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1714.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/172.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/173.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/174.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/175.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1757.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1759.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1760.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1762.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1765.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1770.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1772.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1776.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1777.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1778.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/178.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1783.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1787.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1789.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1791.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1792.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1793.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1794.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1795.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1796.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1797.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1798.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1799.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1801.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1802.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1806.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1809.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/181.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1811.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1812.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1813.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1814.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1815.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/182.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1820.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1822.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1823.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1826.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1827.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/183.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1830.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1831.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1834.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1835.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1836.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1837.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1839.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1841.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1842.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1843.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1845.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1846.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1847.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/185.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1852.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1855.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1857.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1858.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1864.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1868.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1869.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1870.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1871.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1872.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1873.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1875.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1876.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1881.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1883.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1886.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1887.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/189.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1894.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1897.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1899.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/19.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/190.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1901.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1903.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1907.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1908.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/191.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1911.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1913.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1915.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/192.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1920.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1926.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1927.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/193.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1931.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1934.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1936.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1937.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1942.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1945.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1949.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/195.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/196.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1963.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1964.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1965.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1966.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1968.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1969.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1970.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1971.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1974.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1975.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1976.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1979.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/198.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1984.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1985.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1986.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1987.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1989.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1990.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1993.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1997.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/1999.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/200.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2000.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2001.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2002.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2003.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2004.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2005.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2008.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/201.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2012.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2013.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2014.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2021.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2022.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2023.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2028.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/203.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2030.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2039.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/204.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2044.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2045.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/205.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2050.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2051.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2052.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2054.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2055.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2057.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2058.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/206.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2062.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2063.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2064.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2065.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2066.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/207.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2071.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2073.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2076.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2077.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2078.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/208.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2080.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2081.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2085.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2086.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2087.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2089.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/209.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2090.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2096.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2098.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/21.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/210.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2102.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2105.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2106.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2108.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2109.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2112.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2117.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2118.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2123.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2124.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/213.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/214.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/215.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/217.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/219.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/220.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2207.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2208.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2210.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2212.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2216.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2217.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2218.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/222.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2221.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2222.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2225.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2227.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2228.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2229.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/223.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2230.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2232.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2233.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2235.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/224.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2243.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2244.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2245.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2248.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2250.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2251.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2253.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2255.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2256.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2259.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/226.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2260.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2261.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2263.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2265.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2266.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2268.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2270.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2274.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2275.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/228.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2289.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2290.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2291.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2292.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2293.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2294.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2295.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2298.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2299.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/23.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2301.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2302.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2303.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2305.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2306.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2307.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2308.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2309.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2310.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/2311.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/232.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/233.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/235.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/237.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/238.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/240.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/241.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/243.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/245.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/249.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/252.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/253.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/256.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/258.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/260.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/261.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/262.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/265.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/266.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/267.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/268.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/269.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/27.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/270.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/271.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/273.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/274.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/275.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/277.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/279.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/280.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/282.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/284.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/286.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/287.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/289.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/290.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/293.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/294.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/295.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/296.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/298.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/299.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/30.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/302.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/304.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/309.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/31.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/310.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/311.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/312.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/313.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/314.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/316.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/317.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/321.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/322.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/323.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/324.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/325.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/327.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/328.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/341.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/345.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/347.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/348.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/349.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/35.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/350.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/352.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/353.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/355.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/357.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/359.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/36.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/360.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/361.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/362.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/365.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/366.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/368.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/369.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/37.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/370.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/371.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/372.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/374.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/376.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/377.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/386.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/388.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/389.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/392.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/395.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/396.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/397.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/399.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/40.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/401.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/402.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/404.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/408.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/409.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/412.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/413.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/414.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/415.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/417.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/420.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/422.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/424.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/425.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/426.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/427.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/428.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/43.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/431.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/435.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/436.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/437.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/438.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/44.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/446.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/447.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/448.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/449.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/45.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/451.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/452.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/453.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/454.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/457.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/458.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/459.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/46.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/460.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/465.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/467.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/468.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/469.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/47.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/470.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/472.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/475.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/478.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/480.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/482.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/484.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/488.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/490.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/491.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/498.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/499.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/50.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/500.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/501.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/503.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/504.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/507.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/509.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/510.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/511.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/512.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/518.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/52.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/520.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/521.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/523.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/524.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/525.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/529.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/53.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/530.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/532.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/535.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/536.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/539.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/54.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/540.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/543.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/544.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/545.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/546.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/547.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/55.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/57.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/58.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/61.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/62.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/620.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/629.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/630.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/631.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/632.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/633.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/635.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/636.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/64.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/640.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/643.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/644.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/646.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/647.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/651.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/652.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/653.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/654.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/655.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/657.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/658.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/659.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/660.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/661.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/662.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/664.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/665.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/668.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/67.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/671.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/675.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/679.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/68.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/680.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/683.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/684.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/685.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/686.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/687.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/688.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/689.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/691.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/692.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/693.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/694.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/695.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/699.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/7.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/70.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/702.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/703.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/705.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/708.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/710.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/714.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/716.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/718.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/725.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/726.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/727.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/73.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/731.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/732.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/733.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/736.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/737.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/738.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/739.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/740.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/743.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/744.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/745.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/746.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/747.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/750.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/751.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/752.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/754.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/755.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/759.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/76.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/761.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/762.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/770.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/774.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/775.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/776.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/777.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/779.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/780.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/784.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/785.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/786.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/787.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/788.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/789.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/79.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/791.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/792.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/797.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/798.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/8.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/80.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/800.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/805.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/806.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/808.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/809.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/81.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/810.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/813.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/817.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/819.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/82.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/820.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/824.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/826.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/827.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/829.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/831.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/836.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/838.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/839.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/84.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/841.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/842.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/843.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/845.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/846.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/848.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/85.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/857.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/859.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/86.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/861.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/862.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/865.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/867.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/869.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/87.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/872.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/873.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/874.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/875.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/876.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/877.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/885.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/886.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/888.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/889.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/89.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/890.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/891.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/893.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/896.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/897.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/899.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/9.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/90.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/900.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/901.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/904.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/905.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/908.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/91.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/911.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/913.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/916.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/92.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/922.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/923.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/924.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/93.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/931.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/937.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/938.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/940.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/948.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/95.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/952.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/953.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/954.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/955.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/957.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/958.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/96.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/963.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/964.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/965.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/966.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/967.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/97.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/970.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/972.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/979.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/98.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/985.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/99.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/993.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/998.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obect Oriented Analysis/st/999.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="GymWorkoutMate.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -64,47 +1251,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="GymWorkoutMate" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FragmentWorkouts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Fragment/FragmentWorkouts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditSetsActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditSetsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6010733">
-              <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-              <folding>
-                <element signature="e#2776#3134#0" expanded="true" />
-                <element signature="e#3133#3134#0" expanded="true" />
-                <element signature="e#8839#9202#0" expanded="true" />
-                <element signature="e#9201#9202#0" expanded="true" />
-                <element signature="e#9270#9468#0" expanded="true" />
-                <element signature="e#9467#9468#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditWorkoutActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gymworkoutmate/nickstamp/gymworkoutmate/Activity/EditWorkoutActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="157" column="47" selection-start-line="157" selection-start-column="47" selection-end-line="157" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -117,6 +1263,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="icons" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -1655,25 +2806,14 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectId" id="25K1qWxfXzDhmCMovRvjLbIfcbw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
@@ -1807,17 +2947,21 @@
       <pane id="ProjectPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.1.101:5555" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="circularImageViewStyle&#9;PSI&#9;JAVA://com.gymworkoutmate.nickstamp.gymworkoutmate.R.attr#circularImageViewStyle" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/TestApplication" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="circularImageViewStyle&#9;PSI&#9;JAVA://com.gymworkoutmate.nickstamp.gymworkoutmate.R.attr#circularImageViewStyle" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestApplication" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -1837,7 +2981,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Application.app">
+  <component name="RunManager">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -1875,85 +3019,17 @@
       <option name="PREFERRED_AVD" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method>
-        <option name="Make" enabled="false" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
     </configuration>
     <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="app" />
@@ -1974,28 +3050,37 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
-    </list>
-    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="false" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="" />
       <created>1446491104698</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
     <servers />
@@ -2068,6 +3153,17 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -2075,15 +3171,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
