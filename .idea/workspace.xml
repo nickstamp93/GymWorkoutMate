@@ -35,13 +35,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Updates and fixes in gradle">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/cbc.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/euronews_2.webp" afterDir="false" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle updates">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/play_tv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/tile_mousiki.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/euronews.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/euronews.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/mega.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/mega.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/xalastra_tv.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/xalastra.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1935,7 +1932,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647797342090</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Gradle updates">
+      <created>1647799142886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647799142886</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2030,9 +2034,9 @@
     <MESSAGE value="Gradle fixes" />
     <MESSAGE value="Dependency updates" />
     <MESSAGE value="Gradle fixes and migration" />
-    <MESSAGE value="Gradle updates" />
     <MESSAGE value="Updates and fixes in gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates and fixes in gradle" />
+    <MESSAGE value="Gradle updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gradle updates" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
