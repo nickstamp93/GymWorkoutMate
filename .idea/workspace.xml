@@ -35,8 +35,104 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes in gradle">
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle updates">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/104.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/106.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/109.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/111.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/113.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/114.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/115.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/116.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/117.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/122.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/16.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/17.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/18.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/19.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/20.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/21.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/23.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/24.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/25.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/27.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/28.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/29.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/30.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/31.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/33.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/34.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/35.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/36.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/37.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/42.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/43.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/44.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/48.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/50.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/52.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/56.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/58.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/60.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/61.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/65.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/66.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/68.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/69.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/7.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/74.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/76.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/77.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/78.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/80.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/81.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/83.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/84.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/86.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/87.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/92.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/93.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/94.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/95.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/96.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/97.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/98.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/epg/99.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert2.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert3.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/cnn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_ant1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_makedonia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_openBeyond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_skai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_smile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/gr/logo_star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/mad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nickelodeonhdd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/eentertainment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/fox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/foxlife.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/madgreekz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/mtvhits.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/nationalgeographichd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novacinema1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novacinema2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novacinema3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novacinema4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novasports1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novasports2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novasports3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novasports4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/guide/nova/novasports5.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1768,7 +1864,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/img/ch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/img/epg" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -1779,17 +1875,18 @@
       <recent name="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg/gr" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/guide/gr" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/guide" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
-      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets" />
-      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg/gr" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
       <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets\Exercises" />
-      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\res\drawable-mdpi" />
-      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
@@ -1946,7 +2043,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647799924778</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Gradle updates">
+      <created>1649077800999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649077800999</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2042,9 +2146,9 @@
     <MESSAGE value="Dependency updates" />
     <MESSAGE value="Gradle fixes and migration" />
     <MESSAGE value="Updates and fixes in gradle" />
-    <MESSAGE value="Gradle updates" />
     <MESSAGE value="Fixes in gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes in gradle" />
+    <MESSAGE value="Gradle updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gradle updates" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
