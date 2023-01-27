@@ -36,7 +36,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fix imports">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ftina_tsigara.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ftina_tsigara_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/kon_elenis.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/kon_elenis_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ola_einai_dromos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ola_einai_dromos_bg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/padigeumenoi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/pagideumenoi_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/papadopoulos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/papadopoulos_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/tsiou.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/tsiou_bg.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1777,7 +1788,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/img/ch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/img/ms" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -1788,11 +1799,11 @@
       <recent name="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/files" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
@@ -2166,7 +2177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673945556868</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Gradle updates">
+      <created>1674673494971</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674673494971</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Fix imports">
+      <created>1674674151762</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1674674151762</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2269,11 +2294,11 @@
     <MESSAGE value="Update gradle" />
     <MESSAGE value="Lib updates" />
     <MESSAGE value="Gradle upgrade" />
-    <MESSAGE value="Gradle updates" />
     <MESSAGE value="Fix imports (1)" />
     <MESSAGE value="Libs updates" />
     <MESSAGE value="Fix icons" />
     <MESSAGE value="Gradle fixes" />
+    <MESSAGE value="Gradle updates" />
     <MESSAGE value="Fix imports" />
     <option name="LAST_COMMIT_MESSAGE" value="Fix imports" />
   </component>
