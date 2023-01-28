@@ -35,19 +35,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fix imports">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ftina_tsigara.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ftina_tsigara_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/kon_elenis.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/kon_elenis_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ola_einai_dromos.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ola_einai_dromos_bg.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/padigeumenoi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/pagideumenoi_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/papadopoulos.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/papadopoulos_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/tsiou.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/tsiou_bg.webp" afterDir="false" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -2191,7 +2179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674674151762</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Gradle updates">
+      <created>1674846005418</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1674846005418</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2298,9 +2293,9 @@
     <MESSAGE value="Libs updates" />
     <MESSAGE value="Fix icons" />
     <MESSAGE value="Gradle fixes" />
-    <MESSAGE value="Gradle updates" />
     <MESSAGE value="Fix imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix imports" />
+    <MESSAGE value="Gradle updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gradle updates" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
