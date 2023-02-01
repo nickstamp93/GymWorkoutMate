@@ -2186,7 +2186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674846005418</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Gradle updates">
+      <created>1674909633322</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1674909633322</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Gradle updates">
+      <created>1674909734007</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1674909734008</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
