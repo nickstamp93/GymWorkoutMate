@@ -35,8 +35,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle updates">
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fix imports and add dependencies">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/bachelor_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/dekapentaugoustos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/dekapentaugoustos_bg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/klama_paradeisos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/klama_paradeisos_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/klironomos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/klironomos_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/loufa_parallagi_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/nisos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/nisos_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/nisos_2_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/nisos_bg.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/agaio_sos.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/aigaio_sos.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/bachelor_1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/bachelor.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/larisa_empisteutiko.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/larisa_empisteutiko.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2200,7 +2215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674909734008</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Fix imports and add dependencies">
+      <created>1675253306864</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1675253306864</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2309,7 +2331,8 @@
     <MESSAGE value="Gradle fixes" />
     <MESSAGE value="Fix imports" />
     <MESSAGE value="Gradle updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle updates" />
+    <MESSAGE value="Fix imports and add dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix imports and add dependencies" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
