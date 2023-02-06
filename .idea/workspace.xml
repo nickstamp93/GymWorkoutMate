@@ -35,11 +35,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle fixes">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/dekapentaugoustos_bg.webp" afterDir="false" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fix gradle setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/bachelor_2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/bachelor_2.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/dekapentaugoustos_bg.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2217,7 +2214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675255003300</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Fix gradle setup">
+      <created>1675257673762</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1675257673762</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2327,7 +2331,8 @@
     <MESSAGE value="Gradle updates" />
     <MESSAGE value="Fix imports and add dependencies" />
     <MESSAGE value="Gradle fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle fixes" />
+    <MESSAGE value="Fix gradle setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix gradle setup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
