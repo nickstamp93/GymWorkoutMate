@@ -35,8 +35,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle fix">
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fix imports 3">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/vasilias.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/vasilias_bg.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ziteitai_pseutis.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/ziteitai_pseutis_bg.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/agapi_sta_16.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/agapi_sta_16.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/agapi_sta_16_bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/agapi_sta_16_bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/bank_bang_bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/bank_bang_bg.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1776,7 +1783,7 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/img/ch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets/img/ms" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -1905,27 +1912,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Gradle updates">
-      <created>1646734500481</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1646734500481</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updates and fixes in gradle">
-      <created>1647797342090</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1647797342090</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Gradle updates">
-      <created>1647799142886</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647799142886</updated>
     </task>
     <task id="LOCAL-00007" summary="Fixes in gradle">
       <created>1647799924778</created>
@@ -2249,7 +2235,28 @@
       <option name="project" value="LOCAL" />
       <updated>1678441225228</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Fix imports">
+      <created>1678452718247</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1678452718247</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Fix imports 2">
+      <created>1678462867015</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1678462867015</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Fix imports 3">
+      <created>1678463447828</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1678463447828</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2353,7 +2360,6 @@
     <MESSAGE value="Fix imports (1)" />
     <MESSAGE value="Libs updates" />
     <MESSAGE value="Fix icons" />
-    <MESSAGE value="Fix imports" />
     <MESSAGE value="Gradle updates" />
     <MESSAGE value="Fix imports and add dependencies" />
     <MESSAGE value="Fix gradle setup" />
@@ -2363,7 +2369,10 @@
     <MESSAGE value="Gradle fixes" />
     <MESSAGE value="Lib updates" />
     <MESSAGE value="Gradle fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle fix" />
+    <MESSAGE value="Fix imports" />
+    <MESSAGE value="Fix imports 2" />
+    <MESSAGE value="Fix imports 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix imports 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
