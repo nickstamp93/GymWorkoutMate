@@ -35,7 +35,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle fix">
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fix imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1906,13 +1906,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00014" summary="Dependency updates &amp; fixes">
-      <created>1660310660062</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1660310660062</updated>
-    </task>
     <task id="LOCAL-00015" summary="Gradle updates">
       <created>1660400108123</created>
       <option name="number" value="00015" />
@@ -2249,7 +2242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680154869528</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Fix imports">
+      <created>1680187431083</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1680187431083</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2362,10 +2362,10 @@
     <MESSAGE value="Fix imports 2" />
     <MESSAGE value="Fix imports 3" />
     <MESSAGE value="Fix drawables" />
-    <MESSAGE value="Fix imports" />
     <MESSAGE value="Gradle setup" />
     <MESSAGE value="Gradle fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle fix" />
+    <MESSAGE value="Fix imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix imports" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
