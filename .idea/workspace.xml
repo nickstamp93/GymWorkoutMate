@@ -36,34 +36,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Hotfix">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/alalaoum_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/alaloum.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/amore_mio.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/amore_mio_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/an.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/an_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/apo_erwta.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/eutuxia.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/eutuxia_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/gamos_koris.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/gamos_koris_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/halvai.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/halvai_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/loufa_steria.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/loufa_steria_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/mia_fora_ena_mwro.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/mia_fora_ena_mwro_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/polukseni.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/polukseni_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/raftis.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/raftis_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/robogirl.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/robogirl_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/roza_smyrnis.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/roza_smyrnis_bg.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/tzamaika.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/aigaio_sos_bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/aigaio_sos_bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/alalaoum_bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/alaloum_bg.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/apo_erwta.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/apo_erwta.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1933,20 +1908,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00018" summary="Lib updates">
-      <created>1662716509778</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1662716509778</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Gradle updates">
-      <created>1663050657035</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1663050657035</updated>
-    </task>
     <task id="LOCAL-00020" summary="Gradle updates">
       <created>1663052755578</created>
       <option name="number" value="00020" />
@@ -2276,7 +2237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680516290080</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Asset fixes">
+      <created>1680631114703</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1680631114703</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Hotfix">
+      <created>1680631360974</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1680631360974</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2367,7 +2342,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Resolve gradle conflicts" />
     <MESSAGE value="Gradle update" />
     <MESSAGE value="Dependency updates &amp; fixes" />
     <MESSAGE value="Gradle lib updates" />
@@ -2391,6 +2365,7 @@
     <MESSAGE value="Fix imports" />
     <MESSAGE value="Fix gradle" />
     <MESSAGE value="Fix asset file" />
+    <MESSAGE value="Asset fixes" />
     <MESSAGE value="Hotfix" />
     <option name="LAST_COMMIT_MESSAGE" value="Hotfix" />
   </component>
