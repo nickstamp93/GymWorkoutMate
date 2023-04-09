@@ -37,8 +37,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Hotfix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/alalaoum_bg.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/alaloum_bg.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/apo_erwta.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/apo_erwta.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1908,13 +1906,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00020" summary="Gradle updates">
-      <created>1663052755578</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1663052755578</updated>
-    </task>
     <task id="LOCAL-00021" summary="Gradle fix">
       <created>1663659930141</created>
       <option name="number" value="00021" />
@@ -2251,7 +2242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680631360974</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Hotfix">
+      <created>1680634882602</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1680634882602</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="ToolWindowManager">
