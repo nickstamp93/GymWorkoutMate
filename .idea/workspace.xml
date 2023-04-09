@@ -35,9 +35,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Hotfix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Hotfixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1906,13 +1904,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00021" summary="Gradle fix">
-      <created>1663659930141</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1663659930141</updated>
-    </task>
     <task id="LOCAL-00022" summary="Gradle updates">
       <created>1663744224747</created>
       <option name="number" value="00022" />
@@ -2249,7 +2240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680634882602</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Hotfixes">
+      <created>1681039781470</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1681039781471</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2340,7 +2338,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gradle update" />
     <MESSAGE value="Dependency updates &amp; fixes" />
     <MESSAGE value="Gradle lib updates" />
     <MESSAGE value="Update gradle" />
@@ -2365,7 +2362,8 @@
     <MESSAGE value="Fix asset file" />
     <MESSAGE value="Asset fixes" />
     <MESSAGE value="Hotfix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hotfix" />
+    <MESSAGE value="Hotfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hotfixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
