@@ -35,7 +35,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Hotfixes" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Assets">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/argentina_football.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/argentina_football.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/eteros_egw.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/eteros_egw.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ms/raftis.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/raftis.webp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1904,13 +1909,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00022" summary="Gradle updates">
-      <created>1663744224747</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1663744224748</updated>
-    </task>
     <task id="LOCAL-00023" summary="Gradle lib updates">
       <created>1664312262061</created>
       <option name="number" value="00023" />
@@ -2247,7 +2245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681039781471</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Assets">
+      <created>1681040440968</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1681040440968</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2349,7 +2354,6 @@
     <MESSAGE value="Fix imports and add dependencies" />
     <MESSAGE value="Fix gradle setup" />
     <MESSAGE value="Code improvements" />
-    <MESSAGE value="Assets" />
     <MESSAGE value="Gradle fixes" />
     <MESSAGE value="Lib updates" />
     <MESSAGE value="Fix imports 2" />
@@ -2363,7 +2367,8 @@
     <MESSAGE value="Asset fixes" />
     <MESSAGE value="Hotfix" />
     <MESSAGE value="Hotfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hotfixes" />
+    <MESSAGE value="Assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assets" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
