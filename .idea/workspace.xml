@@ -35,9 +35,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Assets fix">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/aoratoi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ms/aoratoi_bg.webp" afterDir="false" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1908,13 +1906,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00024" summary="Gradle lib updates">
-      <created>1669283887859</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1669283887859</updated>
-    </task>
     <task id="LOCAL-00025" summary="Gradle lib updates">
       <created>1669284327411</created>
       <option name="number" value="00025" />
@@ -2251,7 +2242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681690919547</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Fixes">
+      <created>1682068203159</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1682068203160</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2342,7 +2340,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gradle lib updates" />
     <MESSAGE value="Update gradle" />
     <MESSAGE value="Gradle upgrade" />
     <MESSAGE value="Fix imports (1)" />
@@ -2367,7 +2364,8 @@
     <MESSAGE value="Hotfixes" />
     <MESSAGE value="Assets" />
     <MESSAGE value="Assets fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assets fix" />
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
