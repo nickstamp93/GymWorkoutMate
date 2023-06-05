@@ -35,7 +35,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/babysharktv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/bcikids.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/diamond.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/klikfm.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/legotoons.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/pawpatrol.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/preview.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1901,13 +1910,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00033" summary="Fix imports (1)">
-      <created>1673507945634</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1673507945634</updated>
-    </task>
     <task id="LOCAL-00034" summary="Libs updates">
       <created>1673595857167</created>
       <option name="number" value="00034" />
@@ -2244,7 +2246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685196893453</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Fixes">
+      <created>1685197480483</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1685197480483</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
