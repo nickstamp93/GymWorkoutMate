@@ -32,11 +32,19 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle setup">
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ant1_old.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert1_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert2_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert3_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/makedonia.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/opensport.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/ant1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ant1.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,18 +74,10 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="icons" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1608,9 +1608,6 @@
       </list>
     </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -1624,7 +1621,6 @@
     <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectId" id="25K1qWxfXzDhmCMovRvjLbIfcbw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -1761,37 +1757,24 @@
       <pane id="ProjectPane" />
     </panes>
   </component>
-  <component name="ProjectViewState">
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nick/AndroidStudioProjects/GymWorkoutMate/app/src/main/assets/img/category&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/ch"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
       <recent name="com.gymworkoutmate.nickstamp.gymworkoutmate" />
       <recent name="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/category" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/country" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
+      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets" />
+      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg/gr" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
+      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets\Exercises" />
+      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\res\drawable-mdpi" />
+      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
@@ -1896,7 +1879,6 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="" />
@@ -1905,350 +1887,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00044" summary="Gradle fixes">
-      <created>1675255003300</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1675255003300</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Fix gradle setup">
-      <created>1675257673762</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1675257673762</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Hotfix">
-      <created>1675710543851</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1675710543851</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Code improvements">
-      <created>1676576077873</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1676576077873</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Gradle fix">
-      <created>1676577066683</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1676577066683</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Assets">
-      <created>1676577276671</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1676577276671</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Gradle fixes">
-      <created>1677341099686</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1677341099686</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Lib updates">
-      <created>1677696914061</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1677696914061</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Gradle fix">
-      <created>1678441225228</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1678441225228</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Fix imports">
-      <created>1678452718247</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1678452718247</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Fix imports 2">
-      <created>1678462867015</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1678462867015</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Fix imports 3">
-      <created>1678463447828</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1678463447828</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Fix imports">
-      <created>1678950864405</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1678950864405</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Fix imports">
-      <created>1678951436915</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1678951436915</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Fix drawables">
-      <created>1678953177438</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1678953177438</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Fix imports">
-      <created>1679039979724</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1679039979724</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Fix imports">
-      <created>1679041200840</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1679041200840</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Gradle setup">
-      <created>1680076904348</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1680076904349</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Gradle fix">
-      <created>1680154869528</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1680154869528</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Fix imports">
-      <created>1680187431083</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1680187431083</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Fix gradle">
-      <created>1680354194370</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1680354194370</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Fix asset file">
-      <created>1680438445539</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1680438445539</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Hotfix">
-      <created>1680516290079</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1680516290080</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Asset fixes">
-      <created>1680631114703</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1680631114703</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Hotfix">
-      <created>1680631360974</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1680631360974</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Hotfix">
-      <created>1680634882602</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1680634882602</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Hotfixes">
-      <created>1681039781470</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1681039781471</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Assets">
-      <created>1681040440968</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1681040440968</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Assets fix">
-      <created>1681690919547</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1681690919547</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Fixes">
-      <created>1682068203159</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1682068203160</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Fixes">
-      <created>1682341894552</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1682341894553</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Fixes">
-      <created>1682343041550</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1682343041550</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Fixes">
-      <created>1683300528414</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1683300528414</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Fixes">
-      <created>1683465338159</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1683465338159</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Fixes">
-      <created>1684424874510</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1684424874510</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Fixes">
-      <created>1684602560244</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1684602560244</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Fixes">
-      <created>1684687292925</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1684687292926</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Fixes">
-      <created>1685196893453</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1685196893453</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Fixes">
-      <created>1685197480483</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1685197480483</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Fixes">
-      <created>1685983265186</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1685983265187</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Fixes">
-      <created>1686762413695</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1686762413695</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Fixes">
-      <created>1687158377250</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1687158377251</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Fixes">
-      <created>1687158563908</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1687158563908</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Fixes">
-      <created>1689631038875</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1689631038875</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Fixes">
-      <created>1689631088256</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1689631088256</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Fixes">
-      <created>1689633609997</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1689633609997</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Gradle setup">
-      <created>1690136991173</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1690136991173</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Gradle setup">
-      <created>1690146290302</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1690146290302</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Gradle setup">
-      <created>1690147396637</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1690147396637</updated>
-    </task>
-    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2319,17 +1957,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -2337,34 +1964,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update gradle" />
-    <MESSAGE value="Gradle upgrade" />
-    <MESSAGE value="Fix imports (1)" />
-    <MESSAGE value="Libs updates" />
-    <MESSAGE value="Fix icons" />
-    <MESSAGE value="Gradle updates" />
-    <MESSAGE value="Fix imports and add dependencies" />
-    <MESSAGE value="Fix gradle setup" />
-    <MESSAGE value="Code improvements" />
-    <MESSAGE value="Gradle fixes" />
-    <MESSAGE value="Lib updates" />
-    <MESSAGE value="Fix imports 2" />
-    <MESSAGE value="Fix imports 3" />
-    <MESSAGE value="Fix drawables" />
-    <MESSAGE value="Gradle fix" />
-    <MESSAGE value="Fix imports" />
-    <MESSAGE value="Fix gradle" />
-    <MESSAGE value="Fix asset file" />
-    <MESSAGE value="Asset fixes" />
-    <MESSAGE value="Hotfix" />
-    <MESSAGE value="Hotfixes" />
-    <MESSAGE value="Assets" />
-    <MESSAGE value="Assets fix" />
-    <MESSAGE value="Fixes" />
-    <MESSAGE value="Gradle setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle setup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
