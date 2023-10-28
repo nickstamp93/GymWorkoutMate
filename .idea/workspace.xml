@@ -35,17 +35,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ant1_old.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert1_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert2_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ert3_4.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/makedonia.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/opensport.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/ant1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ant1.webp" afterDir="false" />
-    </list>
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1608,6 +1598,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -1768,6 +1761,7 @@
       <recent name="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
       <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets" />
       <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\res\drawable" />
     </key>
@@ -1887,6 +1881,14 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
+    <task id="LOCAL-00001" summary="Gradle">
+      <created>1698518981054</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698518981054</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1957,6 +1959,17 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -1964,6 +1977,10 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gradle" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
