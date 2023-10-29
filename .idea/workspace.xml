@@ -32,10 +32,127 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle fixesK">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/10channel_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/aigaio_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/alitheiatv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/alpha_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/arttv_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/astra_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/best_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/besthybrid1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/besthybrid2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/capital_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/centertv_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/choice_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/corfu_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/creta_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/delta_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/destinationgreece.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/diavata_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/dipso_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ebs.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ebsplus.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ecclesia_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ed.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/egnatia_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ellada_tv_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ellas_tv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ellinikosfm_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ena_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/epiloges_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/epirus_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ertnews1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ertnews2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ertnews3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ertsports2_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ertsports3_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ertsports4_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ertworld_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/etv_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/euro_channel_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/faros_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/fashion_tv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/filopoli_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/flash_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/galaxy_5.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/gnomi_tv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/grd_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/greca.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/groovy_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/hellas.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/hellenictvlondon.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/high_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/imetv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ippodromies_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/irida_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/itv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/kidstv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/kliktv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/kontra_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/kosmos_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/kriti_tv_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/lepanto_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/london_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/lychnos_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/magic_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/maron_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/mega_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/mesogeios_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/messatida_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/messinia_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/mgr_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/mgr_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/montreal_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/naftemporiki_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/nea_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/neteurope.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/netmax_4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/netv_toronto.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ngtv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/notioi_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/nrg_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/nstv_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/oddbods_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/omega_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/onecy.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/onetv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/open_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ort_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/panik_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/pella_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/pemptousia_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/pisti.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/playtv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/plp_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/plus_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/pluton_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/pronews_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/realmusic_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/redmusic.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/reloadplay_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/rik1_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/rik2_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/rikhd_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/riksat_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/risetv.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/samiaki_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/sigma_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/skai_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/smile_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/star_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/start_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/starve_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/stent_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/syros_3.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/city_2.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/city_2.webp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1614,6 +1731,7 @@
     <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectId" id="2XRBuOLKgzX1lSPHGgyaYQ3nYyy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -1750,8 +1868,17 @@
       <pane id="ProjectPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "android.gradle.sync.needed": "true",
+    "cidr.known.project.marker": "true",
     "last_opened_file_path": "/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/ch"
   }
 }]]></component>
@@ -1873,6 +2000,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="" />
@@ -1888,7 +2016,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698518981054</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Gradle fixes">
+      <created>1698519551096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698519551096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1980,7 +2115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle" />
+    <MESSAGE value="Gradle fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gradle fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
