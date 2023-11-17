@@ -35,13 +35,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fix">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/cinematime_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/dkids.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/ducktv_2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/happykids.webp" afterDir="false" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/sat7kids_2.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/img/ch/cn.webp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/cn.webp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2056,7 +2052,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699468674360</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Fixes">
+      <created>1700207438262</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1700207438262</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2153,7 +2156,8 @@
     <MESSAGE value="Fix imports" />
     <MESSAGE value="Gradle setup" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
