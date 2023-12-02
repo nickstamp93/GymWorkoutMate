@@ -2065,7 +2065,28 @@
       <option name="project" value="LOCAL" />
       <updated>1700209063678</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fixes">
+      <created>1700292766053</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700292766053</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fixes">
+      <created>1700293103373</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1700293103373</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Fixes">
+      <created>1701329400985</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701329400985</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
