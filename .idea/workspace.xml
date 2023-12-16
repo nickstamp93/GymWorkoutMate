@@ -35,7 +35,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/aktina2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/aktina3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/greektvusa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/greektvusa2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/tv100_4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1762,7 +1769,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "android.gradle.sync.needed": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/v"
+    "last_opened_file_path": "/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/ch"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -1772,10 +1779,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/v" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
-      <recent name="C:\Users\nickstamp\Documents\GitHub\GymWorkoutMate\app\src\main\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
@@ -2133,7 +2140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702453925818</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Fixes">
+      <created>1702454883717</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702454883717</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
