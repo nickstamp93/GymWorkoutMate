@@ -3,5 +3,5 @@
 #EXT-X-TARGETDURATION:4
 #EXT-X-MEDIA-SEQUENCE:0
 #EXTINF:3.500000,
-no_signal.ts
+https://raw.githubusercontent.com/nickstamp93/GymWorkoutMate/i/app/src/main/assets/v/no_signal.ts
 #EXT-X-ENDLIST
