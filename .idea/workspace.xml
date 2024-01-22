@@ -1765,6 +1765,11 @@
     &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/ch&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;kotlin&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -2226,7 +2231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705301353214</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Fixes">
+      <created>1705650160279</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1705650160279</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Fixes">
+      <created>1705651540677</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1705651540677</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
