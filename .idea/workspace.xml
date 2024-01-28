@@ -1902,13 +1902,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00001" summary="Gradle">
-      <created>1698518981054</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698518981054</updated>
-    </task>
     <task id="LOCAL-00002" summary="Gradle fixes">
       <created>1698519551096</created>
       <option name="number" value="00002" />
@@ -2245,7 +2238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705651540677</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Fixes">
+      <created>1705910030376</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1705910030376</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="ToolWindowManager">
