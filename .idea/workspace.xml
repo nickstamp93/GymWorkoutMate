@@ -1764,7 +1764,7 @@
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/ms&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/ch&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -1778,8 +1778,8 @@
       <recent name="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/v" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
@@ -1901,13 +1901,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Fix imports">
-      <created>1698597129257</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1698597129257</updated>
     </task>
     <task id="LOCAL-00006" summary="Fix imports">
       <created>1698598857237</created>
@@ -2245,7 +2238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706597153437</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Fixes">
+      <created>1707057281166</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1707057281166</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
