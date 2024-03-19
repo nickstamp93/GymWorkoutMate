@@ -35,12 +35,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle files">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/apokaliptika.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/evripos.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/kriti1.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1905,13 +1900,6 @@
       <option name="presentableId" value="Default" />
       <updated>1446491104698</updated>
     </task>
-    <task id="LOCAL-00012" summary="Fix imports">
-      <created>1698606088115</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1698606088115</updated>
-    </task>
     <task id="LOCAL-00013" summary="Gradle setup">
       <created>1698651428215</created>
       <option name="number" value="00013" />
@@ -2248,7 +2236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710348833875</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Gradle files">
+      <created>1710886911356</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1710886911356</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
