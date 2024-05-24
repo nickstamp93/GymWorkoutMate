@@ -35,7 +35,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle files" />
+    <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Gradle files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1772,7 +1774,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;i&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/ch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nickstamp/StudioProjects/GymWorkoutMate/app/src/main/assets/img/st&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -1787,11 +1789,11 @@
       <recent name="com.gymworkoutmate.nickstamp.gymworkoutmate.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/op" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
@@ -2254,7 +2256,7 @@
       <option name="project" value="LOCAL" />
       <updated>1712305212994</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="ToolWindowManager">
