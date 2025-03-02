@@ -1803,8 +1803,8 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ch" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/st" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets/img/epg" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/ms" />
       <recent name="$PROJECT_DIR$/app/src/main/assets/img/op" />
     </key>
@@ -2269,7 +2269,7 @@
       <option name="project" value="LOCAL" />
       <updated>1712305212994</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="ToolWindowManager">
