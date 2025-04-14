@@ -36,6 +36,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5a1ccb-cb7e-4aab-984e-686f8e074c22" name="Default" comment="Fixes">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/babysharktv.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/cartoonnetwork.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/newsima.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/pepapig.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/img/ch/wbkids.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -2270,7 +2275,7 @@
       <option name="project" value="LOCAL" />
       <updated>1712305212994</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="ToolWindowManager">
